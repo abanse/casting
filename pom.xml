@@ -19,8 +19,8 @@
 	</modules>
 
 	<scm>
-		<connection>scm:git:https://10.129.201.46/mes-rw/casting.git</connection>
-		<developerConnection>scm:git:https://10.129.201.46/mes-rw/casting.git</developerConnection>
+		<connection>scm:git:https://abanse@dev.azure.com/abanse/MES-Core/_git/casting.git</connection>
+		<developerConnection>scm:git:https://abanse@dev.azure.com/abanse/MES-Core/_git/casting.git</developerConnection>
 	</scm>
 
 </project>
