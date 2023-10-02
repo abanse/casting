@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.SearchBox?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<BorderPane fx:id="mainPane" xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hydro.casting.gui.planning.view.content.PlanningMeltingDemandController">
+    <top>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints prefWidth="100"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints/>
+            </rowConstraints>
+            <children>
+                <ToolBar prefHeight="42.0" prefWidth="200.0">
+                    <items>
+                        <Label text="Gruppierung"/>
+                        <ComboBox fx:id="grouping"/>
+                        <Separator orientation="VERTICAL"/>
+                        <SearchBox fx:id="searchBox" prefWidth="200" promptText="Filtern nach ?"/>
+                    </items>
+                </ToolBar>
+                <ToolBar prefHeight="42.0" GridPane.columnIndex="1"/>
+                <HBox fx:id="summaryDemand" alignment="CENTER" spacing="2.0"
+                      GridPane.columnIndex="1"/>
+            </children>
+        </GridPane>
+    </top>
+    <right>
+        <!--
+<VBox fx:id="functionBox" spacing="5.0">
+    <children>
+        <TaskButton fx:id="add" maxWidth="Infinity" functionKey="F1"
+                    onAction="#add">
+            <tooltip>
+                <Tooltip text="Eintrag einfügen (selektierte Position)"/>
+            </tooltip>
+            <graphic>
+                <ImageView fitHeight="22" fitWidth="22"
+                           preserveRatio="true" smooth="true">
+                    <image>
+                        <Image url="@/com/hydro/casting/gui/images/insertPos.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </TaskButton>
+
+        <TaskButton fx:id="append" maxWidth="Infinity" functionKey="F2"
+                    onAction="#append">
+            <tooltip>
+                <Tooltip text="Eintrag ans Ende anfügen"/>
+            </tooltip>
+            <graphic>
+                <ImageView fitHeight="22" fitWidth="22"
+                           preserveRatio="true" smooth="true">
+                    <image>
+                        <Image url="@/com/hydro/casting/gui/images/append.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </TaskButton>
+        <Separator maxWidth="Infinity"/>
+        <TaskButton fx:id="targetSelection" maxWidth="Infinity" functionKey="F3" onAction="#targetSelection">
+            <tooltip>
+                <Tooltip text="Selektiere die selektierten Maschinenbelgungseinträge"/>
+            </tooltip>
+            <graphic>
+                <ImageView fitHeight="22" fitWidth="22"
+                           preserveRatio="true" smooth="true">
+                    <image>
+                        <Image url="@/com/hydro/casting/gui/images/target.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </TaskButton>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+</VBox>
+-->
+    </right>
+    <center>
+        <fx:include fx:id="tableDemand"
+                    source="../../table/FurnaceDemandTable.fxml"/>
+    </center>
+</BorderPane>

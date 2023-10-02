@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.CheckTreeView?>
+<BorderPane prefHeight="556.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hydro.casting.gui.locking.material.control.LockMaterialControlController">
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true">
+            <content>
+                <GridPane hgap="5.0" vgap="5.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="300.0"/>
+                        <ColumnConstraints halignment="RIGHT" hgrow="NEVER" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints halignment="RIGHT" hgrow="NEVER" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER"/>
+                        <RowConstraints minHeight="10.0" vgrow="ALWAYS" fillHeight="true"/>
+                    </rowConstraints>
+                    <children>
+                        <TitledPane text="Barren" focusTraversable="false" collapsible="false" minHeight="20.0" maxHeight="Infinity"
+                                    GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.rowSpan="5">
+                            <content>
+                                <CheckTreeView fx:id="lockableMaterials" prefHeight="20.0" showRoot="false"/>
+                            </content>
+                        </TitledPane>
+                        <Label text="Code" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                        <AutoCompletionTextField fx:id="materialLockType" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+                        <StringTextField fx:id="materialLockTypeDescription" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+                        <Label text="Ort" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                        <AutoCompletionTextField fx:id="materialLockLocation" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+                        <StringTextField fx:id="materialLockLocationDescription" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+                        <Label text="Verursacher" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                        <AutoCompletionTextField fx:id="imposationMachine" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+                        <StringTextField fx:id="imposationMachineDescription" editable="false" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+                        <Label text="Sperrmeldung" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                        <StringTextField fx:id="reason" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </GridPane>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

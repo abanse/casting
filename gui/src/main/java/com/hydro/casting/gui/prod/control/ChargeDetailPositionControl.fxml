@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import com.hydro.core.gui.comp.StringTextField?>
+<GridPane fx:id="mainPane" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.hydro.casting.gui.prod.control.ChargeDetailPositionControlController">
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" prefWidth="100"/>
+        <ColumnConstraints halignment="LEFT" prefWidth="60"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <Label fx:id="position" text="Pos.:??" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+        <Label text="Gießlänge:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <StringTextField fx:id="length" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Label text="Längenzuschlag:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <StringTextField fx:id="lengthBonus" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Label fx:id="width" text="1600" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+            <font>
+                <Font size="24"/>
+            </font>
+        </Label>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+</GridPane>

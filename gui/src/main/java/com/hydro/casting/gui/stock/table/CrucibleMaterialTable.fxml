@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.cell.TableDateCellFactory?>
+<?import com.hydro.core.gui.comp.cell.TableNumberCellFactory?>
+<?import com.hydro.core.gui.comp.ClientModelTableView?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<ClientModelTableView fx:id="table" clientModelId="casting.model" clientModelViewId="casting.model.crucible-material" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+                      fx:controller="com.hydro.casting.gui.stock.table.CrucibleMaterialTableController">
+    <columns>
+        <TableColumn fx:id="nameColumn" prefWidth="180.0" text="Schmelze" id="name">
+            <cellValueFactory>
+                <PropertyValueFactory property="name"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Tiegel" id="crucibleName">
+            <cellValueFactory>
+                <PropertyValueFactory property="crucibleName"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Netto(kg)" id="weight">
+            <cellValueFactory>
+                <PropertyValueFactory property="weight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableNumberCellFactory numberFormat="\%.0f"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Brutto(kg)" id="grossWeight">
+            <cellValueFactory>
+                <PropertyValueFactory property="grossWeight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableNumberCellFactory numberFormat="\%.0f"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Herkunft" id="source">
+            <cellValueFactory>
+                <PropertyValueFactory property="source"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="120.0" text="Verwiegung" id="generationSuccessTS">
+            <cellValueFactory>
+                <PropertyValueFactory property="generationSuccessTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+    </columns>
+</ClientModelTableView>

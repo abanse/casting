@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.TaskButton?>
+<?import javafx.embed.swing.SwingNode?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import com.hydro.casting.gui.locking.workflow.task.LWAddMessageTask?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.locking.workflow.control.LockingWorkflowStepsControlController">
+	<top>
+		<Label text="Maßnahme und Sperrmeldungsbearbeitung" textAlignment="CENTER" BorderPane.alignment="CENTER" />
+	</top>
+	<center>
+		<SwingNode fx:id="lockCommentContainer">
+			<BorderPane.margin>
+				<Insets bottom="5.0" left="0.0" right="0.0" top="5.0" />
+			</BorderPane.margin>
+		</SwingNode>
+		<!-- 
+		<WebView fx:id="lockComment" disable="false" pickOnBounds="false" focusTraversable="false">
+			<BorderPane.margin>
+				<Insets bottom="5.0" left="0.0" right="0.0" top="5.0" />
+			</BorderPane.margin>
+		</WebView>
+		-->
+	</center>
+	<bottom>
+		<TaskButton fx:id="addMessage" BorderPane.alignment="CENTER_RIGHT" maxWidth="50">
+			<graphic>
+				<ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true" smooth="true">
+					<image>
+						<Image url="@/com/hydro/core/gui/images/add.png" />
+					</image>
+				</ImageView>
+			</graphic>
+			<task>
+				<LWAddMessageTask fx:id="addMessageTask" />
+			</task>
+		</TaskButton>
+	</bottom>
+	<padding>
+		<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+	</padding>
+</BorderPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import com.hydro.core.gui.comp.SearchBox?>
+<fx:root type="javafx.scene.layout.BorderPane" xmlns="http://javafx.com/javafx/8"
+		 xmlns:fx="http://javafx.com/fxml/1">
+	<top>
+		<GridPane hgap="5">
+			<BorderPane.margin>
+				<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+			</BorderPane.margin>
+			<children>
+				<Button fx:id="reload" onAction="#reload" styleClass="functions-menubutton"
+						GridPane.columnIndex="0" GridPane.rowIndex="0" visible="true">
+					<graphic>
+						<ImageView fitHeight="20" fitWidth="20">
+							<image>
+								<Image url="@/com/hydro/core/gui/images/reload.png" />
+							</image>
+						</ImageView>
+					</graphic>
+				</Button>
+				<SearchBox fx:id="searchBox" GridPane.columnIndex="1"
+						   GridPane.rowIndex="0">
+				</SearchBox>
+				<Button fx:id="wizard" onAction="#wizard" styleClass="functions-menubutton"
+					GridPane.columnIndex="2" GridPane.rowIndex="0" visible="false">
+					<graphic>
+						<ImageView fitHeight="20" fitWidth="20">
+							<image>
+								<Image url="@/com/hydro/casting/gui/images/wizard.png" />
+							</image>
+						</ImageView>
+					</graphic>
+				</Button>
+			</children>
+			<columnConstraints>
+				<ColumnConstraints hgrow="NEVER" />
+				<ColumnConstraints hgrow="ALWAYS" />
+				<ColumnConstraints hgrow="NEVER" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints vgrow="NEVER" valignment="CENTER" />
+			</rowConstraints>
+		</GridPane>
+	</top>
+</fx:root>

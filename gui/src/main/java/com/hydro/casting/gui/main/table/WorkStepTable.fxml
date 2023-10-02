@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.cell.TableDateCellFactory?>
+<?import com.hydro.core.gui.comp.ServerTableView?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<ServerTableView fx:id="table" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.main.table.WorkStepTableController">
+    <columns>
+        <TableColumn fx:id="apkColumn" prefWidth="150" text="Arbeitsgang" id="apk">
+            <cellValueFactory>
+                <PropertyValueFactory property="apk"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="90" text="Nummer" id="workStepNumber">
+            <cellValueFactory>
+                <PropertyValueFactory property="workStepNumber"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="110" text="Start" id="startTS">
+            <cellValueFactory>
+                <PropertyValueFactory property="startTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="110" text="Ende" id="endTS">
+            <cellValueFactory>
+                <PropertyValueFactory property="endTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="300" text="Beschreibung" id="description">
+            <cellValueFactory>
+                <PropertyValueFactory property="description"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="90" text="Arbeitsplatz" id="workPlace">
+            <cellValueFactory>
+                <PropertyValueFactory property="workPlace"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="300" text="Arbeitsplatz Beschreibung" id="workPlaceDescription">
+            <cellValueFactory>
+                <PropertyValueFactory property="workPlaceDescription"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="70" text="Werk" id="plantApk">
+            <cellValueFactory>
+                <PropertyValueFactory property="plantApk"/>
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+</ServerTableView>

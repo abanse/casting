@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.cell.TableDateCellFactory?>
+<?import com.hydro.core.gui.comp.ServerTableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.*?>
+<ServerTableView fx:id="table" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.prod.table.MoldDepartmentTableController">
+    <columns>
+        <TableColumn prefWidth="70.0" text="Anlage" id="caster">
+        </TableColumn>
+        <TableColumn fx:id="castingTS" prefWidth="130.0" text="Einsatzzeitpunkt(Soll)" id="castingTS">
+            <cellValueFactory>
+                <PropertyValueFactory property="castingTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="80.0" text="Status" id="state">
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="Pos 1" id="pos1">
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="Pos 2" id="pos2">
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="Pos 3" id="pos3">
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="Pos 4" id="pos4">
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="Pos 5" id="pos5">
+        </TableColumn>
+    </columns>
+</ServerTableView>

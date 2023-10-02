@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.ServerTableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.TableColumn?>
+<?import com.hydro.core.gui.comp.cell.TableNumberCellFactory?>
+<ServerTableView fx:id="table" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.prod.table.ChargeTableController">
+    <columns>
+        <TableColumn fx:id="chargeColumn" prefWidth="70.0" text="Charge" id="chargeWithoutYear">
+            <cellValueFactory>
+                <PropertyValueFactory property="chargeWithoutYear"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Legierung" id="alloy">
+            <cellValueFactory>
+                <PropertyValueFactory property="alloy"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Gepl. Gewicht(t)" id="plannedWeight">
+            <cellValueFactory>
+                <PropertyValueFactory property="plannedWeight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableNumberCellFactory numberFormat="\%.0f" factor="0.001"/>
+            </cellFactory>
+        </TableColumn>
+    </columns>
+</ServerTableView>

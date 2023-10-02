@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.cell.MaintenanceNumberCellFactory?>
+<?import com.hydro.core.gui.comp.MaintenanceTableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.TableColumn?>
+<?import com.hydro.core.gui.comp.cell.MaintenanceIntegerCellFactory?>
+<?import com.hydro.core.gui.comp.cell.MaintenanceStringCellFactory?>
+<?import com.hydro.core.gui.comp.cell.MaintenanceLocalDateTimeCellFactory?>
+<MaintenanceTableView fx:id="table" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.main.table.MachineCalendarTableController">
+    <columns>
+        <TableColumn editable="true" prefWidth="100.0" text="Anlage" id="machine" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="machine"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn editable="true" prefWidth="150.0" text="Startzeit" id="startTS" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="startTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceLocalDateTimeCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn editable="true" prefWidth="100.0" text="Dauer(min.)" id="duration" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="duration"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn editable="true" prefWidth="400.0" text="Beschreibung" id="description" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="description"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+    </columns>
+</MaintenanceTableView>

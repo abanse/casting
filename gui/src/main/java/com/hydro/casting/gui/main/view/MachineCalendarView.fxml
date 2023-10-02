@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.*?>
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<ViewParent title="Ressource-Kalender"
+            prefHeight="500.0" prefWidth="500.0"
+            xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hydro.casting.gui.main.view.MachineCalendarViewController">
+    <top>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="NEVER"/>
+                <ColumnConstraints prefWidth="10"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints fillHeight="true"/>
+            </rowConstraints>
+            <children>
+                <ToolBar maxHeight="Infinity" BorderPane.alignment="CENTER"
+                         GridPane.columnSpan="3">
+                    <items>
+                        <SearchBox fx:id="searchBox" prefWidth="250"/>
+                    </items>
+                </ToolBar>
+                <ToolBar maxHeight="Infinity" GridPane.columnIndex="1">
+                    <items>
+                        <HBox fx:id="summary" alignment="CENTER" spacing="2.0"
+                              GridPane.columnIndex="1"/>
+                        <TaskButton onAction="#reload" functionKey="F5">
+                            <tooltip>
+                                <Tooltip text="Aktualisieren"/>
+                            </tooltip>
+                            <graphic>
+                                <ImageView fitHeight="21.0" fitWidth="21.0"
+                                           pickOnBounds="true" preserveRatio="true" smooth="true">
+                                    <image>
+                                        <Image url="@/com/hydro/core/gui/images/reload.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TaskButton>
+                    </items>
+                </ToolBar>
+            </children>
+        </GridPane>
+    </top>
+    <center>
+        <fx:include fx:id="table"
+                    source="../table/MachineCalendarTable.fxml"/>
+    </center>
+    <right>
+        <VBox spacing="5.0" alignment="TOP_CENTER" fillWidth="true">
+            <children>
+                <TaskButton onAction="#add" functionKey="F6">
+                    <tooltip>
+                        <Tooltip text="Datensatz hinzufügen"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="21.0"
+                                   pickOnBounds="true" preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/core/gui/images/add.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+                <TaskButton fx:id="copy" onAction="#copy" functionKey="F7">
+                    <tooltip>
+                        <Tooltip text="Datensatz kopieren"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="21.0"
+                                   pickOnBounds="true" preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/core/gui/images/duplicate.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+                <TaskButton fx:id="delete" onAction="#delete" functionKey="F8">
+                    <tooltip>
+                        <Tooltip text="Datensatz löschen"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="21.0"
+                                   pickOnBounds="true" preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/core/gui/images/minus.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </right>
+</ViewParent>

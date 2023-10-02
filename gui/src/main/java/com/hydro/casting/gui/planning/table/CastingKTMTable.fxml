@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.cell.MaintenanceNumberCellFactory?>
+<?import com.hydro.core.gui.comp.MaintenanceTableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.TableColumn?>
+<?import com.hydro.core.gui.comp.cell.MaintenanceIntegerCellFactory?>
+<?import com.hydro.core.gui.comp.cell.MaintenanceStringCellFactory?>
+<MaintenanceTableView fx:id="tableC" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.planning.table.CastingKTMTableController">
+    <columns>
+        <TableColumn editable="true" prefWidth="100.0" text="Gießanlage" id="caster" userData="disableSimpleEdit" styleClass="kt-column">
+            <cellValueFactory>
+                <PropertyValueFactory property="caster"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn editable="true" prefWidth="100.0" text="Legierung" id="alloy" userData="disableSimpleEdit" styleClass="kt-column">
+            <cellValueFactory>
+                <PropertyValueFactory property="alloy"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn editable="true" prefWidth="100.0" text="Priorität" id="prio" userData="disableSimpleEdit" styleClass="kt-column">
+            <cellValueFactory>
+                <PropertyValueFactory property="prio"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn editable="true" prefWidth="100.0" text="Gießgeschwindigkeit(mm/min)" id="castingSpeed" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="castingSpeed"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceNumberCellFactory pattern="0.00"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn editable="true" prefWidth="100.0" text="Handlingzeit(h)" id="handlingTime" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="handlingTime"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceNumberCellFactory pattern="0.0"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn editable="true" prefWidth="100.0" text="Abstehzeit(h)" id="standingTime" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="standingTime"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceNumberCellFactory pattern="0.0"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn editable="true" prefWidth="100.0" text="Gießen Überwachungszeit(min)" id="castingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="castingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn editable="true" prefWidth="100.0" text="Abfahren und Reinigen Überwachungszeit(min)" id="unloadingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="unloadingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+    </columns>
+</MaintenanceTableView>

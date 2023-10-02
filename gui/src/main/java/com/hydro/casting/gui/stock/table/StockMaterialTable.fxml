@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.cell.TableNumberCellFactory?>
+<?import com.hydro.core.gui.comp.cell.TableStringCellFactory?>
+<?import com.hydro.core.gui.comp.ClientModelTableView?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<ClientModelTableView fx:id="table" clientModelId="casting.model" clientModelViewId="casting.model.material" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+                      fx:controller="com.hydro.casting.gui.stock.table.StockMaterialTableController">
+    <columns>
+        <TableColumn fx:id="nameColumn" prefWidth="180.0" text="Material" id="name">
+            <cellValueFactory>
+                <PropertyValueFactory property="name"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableStringCellFactory beginIndex="10"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Liefer-Charge" id="deliveryCharge">
+            <cellValueFactory>
+                <PropertyValueFactory property="deliveryCharge"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="SAP-Material" id="materialTypeApk">
+            <cellValueFactory>
+                <PropertyValueFactory property="materialTypeApk"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableStringCellFactory beginIndex="10"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="300.0" text="Name" id="materialTypeDescription">
+            <cellValueFactory>
+                <PropertyValueFactory property="materialTypeDescription"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Bestand(kg)" id="weight">
+            <cellValueFactory>
+                <PropertyValueFactory property="weight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableNumberCellFactory numberFormat="\%.0f"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Legierung" id="alloyName">
+            <cellValueFactory>
+                <PropertyValueFactory property="alloyName"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Lager" id="source">
+            <cellValueFactory>
+                <PropertyValueFactory property="source"/>
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+</ClientModelTableView>

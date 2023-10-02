@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.geometry.Insets?>
+<?import com.hydro.core.gui.comp.StringTextField?>
+<?import javafx.scene.control.Label?>
+<?import com.hydro.core.gui.comp.DoubleTextField?>
+<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.hydro.casting.gui.melting.control.MeltingFurnaceInstructionControlController">
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints prefWidth="70.0"/>
+        <ColumnConstraints hgrow="ALWAYS" halignment="RIGHT"/>
+        <ColumnConstraints prefWidth="50.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+    <padding>
+        <Insets left="5.0" right="5.0"/>
+    </padding>
+    <StringTextField styleClass="header" fx:id="charge" prefWidth="110" editable="false" alignment="CENTER" GridPane.columnSpan="4" GridPane.halignment="CENTER" GridPane.fillWidth="false"/>
+    <Label text="Legierung" GridPane.columnIndex="0"/>
+    <StringTextField fx:id="alloy" editable="false" GridPane.columnIndex="1"/>
+    <Label text="Auslastung" GridPane.columnIndex="2"/>
+    <DoubleTextField fx:id="utilization" emptyIfZero="true" pattern="0.0%" editable="false" GridPane.columnIndex="3"/>
+</GridPane>

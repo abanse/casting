@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.prod.control.MaterialBrowser?>
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<ViewParent title="Materialien"
+            prefHeight="500.0" prefWidth="500.0"
+            xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hydro.casting.gui.prod.view.MaterialsViewController">
+    <center>
+        <TabPane fx:id="sourceTab">
+            <tabs>
+                <Tab text="Materialien" closable="false">
+                    <graphic>
+                        <ImageView fitHeight="14" fitWidth="14">
+                            <image>
+                                <Image url="@/com/hydro/casting/gui/images/material.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <content>
+                        <MaterialBrowser fx:id="materialBrowser"/>
+                    </content>
+                </Tab>
+                <!--				<Tab text="Versätze" closable="false">-->
+                <!--					<graphic>-->
+                <!--						<ImageView fitHeight="16" fitWidth="16">-->
+                <!--							<image>-->
+                <!--								<Image url="@/de/msw/pp/gui/images/versaetzeSmall.png" />-->
+                <!--							</image>-->
+                <!--						</ImageView>-->
+                <!--					</graphic>-->
+                <!--					<content>-->
+                <!--						<TransferBrowser />-->
+                <!--					</content>-->
+                <!--				</Tab>-->
+            </tabs>
+        </TabPane>
+    </center>
+</ViewParent>

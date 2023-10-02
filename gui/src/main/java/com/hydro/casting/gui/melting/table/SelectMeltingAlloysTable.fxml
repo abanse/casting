@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.cell.MaintenanceBooleanCellFactory?>
+<?import com.hydro.core.gui.comp.cell.MaintenanceStringCellFactory?>
+<?import com.hydro.core.gui.comp.MaintenanceTableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.TableColumn?>
+<MaintenanceTableView xmlns="http://javafx.com/javafx"
+                      xmlns:fx="http://javafx.com/fxml"
+                      fx:controller="com.hydro.casting.gui.melting.table.SelectMeltingAlloysTableController"
+                      prefHeight="400.0" prefWidth="600.0">
+    <columns>
+        <TableColumn prefWidth="100.0" text="Legierung" id="name" editable="false" userData="disableSimpleEdit" styleClass="kt-column">
+            <cellValueFactory>
+                <PropertyValueFactory property="name"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Relevant für Schmelzbereich" id="meltingRelevant" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="meltingRelevant"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceBooleanCellFactory/>
+            </cellFactory>
+        </TableColumn>
+    </columns>
+</MaintenanceTableView>

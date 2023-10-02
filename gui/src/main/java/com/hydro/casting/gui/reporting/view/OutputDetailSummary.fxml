@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<TitledPane fx:id="pane" maxHeight="-Infinity"
+			maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Zeitraum"
+			xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+			fx:controller="com.hydro.casting.gui.reporting.view.OutputDetailSummaryController">
+	<GridPane fx:id="content">
+		<columnConstraints>
+			<ColumnConstraints hgrow="ALWAYS" minWidth="10.0"
+							   prefWidth="250.0"/>
+		</columnConstraints>
+		<rowConstraints>
+			<RowConstraints minHeight="10.0" vgrow="ALWAYS"/>
+			<RowConstraints minHeight="10.0" vgrow="ALWAYS"/>
+			<RowConstraints minHeight="10.0" vgrow="ALWAYS"/>
+		</rowConstraints>
+		<GridPane>
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+								   percentWidth="60.0" prefWidth="100.0"/>
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+								   percentWidth="40.0" prefWidth="100.0"/>
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints vgrow="ALWAYS"/>
+			</rowConstraints>
+			<VBox fx:id="descriptionBox" GridPane.columnIndex="0"
+				  GridPane.rowIndex="0">
+			</VBox>
+			<VBox fx:id="valueBox" GridPane.columnIndex="1"
+				  GridPane.rowIndex="0">
+			</VBox>
+		</GridPane>
+		<Hyperlink fx:id="displayDetails" onAction="#displayDetails"
+				   alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Details anzeigen"
+				   VBox.vgrow="ALWAYS" focusTraversable="false" GridPane.rowIndex="1">
+			<font>
+				<Font size="10.0"/>
+			</font>
+		</Hyperlink>
+
+		<GridPane fx:id="detailPane" maxWidth="1.7976931348623157E308"
+				  GridPane.rowIndex="2">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+								   percentWidth="60.0" prefWidth="100.0"/>
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+								   percentWidth="40.0" prefWidth="100.0"/>
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints vgrow="ALWAYS"/>
+			</rowConstraints>
+			<VBox fx:id="descriptionBoxDetail" GridPane.columnIndex="0"
+				  GridPane.rowIndex="0">
+			</VBox>
+			<VBox fx:id="valueBoxDetail" GridPane.columnIndex="1"
+				  GridPane.rowIndex="0">
+			</VBox>
+		</GridPane>
+	</GridPane>
+</TitledPane>

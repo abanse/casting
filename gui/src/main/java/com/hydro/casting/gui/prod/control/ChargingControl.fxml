@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.prod.table.ChargingTable?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Slider?>
+<GridPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          hgap="5" vgap="5" fx:controller="com.hydro.casting.gui.prod.control.ChargingControlController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS"/>
+        <ColumnConstraints hgrow="NEVER"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="ALWAYS"/>
+    </rowConstraints>
+    <ChargingTable fx:id="chargingTable" prefHeight="200" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <GridPane.margin>
+            <Insets left="5" bottom="5"/>
+        </GridPane.margin>
+    </ChargingTable>
+    <Label fx:id="attention" contentDisplay="RIGHT" visible="false"
+           styleClass="alert" GridPane.columnIndex="0" GridPane.rowIndex="0"
+           GridPane.halignment="RIGHT"
+           GridPane.valignment="TOP">
+        <graphic>
+            <ImageView fitWidth="32" fitHeight="32">
+                <Image url="@/com/hydro/casting/gui/images/warning.png"/>
+            </ImageView>
+        </graphic>
+    </Label>
+    <Slider fx:id="timeSlider" orientation="VERTICAL" GridPane.columnIndex="1">
+        <GridPane.margin>
+            <Insets bottom="5"/>
+        </GridPane.margin>
+    </Slider>
+</GridPane>

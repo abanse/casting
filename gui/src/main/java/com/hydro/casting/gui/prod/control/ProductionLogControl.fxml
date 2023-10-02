@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.TaskButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hydro.casting.gui.prod.control.ProductionLogControlController">
+    <center>
+        <fx:include fx:id="productionLogTable"
+                    source="../table/ProductionLogTable.fxml"/>
+    </center>
+    <right>
+        <VBox spacing="5.0" alignment="TOP_CENTER" fillWidth="true">
+            <TaskButton onAction="#reload">
+                <tooltip>
+                    <Tooltip text="Aktualisieren"/>
+                </tooltip>
+                <graphic>
+                    <ImageView fitHeight="21.0" fitWidth="21.0"
+                               pickOnBounds="true" preserveRatio="true" smooth="true">
+                        <image>
+                            <Image url="@/com/hydro/core/gui/images/reload.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </TaskButton>
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </BorderPane.margin>
+        </VBox>
+    </right>
+</BorderPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane hgap="5.0" vgap="5.0" style="-fx-border-color: lightgray;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.hydro.casting.gui.prod.control.InspectionTwoStateControlController">
+    <columnConstraints>
+        <ColumnConstraints halignment="LEFT" hgrow="NEVER" minWidth="10.0" prefWidth="120.0"/>
+        <ColumnConstraints halignment="LEFT" hgrow="NEVER" minWidth="10.0" prefWidth="120.0"/>
+        <ColumnConstraints halignment="LEFT" hgrow="NEVER" minWidth="10.0" prefWidth="180.0"/>
+        <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" minWidth="10.0" fillWidth="false"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+    <Label fx:id="descriptionLine" text="Beschreibung der Ja/Nein-Frage" GridPane.columnSpan="4" GridPane.halignment="LEFT"/>
+    <Label fx:id="result" GridPane.columnSpan="4" GridPane.halignment="RIGHT"/>
+    <CheckBox fx:id="checkBoxYes" mnemonicParsing="false" onAction="#checkboxClickedYes" text="Ja" GridPane.rowIndex="1">
+        <GridPane.margin>
+            <Insets left="20.0"/>
+        </GridPane.margin>
+    </CheckBox>
+    <CheckBox fx:id="checkBoxNo" mnemonicParsing="false" onAction="#checkboxClickedNo" text="Nein" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <VBox fx:id="interventionBox" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <Label fx:id="interventionLabel"/>
+        <TextField fx:id="intervention" prefWidth="200"/>
+    </VBox>
+    <VBox fx:id="additionalInfoBox" GridPane.columnIndex="3" GridPane.rowIndex="1">
+        <Label fx:id="additionalInfoLabel"/>
+        <TextField fx:id="additionalInfo" prefWidth="200"/>
+    </VBox>
+    <VBox fx:id="commentBox" GridPane.rowIndex="2" GridPane.columnSpan="4" maxWidth="Infinity">
+        <Label fx:id="titleComment" text="Art der Mängel:"/>
+        <TextArea fx:id="commentContent" prefHeight="40.0" wrapText="true"/>
+    </VBox>
+</GridPane>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.planning.table.cell.DemandCounterValueFactory?>
+<?import com.hydro.core.gui.comp.CacheTreeTableView?>
+<?import com.hydro.core.gui.comp.cell.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<CacheTreeTableView fx:id="demandTable" showRoot="false" columnFilterEnabled="true" cache="casting-planning" cachePath="/caster-demand" clientModelId="casting.model"
+                    xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.planning.table.CasterDemandTableController">
+    <columns>
+        <TreeTableColumn prefWidth="90.0" text="Legierung" id="alloy">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="alloy"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="Qualität" id="quality">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="quality"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="Breite" id="width">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="width"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="Länge" id="length">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="length"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn fx:id="doubleLengthColumn" prefWidth="50.0" text="T-Länge" id="doubleLength">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="doubleLength"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="80.0" text="Lieferdatum(von)" id="deliveryDateFrom">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="deliveryDateFrom"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableDateCellFactory dateFormat="dd.MM.yy"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="80.0" text="Lieferdatum(bis)" id="deliveryDateTo">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="deliveryDateTo"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableDateCellFactory dateFormat="dd.MM.yy"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="#Gesamt" id="amount">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="amount"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="#Offen(Produktion)" id="toProduce">
+            <cellValueFactory>
+                <DemandCounterValueFactory clientModelProvider="$demandTable" counterVariant="ToProduce"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="#Offen(Planung)" id="toSchedule">
+            <cellValueFactory>
+                <DemandCounterValueFactory clientModelProvider="$demandTable" counterVariant="ToSchedule"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+       <TreeTableColumn prefWidth="50.0" text="#Hier Geplant" id="currentPlanned">
+            <cellValueFactory>
+                <DemandCounterValueFactory fx:id="currentPlanned" clientModelProvider="$demandTable" counterVariant="Scheduled"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="#Geplant" id="planned">
+            <cellValueFactory>
+                <DemandCounterValueFactory clientModelProvider="$demandTable" counterVariant="Scheduled"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="?#Barrenbestand" id="slabAssignment">
+            <cellValueFactory>
+                <DemandCounterValueFactory clientModelProvider="$demandTable" counterVariant="Slabs"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="#Produziert" id="delivered">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="delivered"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="#Abgerufen" id="retrieved">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="retrieved"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Auftrag" id="orderId">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="orderId"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableStringCellFactory beginIndex="5"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="40.0" text="Position" id="orderPosition">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="orderPosition"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableStringCellFactory beginIndex="4"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="Versuchs-Nr." id="experimentNumber">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="experimentNumber"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="Bestellung" id="purchaseOrder">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="purchaseOrder"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="Kunden-Nr." id="customerId">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="customerId"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableStringCellFactory beginIndex="5"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="200.0" text="Kunde" id="customerName">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="customerName"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="80.0" text="Material-Nr." id="materialType">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="materialType"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableStringCellFactory beginIndex="10"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="400.0" text="Material-Beschreibung" id="materialTypeDescription">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="materialTypeDescription"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+    </columns>
+</CacheTreeTableView>

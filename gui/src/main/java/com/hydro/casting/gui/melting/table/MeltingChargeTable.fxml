@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.ServerTableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.TableColumn?>
+<ServerTableView fx:id="table"
+                 xmlns="http://javafx.com/javafx"
+                 xmlns:fx="http://javafx.com/fxml"
+                 fx:controller="com.hydro.casting.gui.melting.table.MeltingChargeTableController"
+                 prefHeight="400.0" prefWidth="600.0">
+    <columns>
+        <TableColumn fx:id="chargeColumn" prefWidth="120.0" text="Charge" id="chargeWithoutYear">
+            <cellValueFactory>
+                <PropertyValueFactory property="chargeWithoutYear"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="120.0" text="Legierung" id="alloy">
+            <cellValueFactory>
+                <PropertyValueFactory property="alloy"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn fx:id="schedulableStateColumn" prefWidth="120.0" text="Status" id="executionState">
+            <cellValueFactory>
+                <PropertyValueFactory property="executionState"/>
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+</ServerTableView>

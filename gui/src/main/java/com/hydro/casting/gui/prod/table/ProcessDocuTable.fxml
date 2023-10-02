@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.prod.table.cell.InspectionResultCellFactory?>
+<?import com.hydro.core.gui.comp.cell.TableDateCellFactory?>
+<?import com.hydro.core.gui.comp.ServerTableView?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<ServerTableView fx:id="table" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.prod.table.ProcessDocuTableController">
+    <columns>
+        <TableColumn prefWidth="70.0" text="Charge" id="chargeWithoutYear">
+            <cellValueFactory>
+                <PropertyValueFactory property="chargeWithoutYear"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Legierung" id="alloy">
+            <cellValueFactory>
+                <PropertyValueFactory property="alloy"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn fx:id="castingTS" prefWidth="100.0" text="Gießzeitpunkt" id="castingTS">
+            <cellValueFactory>
+                <PropertyValueFactory property="castingTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Sägezeitpunkt" id="sawingTS">
+            <cellValueFactory>
+                <PropertyValueFactory property="analysisTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Sperren" id="lockInfo">
+            <cellValueFactory>
+                <PropertyValueFactory property="analysisTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="Anlagenzustand" id="equipmentCondition">
+            <cellValueFactory>
+                <PropertyValueFactory property="equipmentCondition"/>
+            </cellValueFactory>
+            <cellFactory>
+                <InspectionResultCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="Einsätze" id="materialInputs">
+            <cellValueFactory>
+                <PropertyValueFactory property="analysisTS"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="Zeiten Ofenphasen" id="furnaceProcess">
+            <cellValueFactory>
+                <PropertyValueFactory property="analysisTS"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="Analysen" id="analysisTS">
+            <cellValueFactory>
+                <PropertyValueFactory property="analysisTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="Angussvorbereitung" id="castingPreparation">
+            <cellValueFactory>
+                <PropertyValueFactory property="castingPreparation"/>
+            </cellValueFactory>
+            <cellFactory>
+                <InspectionResultCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="Sichtprüfung (Guß)" id="visualInspection">
+            <cellValueFactory>
+                <PropertyValueFactory property="visualInspection"/>
+            </cellValueFactory>
+            <cellFactory>
+                <InspectionResultCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="SAP-Meldung (Guß)" id="sapCastingNotification">
+            <cellValueFactory>
+                <PropertyValueFactory property="analysisTS"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="Sichtprüfung (Sägen)" id="sawingInspection">
+            <cellValueFactory>
+                <PropertyValueFactory property="analysisTS"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="150.0" text="SAP-Meldung (Sägen)" id="sapSawingNotification">
+            <cellValueFactory>
+                <PropertyValueFactory property="analysisTS"/>
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+</ServerTableView>

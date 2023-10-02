@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.StackPane?>
+<StackPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.prod.detail.ProcessDocuDetailController">
+    <TabPane fx:id="details" styleClass="charge-doc-tab-pane">
+        <Tab text="Details" closable="false">
+           <fx:include fx:id="detail" source="../control/ChargeDetailControl.fxml"/>
+        </Tab>
+        <Tab text="Anlagenzustand" closable="false">
+            <fx:include fx:id="equipmentCondition" source="../control/EquipmentConditionDetail.fxml"/>
+        </Tab>
+        <Tab text="Analysen" closable="false">
+            <fx:include fx:id="analysisDetail" source="../control/AnalysisDetail.fxml"/>
+        </Tab>
+        <Tab text="Sichtprüfung" closable="false">
+            <fx:include fx:id="visualInspectionDetail" source="../control/VisualInspectionDetail.fxml"/>
+        </Tab>
+        <Tab text="Angussvorbereitung" closable="false">
+            <fx:include fx:id="castingPreparationDetail" source="../control/CastingPreparationDetail.fxml"/>
+        </Tab>
+        <Tab text="Prüfung Angussvorbereitung" closable="false">
+            <fx:include fx:id="castingPreparationExaminationDetail" source="../control/CastingPreparationExaminationDetail.fxml"/>
+        </Tab>
+        <Tab text="Badtemperatur" closable="false">
+            <fx:include fx:id="bathTempAV" source="../control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Drahtmenge" closable="false">
+            <fx:include fx:id="wireAmountAV" source="../control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Kippwinkel" closable="false">
+            <fx:include fx:id="tiltAngleAV" source="../control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Niveau Ofenrinne" closable="false">
+            <fx:include fx:id="levelOvenChannelAV" source="../control/ActualValuesDetail.fxml" />
+        </Tab>
+        <Tab text="Niveau Zulaufrinne" closable="false">
+            <fx:include fx:id="levelInletChannelAV" source="../control/ActualValuesDetail.fxml" />
+        </Tab>
+        <Tab text="SIR_Niveau_Reaktor" closable="false">
+            <fx:include fx:id="sirNiveauReaktorAV" source="../control/ActualValuesDetail.fxml" />
+        </Tab>
+        <Tab text="Wassermenge" closable="false">
+            <fx:include fx:id="amountOfWaterAV" source="../control/ActualValuesDetail.fxml" />
+        </Tab>
+        <Tab text="Niveau Sensor 1" closable="false">
+            <fx:include fx:id="niveauSensor1AV" source="../control/ActualValuesDetail.fxml" />
+        </Tab>
+        <Tab text="Niveau Sensor 2" closable="false">
+            <fx:include fx:id="niveauSensor2AV" source="../control/ActualValuesDetail.fxml" />
+        </Tab>
+        <Tab text="Niveau Sensor 3" closable="false">
+            <fx:include fx:id="niveauSensor3AV" source="../control/ActualValuesDetail.fxml" />
+        </Tab>
+        <Tab text="Niveau Sensor 4" closable="false">
+            <fx:include fx:id="niveauSensor4AV" source="../control/ActualValuesDetail.fxml" />
+        </Tab>
+        <Tab text="Position Betätiger 1" closable="false">
+            <fx:include fx:id="positionBetaetiger1AV" source="../control/ActualValuesDetail.fxml" />
+        </Tab>
+        <Tab text="Position Betätiger 2" closable="false">
+            <fx:include fx:id="positionBetaetiger2AV" source="../control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Position Betätiger 3" closable="false">
+            <fx:include fx:id="positionBetaetiger3AV" source="../control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Position Betätiger 4" closable="false">
+            <fx:include fx:id="positionBetaetiger4AV" source="../control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Temperatur Gießrinne" closable="false">
+            <fx:include fx:id="castingGutterTempAV" source="../control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Gießlänge" closable="false">
+            <fx:include fx:id="castingLengthAV" source="../control/ActualValuesDetail.fxml"/>
+        </Tab>
+    </TabPane>
+    <Label fx:id="tabTitle" StackPane.alignment="TOP_RIGHT">
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </padding>
+    </Label>
+</StackPane>

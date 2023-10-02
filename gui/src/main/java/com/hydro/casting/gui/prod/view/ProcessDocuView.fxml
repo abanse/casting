@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.control.ChargeTimeFilterToolbar?>
+<?import com.hydro.core.gui.comp.TaskButton?>
+<?import com.hydro.core.gui.task.OpenDetailViewTask?>
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<ViewParent title="Chargen-Dokumentation"
+            prefHeight="500.0" prefWidth="500.0"
+            xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hydro.casting.gui.prod.view.ProcessDocuViewController">
+    <top>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="NEVER"/>
+                <ColumnConstraints prefWidth="10"/>
+                <ColumnConstraints hgrow="NEVER"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints/>
+            </rowConstraints>
+            <ChargeTimeFilterToolbar fx:id="filterToolBar" prefHeight="40.0" maxHeight="Infinity" GridPane.columnSpan="3">
+                <TaskButton prefWidth="50" functionKey="F3"
+                            fx:id="showDetails" onAction="#showDetails" text="">
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="21.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <Image url="@/com/hydro/core/gui/images/expand.png"/>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+            </ChargeTimeFilterToolbar>
+            <ToolBar GridPane.columnIndex="3" maxHeight="Infinity">
+                <Button fx:id="reload" onAction="#reload">
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="21.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <Image url="@/com/hydro/core/gui/images/reload.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </ToolBar>
+        </GridPane>
+    </top>
+    <center>
+        <MasterDetailPane fx:id="detailPane" detailSide="BOTTOM" dividerPosition="0.5"
+                          showDetailNode="false">
+            <masterNode>
+                <fx:include fx:id="table"
+                            source="../table/ProcessDocuTable.fxml"/>
+            </masterNode>
+            <detailNode>
+                <BorderPane>
+                    <center>
+                        <fx:include fx:id="details"
+                                    source="../detail/ProcessDocuDetail.fxml"/>
+                    </center>
+                    <right>
+                        <ToolBar orientation="VERTICAL">
+                            <TaskButton onAction="#edit">
+                                <graphic>
+                                    <ImageView fitHeight="21.0" fitWidth="21.0"
+                                               pickOnBounds="true" preserveRatio="true">
+                                        <Image url="@/com/hydro/core/gui/images/edit.png"/>
+                                    </ImageView>
+                                </graphic>
+                                <task>
+                                    <OpenDetailViewTask fx:id="openEditTask" table="$table" locked="false" disabled="true"/>
+                                </task>
+                            </TaskButton>
+                        </ToolBar>
+                    </right>
+                </BorderPane>
+            </detailNode>
+        </MasterDetailPane>
+    </center>
+</ViewParent>

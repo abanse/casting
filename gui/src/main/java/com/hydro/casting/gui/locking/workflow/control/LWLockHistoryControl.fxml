@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane prefHeight="556.0" prefWidth="945.0"
+            xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hydro.casting.gui.locking.workflow.control.LWLockHistoryControlController">
+	<center>
+		<fx:include fx:id="lockHistoryTable" source="../table/LockHistoryTable.fxml" />
+	</center>
+</BorderPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.cell.TableDateCellFactory?>
+<?import com.hydro.core.gui.comp.ServerTableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.TableColumn?>
+<ServerTableView fx:id="table"
+                 xmlns="http://javafx.com/javafx"
+                 xmlns:fx="http://javafx.com/fxml"
+                 fx:controller="com.hydro.casting.gui.melting.table.MeltingProcessDocuTableController"
+                 prefHeight="400.0" prefWidth="600.0">
+    <columns>
+        <TableColumn prefWidth="70.0" text="Charge" id="chargeWithoutYear">
+            <cellValueFactory>
+                <PropertyValueFactory property="chargeWithoutYear"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Legierung" id="alloy">
+            <cellValueFactory>
+                <PropertyValueFactory property="alloy"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn fx:id="inProgressTS" prefWidth="100.0" text="Start" id="inProgressTS">
+            <cellValueFactory>
+                <PropertyValueFactory property="inProgressTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Ende" id="successTS">
+            <cellValueFactory>
+                <PropertyValueFactory property="successTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+    </columns>
+</ServerTableView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.hydro.casting.gui.prod.control.FurnaceInstructionControlController">
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints prefWidth="70.0"/>
+        <ColumnConstraints/>
+        <ColumnConstraints prefWidth="60.0"/>
+        <ColumnConstraints/>
+        <ColumnConstraints prefWidth="60.0"/>
+        <ColumnConstraints hgrow="ALWAYS" halignment="RIGHT"/>
+        <ColumnConstraints prefWidth="50.0"/>
+        <ColumnConstraints/>
+        <ColumnConstraints prefWidth="50.0"/>
+        <ColumnConstraints/>
+        <ColumnConstraints prefWidth="50.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+    <padding>
+        <Insets left="5.0" right="5.0"/>
+    </padding>
+    <StringTextField styleClass="header" fx:id="charge" prefWidth="110" editable="false" alignment="CENTER" GridPane.columnSpan="12" GridPane.halignment="CENTER" GridPane.fillWidth="false"/>
+    <Label text="Legierung" GridPane.columnIndex="0"/>
+    <StringTextField fx:id="alloy" editable="false" GridPane.columnIndex="1"/>
+    <Label text="Abguss" GridPane.columnIndex="2"/>
+    <DoubleTextField fx:id="plannedWeight" emptyIfZero="true" pattern="0.0t" editable="false" GridPane.columnIndex="3"/>
+    <Label text="Auslastung" GridPane.columnIndex="4"/>
+    <DoubleTextField fx:id="utilization" emptyIfZero="true" pattern="0.0%" editable="false" GridPane.columnIndex="5"/>
+    <Label text="Sumpf" GridPane.columnIndex="6"/>
+    <DoubleTextField fx:id="bottomWeight" emptyIfZero="true" pattern="0%" editable="false" GridPane.columnIndex="7"/>
+    <Label text="Vorgabe Festmetall" GridPane.columnIndex="8"/>
+    <DoubleTextField fx:id="solidMetal" emptyIfZero="true" pattern="0%" editable="false" GridPane.columnIndex="9"/>
+    <Label text="Vorgabe Flüssig" GridPane.columnIndex="10"/>
+    <DoubleTextField fx:id="liquidMetal" emptyIfZero="true" pattern="0%" editable="false" GridPane.columnIndex="11"/>
+</GridPane>

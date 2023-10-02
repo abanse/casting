@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.melting.task.CreateNewMeltingChargeTask?>
+<?import com.hydro.core.gui.comp.TaskButton?>
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<ViewParent title="Schmelzchargen S2"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.hydro.casting.gui.melting.view.MeltingChargesS2ViewController"
+            prefHeight="400.0" prefWidth="600.0">
+    <center>
+        <MasterDetailPane detailSide="RIGHT" dividerPosition="0.85" showDetailNode="true">
+            <masterNode>
+                <fx:include fx:id="table" source="../table/MeltingChargeTable.fxml"/>
+            </masterNode>
+            <detailNode>
+                <ScrollPane fitToWidth="true">
+                    <VBox spacing="5.0">
+                        <padding>
+                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                        </padding>
+                        <TaskButton maxWidth="Infinity" text="Neue Charge anlegen">
+                            <task>
+                                <CreateNewMeltingChargeTask fx:id="createNewMeltingChargeTask" machineApk="S2"/>
+                            </task>
+                        </TaskButton>
+                    </VBox>
+                </ScrollPane>
+            </detailNode>
+        </MasterDetailPane>
+    </center>
+</ViewParent>

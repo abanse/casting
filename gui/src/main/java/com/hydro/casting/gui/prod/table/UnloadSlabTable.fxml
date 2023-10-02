@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.ServerTableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.TableColumn?>
+<?import com.hydro.core.gui.comp.cell.TableNumberCellFactory?>
+<ServerTableView fx:id="table" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.prod.table.UnloadSlabTableController">
+    <columns>
+        <TableColumn fx:id="slab" prefWidth="90.0" text="Barren" id="slab">
+            <cellValueFactory>
+                <PropertyValueFactory property="slab"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Auftrag" id="order">
+            <cellValueFactory>
+                <PropertyValueFactory property="order"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Breite" id="width">
+            <cellValueFactory>
+                <PropertyValueFactory property="width"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableNumberCellFactory numberFormat="\%.0f"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn text="Länge" id="castingLength">
+            <cellValueFactory>
+                <PropertyValueFactory property="castingLength"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableNumberCellFactory numberFormat="\%.0f"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn text="Zuschlag" id="lengthBonus">
+            <cellValueFactory>
+                <PropertyValueFactory property="lengthBonus"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableNumberCellFactory numberFormat="\%.0f"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn text="Netze (SP)" prefWidth="200" id="netzeSP">
+            <cellValueFactory>
+                <PropertyValueFactory property="netzeSP"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Barren (SP)" prefWidth="200" id="barrenSP">
+            <cellValueFactory>
+                <PropertyValueFactory property="barrenSP"/>
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+</ServerTableView>

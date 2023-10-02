@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<ViewParent title="MABE Gießanlage 50"
+			prefHeight="500.0" prefWidth="500.0"
+			xmlns="http://javafx.com/javafx/8.0.111"
+			xmlns:fx="http://javafx.com/fxml/1"
+			fx:controller="com.hydro.casting.gui.planning.view.MaBe50ViewController">
+	<center>
+		<fx:include fx:id="maBe" source="content/MaBe.fxml" />
+	</center>
+</ViewParent>

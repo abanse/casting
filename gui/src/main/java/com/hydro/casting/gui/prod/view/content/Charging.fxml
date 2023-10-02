@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.prod.control.*?>
+<?import com.hydro.casting.gui.prod.table.ChargingAnalysisTable?>
+<?import com.hydro.casting.gui.prod.task.*?>
+<?import com.hydro.core.gui.comp.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.util.Duration?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<AutoHideSidesPane fx:id="mainAutoHideSidePane" triggerDistance="0.0001" xmlns="http://javafx.com/javafx"
+                   xmlns:fx="http://javafx.com/fxml"
+                   fx:controller="com.hydro.casting.gui.prod.view.content.ChargingController"
+                   prefHeight="400.0" prefWidth="600.0">
+    <showAnimationDelay>
+        <Duration millis="10"/>
+    </showAnimationDelay>
+    <content>
+        <BorderPane>
+            <top>
+                <GridPane hgap="5.0">
+                    <columnConstraints>
+                        <ColumnConstraints prefWidth="117"/>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                        <ColumnConstraints prefWidth="3"/>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                        <ColumnConstraints prefWidth="3"/>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                        <ColumnConstraints prefWidth="3"/>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                        <ColumnConstraints prefWidth="0"/>
+                    </columnConstraints>
+                    <ToolBar GridPane.columnSpan="13">
+                        <TaskButton prefWidth="50"
+                                    fx:id="showDetails" onAction="#showDetails">
+                            <tooltip>
+                                <Tooltip text="Details ein-/ausblenden"/>
+                            </tooltip>
+                            <graphic>
+                                <ImageView fitHeight="21.0" fitWidth="21.0"
+                                           pickOnBounds="true" preserveRatio="true">
+                                    <Image url="@/com/hydro/core/gui/images/collapse.png"/>
+                                </ImageView>
+                            </graphic>
+                        </TaskButton>
+                        <TaskButton prefWidth="50"
+                                    fx:id="toggleCompressAnalysis" onAction="#toggleCompressAnalysis">
+                            <tooltip>
+                                <Tooltip text="Analysen komprimieren/dekomprimieren"/>
+                            </tooltip>
+                            <graphic>
+                                <ImageView fitHeight="21.0" fitWidth="21.0"
+                                           pickOnBounds="true" preserveRatio="true">
+                                    <Image url="@/com/hydro/casting/gui/images/decompress.png"/>
+                                </ImageView>
+                            </graphic>
+                        </TaskButton>
+                        <Separator orientation="VERTICAL"/>
+                    </ToolBar>
+                    <TaskButton fx:id="furnace51" text="Ofen 51" onAction="#openFurnace" GridPane.columnIndex="1" maxWidth="Infinity" userData="51">
+                        <graphic>
+                            <Pane prefHeight="21.0"/>
+                        </graphic>
+                    </TaskButton>
+                    <ChargeStatus fx:id="chargeStatus51" GridPane.columnIndex="1" translateX="3" translateY="6"/>
+                    <LiquidLevelCanvas fx:id="liquidLevel51" GridPane.columnIndex="1" liquidLevelHeight="4.0">
+                        <insets>
+                            <Insets bottom="4.0" right="8.0" left="8.0"/>
+                        </insets>
+                    </LiquidLevelCanvas>
+                    <TaskButton fx:id="furnace52" text="Ofen 52" onAction="#openFurnace" GridPane.columnIndex="2" maxWidth="Infinity" userData="52">
+                        <graphic>
+                            <Pane prefHeight="21.0"/>
+                        </graphic>
+                    </TaskButton>
+                    <ChargeStatus fx:id="chargeStatus52" GridPane.columnIndex="2" translateX="3" translateY="6"/>
+                    <LiquidLevelCanvas fx:id="liquidLevel52" GridPane.columnIndex="2" liquidLevelHeight="4.0">
+                        <insets>
+                            <Insets bottom="4.0" right="8.0" left="8.0"/>
+                        </insets>
+                    </LiquidLevelCanvas>
+                    <Separator orientation="VERTICAL" GridPane.columnIndex="3">
+                        <padding>
+                            <Insets top="6" bottom="6"/>
+                        </padding>
+                    </Separator>
+                    <TaskButton fx:id="furnace61" text="Ofen 61" onAction="#openFurnace" GridPane.columnIndex="4" maxWidth="Infinity" userData="61">
+                        <graphic>
+                            <Pane prefHeight="21.0"/>
+                        </graphic>
+                    </TaskButton>
+                    <ChargeStatus fx:id="chargeStatus61" GridPane.columnIndex="4" translateX="3" translateY="6"/>
+                    <LiquidLevelCanvas fx:id="liquidLevel61" GridPane.columnIndex="4" liquidLevelHeight="4.0">
+                        <insets>
+                            <Insets bottom="4.0" right="8.0" left="8.0"/>
+                        </insets>
+                    </LiquidLevelCanvas>
+                    <TaskButton fx:id="furnace62" text="Ofen 62" onAction="#openFurnace" GridPane.columnIndex="5" maxWidth="Infinity" userData="62">
+                        <graphic>
+                            <Pane prefHeight="21.0"/>
+                        </graphic>
+                    </TaskButton>
+                    <ChargeStatus fx:id="chargeStatus62" GridPane.columnIndex="5" translateX="3" translateY="6"/>
+                    <LiquidLevelCanvas fx:id="liquidLevel62" GridPane.columnIndex="5" liquidLevelHeight="4.0">
+                        <insets>
+                            <Insets bottom="4.0" right="8.0" left="8.0"/>
+                        </insets>
+                    </LiquidLevelCanvas>
+                    <Separator orientation="VERTICAL" GridPane.columnIndex="6">
+                        <padding>
+                            <Insets top="6" bottom="6"/>
+                        </padding>
+                    </Separator>
+                    <TaskButton fx:id="furnace71" text="Ofen 71" onAction="#openFurnace" GridPane.columnIndex="7" maxWidth="Infinity" userData="71">
+                        <graphic>
+                            <Pane prefHeight="21.0"/>
+                        </graphic>
+                    </TaskButton>
+                    <ChargeStatus fx:id="chargeStatus71" GridPane.columnIndex="7" translateX="3" translateY="6"/>
+                    <LiquidLevelCanvas fx:id="liquidLevel71" GridPane.columnIndex="7" liquidLevelHeight="4.0">
+                        <insets>
+                            <Insets bottom="4.0" right="8.0" left="8.0"/>
+                        </insets>
+                    </LiquidLevelCanvas>
+                    <TaskButton fx:id="furnace72" text="Ofen 72" onAction="#openFurnace" GridPane.columnIndex="8" maxWidth="Infinity" userData="72">
+                        <graphic>
+                            <Pane prefHeight="21.0"/>
+                        </graphic>
+                    </TaskButton>
+                    <ChargeStatus fx:id="chargeStatus72" GridPane.columnIndex="8" translateX="3" translateY="6"/>
+                    <LiquidLevelCanvas fx:id="liquidLevel72" GridPane.columnIndex="8" liquidLevelHeight="4.0">
+                        <insets>
+                            <Insets bottom="4.0" right="8.0" left="8.0"/>
+                        </insets>
+                    </LiquidLevelCanvas>
+                    <Separator orientation="VERTICAL" GridPane.columnIndex="9">
+                        <padding>
+                            <Insets top="6" bottom="6"/>
+                        </padding>
+                    </Separator>
+                    <TaskButton fx:id="furnace81" text="Ofen 81" onAction="#openFurnace" GridPane.columnIndex="10" maxWidth="Infinity" userData="81">
+                        <graphic>
+                            <Pane prefHeight="21.0"/>
+                        </graphic>
+                    </TaskButton>
+                    <ChargeStatus fx:id="chargeStatus81" GridPane.columnIndex="10" translateX="3" translateY="6"/>
+                    <LiquidLevelCanvas fx:id="liquidLevel81" GridPane.columnIndex="10" liquidLevelHeight="4.0">
+                        <insets>
+                            <Insets bottom="4.0" right="8.0" left="8.0"/>
+                        </insets>
+                    </LiquidLevelCanvas>
+                    <TaskButton fx:id="furnace82" text="Ofen 82" onAction="#openFurnace" GridPane.columnIndex="11" maxWidth="Infinity" userData="82">
+                        <graphic>
+                            <Pane prefHeight="21.0"/>
+                        </graphic>
+                    </TaskButton>
+                    <ChargeStatus fx:id="chargeStatus82" GridPane.columnIndex="11" translateX="3" translateY="6"/>
+                    <LiquidLevelCanvas fx:id="liquidLevel82" GridPane.columnIndex="11" liquidLevelHeight="4.0">
+                        <insets>
+                            <Insets bottom="4.0" right="8.0" left="8.0"/>
+                        </insets>
+                    </LiquidLevelCanvas>
+                </GridPane>
+            </top>
+            <center>
+                <MasterDetailPane fx:id="detailPane" detailSide="BOTTOM" dividerPosition="0.5" showDetailNode="false">
+                    <masterNode>
+                        <MasterDetailPane detailSide="BOTTOM" dividerPosition="0.45">
+                            <masterNode>
+
+                                <GridPane hgap="5">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="ALWAYS"/>
+                                        <ColumnConstraints hgrow="NEVER"/>
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints/>
+                                        <RowConstraints/>
+                                        <RowConstraints/>
+                                        <RowConstraints vgrow="ALWAYS"/>
+                                    </rowConstraints>
+                                    <TitledSeparator text="Charge" GridPane.rowIndex="0"/>
+                                    <fx:include fx:id="instruction" source="../../control/FurnaceInstructionControl.fxml" GridPane.rowIndex="1"/>
+                                    <TitledSeparator text="Analysen" GridPane.rowIndex="2"/>
+                                    <ToolBar orientation="VERTICAL" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.rowSpan="4">
+                                        <TaskButton onAction="#activateCharge">
+                                            <graphic>
+                                                <ImageView fitHeight="20" fitWidth="20">
+                                                    <image>
+                                                        <Image url="@/com/hydro/core/gui/images/checked.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <tooltip>
+                                                <Tooltip text="Charge aktivieren"/>
+                                            </tooltip>
+                                            <task>
+                                                <ChargingActivateChargeTask fx:id="chargingActivateChargeTask"/>
+                                            </task>
+                                        </TaskButton>
+                                    </ToolBar>
+                                    <ChargingAnalysisTable fx:id="chargingAnalysisTable" prefHeight="200" GridPane.rowIndex="3">
+                                        <GridPane.margin>
+                                            <Insets left="5" right="0" bottom="5"/>
+                                        </GridPane.margin>
+                                    </ChargingAnalysisTable>
+                                </GridPane>
+                            </masterNode>
+                            <detailNode>
+                                <GridPane fx:id="workArea" hgap="5">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="ALWAYS"/>
+                                        <ColumnConstraints hgrow="NEVER"/>
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints/>
+                                        <RowConstraints vgrow="ALWAYS"/>
+                                    </rowConstraints>
+                                    <TitledSeparator text="Ofeninhalt/berechnete Analyse" GridPane.rowIndex="0"/>
+                                    <TaskProgressPane fx:id="chargingProgressPane" GridPane.rowIndex="1">
+                                        <mainNode>
+                                            <fx:include fx:id="charging" source="../../control/ChargingControl.fxml" />
+                                        </mainNode>
+                                    </TaskProgressPane>
+                                    <ToolBar orientation="VERTICAL" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.rowSpan="2">
+                                        <Button onAction="#openMaterials">
+                                            <graphic>
+                                                <ImageView fitHeight="20" fitWidth="20">
+                                                    <image>
+                                                        <Image url="@/com/hydro/casting/gui/images/material.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <tooltip>
+                                                <Tooltip text="Einsätze"/>
+                                            </tooltip>
+                                        </Button>
+                                        <Button onAction="#configure">
+                                            <graphic>
+                                                <ImageView fitHeight="20" fitWidth="20">
+                                                    <image>
+                                                        <Image url="@/com/hydro/core/gui/images/config.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <tooltip>
+                                                <Tooltip text="Vorgaben konfigurieren"/>
+                                            </tooltip>
+                                        </Button>
+                                        <Separator orientation="HORIZONTAL"/>
+                                        <TaskButton onAction="#wizard" GridPane.columnIndex="3">
+                                            <graphic>
+                                                <ImageView fitHeight="20" fitWidth="20">
+                                                    <image>
+                                                        <Image url="@/com/hydro/casting/gui/images/wizard.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <task>
+                                                <ChargingWizardTask fx:id="chargingWizardTask"/>
+                                            </task>
+                                            <tooltip>
+                                                <Tooltip text="Berechne Auflegierungsmaterialien"/>
+                                            </tooltip>
+                                        </TaskButton>
+                                        <TaskButton onAction="#deleteChargingMaterials">
+                                            <graphic>
+                                                <ImageView fitHeight="20" fitWidth="20">
+                                                    <image>
+                                                        <Image url="@/com/hydro/core/gui/images/remove.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <tooltip>
+                                                <Tooltip text="Eintrag löschen"/>
+                                            </tooltip>
+                                            <task>
+                                                <DeleteChargingMaterialsTask fx:id="deleteChargingMaterialsTask"/>
+                                            </task>
+                                        </TaskButton>
+                                        <Separator orientation="HORIZONTAL"/>
+                                        <TaskButton onAction="#saveChargingMaterials">
+                                            <graphic>
+                                                <ImageView fitHeight="20" fitWidth="20">
+                                                    <image>
+                                                        <Image url="@/com/hydro/core/gui/images/save.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <tooltip>
+                                                <Tooltip text="Vorgaben speichern"/>
+                                            </tooltip>
+                                            <task>
+                                                <SaveChargingMaterialsTask fx:id="saveChargingMaterialsTask"/>
+                                            </task>
+                                        </TaskButton>
+                                        <TaskButton onAction="#stopEditingChargingMaterials">
+                                            <graphic>
+                                                <ImageView fitHeight="20" fitWidth="20">
+                                                    <image>
+                                                        <Image url="@/com/hydro/core/gui/images/reload.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <tooltip>
+                                                <Tooltip text="Editieren abbrechen"/>
+                                            </tooltip>
+                                            <task>
+                                                <StopEditingChargingMaterialsTask fx:id="stopEditingChargingMaterialsTask"/>
+                                            </task>
+                                        </TaskButton>
+                                        <TaskButton onAction="#sendChargingSpecification">
+                                            <graphic>
+                                                <ImageView fitHeight="20" fitWidth="20">
+                                                    <image>
+                                                        <Image url="@/com/hydro/core/gui/images/copy.png"/>
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <tooltip>
+                                                <Tooltip text="Vorgaben an Gattierstation senden"/>
+                                            </tooltip>
+                                            <task>
+                                                <SendChargingSpecificationTask fx:id="sendChargingSpecificationTask"/>
+                                            </task>
+                                        </TaskButton>
+                                    </ToolBar>
+                                </GridPane>
+                            </detailNode>
+                        </MasterDetailPane>
+                    </masterNode>
+                    <detailNode>
+                        <fx:include source="../../detail/ChargingDetail.fxml"/>
+                    </detailNode>
+                </MasterDetailPane>
+            </center>
+            <right>
+                <TabPane side="LEFT" fx:id="selectionInfosSidebar">
+                    <tabs>
+                        <Tab text="Gattierung-History" closable="false"/>
+                    </tabs>
+                </TabPane>
+            </right>
+        </BorderPane>
+    </content>
+    <right>
+        <BorderPane fx:id="instructionPane" style="-fx-background-color: white">
+            <top>
+                <GridPane fx:id="rightSidePane" prefWidth="1200" pickOnBounds="true">
+                    <children>
+                        <TabPane fx:id="selectionInfos">
+                            <tabs>
+                                <Tab text="Gattierung-History" closable="false"/>
+                            </tabs>
+                        </TabPane>
+                        <Button onAction="#openFEVOWindow" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                            <GridPane.margin>
+                                <Insets top="1" right="60"/>
+                            </GridPane.margin>
+                            <graphic>
+                                <ImageView fitHeight="18" fitWidth="18"
+                                           preserveRatio="true" smooth="true">
+                                    <image>
+                                        <Image url="@/com/hydro/core/gui/images/moveOut.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <CheckBox fx:id="pinSelection" onAction="#pinSelection" text="pin" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                            <GridPane.margin>
+                                <Insets top="6" right="10"/>
+                            </GridPane.margin>
+                        </CheckBox>
+                    </children>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints vgrow="ALWAYS"/>
+                    </rowConstraints>
+                </GridPane>
+            </top>
+            <center>
+                <!--fx:include fx:id="moldSchedule"
+                            source="MoldSchedule.fxml" /-->
+            </center>
+        </BorderPane>
+    </right>
+</AutoHideSidesPane>

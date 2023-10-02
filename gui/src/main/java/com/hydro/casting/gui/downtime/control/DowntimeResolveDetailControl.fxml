@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.DateTimePicker?>
+<?import com.hydro.core.gui.comp.DurationTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="com.hydro.casting.gui.downtime.control.DowntimeDetailControlController">
+    <center>
+        <GridPane hgap="5.0" vgap="5.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="NEVER" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="160.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="60.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+                <RowConstraints/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0"/>
+            </rowConstraints>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+            <Label text="Störzeit von"/>
+            <DateTimePicker fx:id="dateTimeFrom" GridPane.columnIndex="1" GridPane.rowSpan="2"/>
+            <Label text="Störzeit bis" GridPane.rowIndex="2"/>
+            <DateTimePicker fx:id="dateTimeUntil" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.rowSpan="2"/>
+            <Label text="Dauer" GridPane.rowIndex="4"/>
+            <DurationTextField fx:id="duration" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+            <Label text="Zeit aufteilen" GridPane.rowIndex="5"/>
+            <HBox GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.columnSpan="2" alignment="CENTER" spacing="4">
+                <CheckBox fx:id="splitTimeCheckBox"/>
+                <VBox HBox.hgrow="ALWAYS">
+                    <Label fx:id="splitTimeInfoLabel" visible="false" maxWidth="Infinity" alignment="BASELINE_CENTER" opacity="0.5">
+                        <font>
+                            <Font size="10"/>
+                        </font>
+                    </Label>
+                    <Slider fx:id="splitTimeSlider" disable="true" max="1" value="0.5"/>
+                </VBox>
+            </HBox>
+            <Label text="Anlage" GridPane.rowIndex="6"/>
+            <ComboBox fx:id="costCenter" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.columnSpan="2"/>
+            <Label text="Prozessschritt" GridPane.rowIndex="7"/>
+            <ComboBox fx:id="phase" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="7" GridPane.columnSpan="2"/>
+            <Label fx:id="downtimeModuleLabel" text="Baugruppe" GridPane.rowIndex="8"/>
+            <ComboBox fx:id="downtimeModuleComboBox" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="8" GridPane.columnSpan="2"/>
+            <Label text="Störzeitart" GridPane.rowIndex="9"/>
+            <ComboBox fx:id="downtimeKindComboBox" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="9" GridPane.columnSpan="2"/>
+            <Label text="Kommentar" GridPane.rowIndex="10"/>
+            <TextArea fx:id="downtimeDescription" GridPane.columnIndex="1" GridPane.rowIndex="10" GridPane.rowSpan="2" GridPane.columnSpan="2"/>
+        </GridPane>
+    </center>
+</BorderPane>

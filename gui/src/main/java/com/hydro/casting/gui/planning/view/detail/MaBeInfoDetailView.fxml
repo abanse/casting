@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import com.hydro.core.gui.comp.grid.GridView?>
+<ViewParent title="Maschinenbelegung"
+			prefHeight="500.0" prefWidth="500.0"
+			xmlns="http://javafx.com/javafx/8.0.111"
+			xmlns:fx="http://javafx.com/fxml/1"
+			fx:controller="com.hydro.casting.gui.planning.view.detail.MaBeInfoDetailViewController">
+	<center>
+		<MasterDetailPane detailSide="RIGHT" dividerPosition="0.85" showDetailNode="true">
+			<masterNode>
+				<GridView fx:id="gridView"/>
+			</masterNode>
+			<detailNode>
+				<VBox prefWidth="303.0" spacing="5.0">
+					<children>
+						<Button maxWidth="Infinity" onAction="#cancel" text="Abbrechen"/>
+					</children>
+					<padding>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+					</padding>
+				</VBox>
+			</detailNode>
+		</MasterDetailPane>
+	</center>
+</ViewParent>

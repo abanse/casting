@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.DateTimePicker?>
+<?import com.hydro.core.gui.comp.TaskButton?>
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
+<?import javafx.geometry.Insets?>
+<?import com.hydro.casting.gui.main.task.CreateChargeTask?>
+<ViewParent title="Prozess-Aufträge"
+            prefHeight="500.0" prefWidth="500.0"
+            xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hydro.casting.gui.main.view.ProductionOrderViewController">
+    <top>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="NEVER"/>
+                <ColumnConstraints prefWidth="10"/>
+                <ColumnConstraints hgrow="NEVER"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints/>
+            </rowConstraints>
+            <children>
+                <ToolBar fx:id="filterToolBar" prefHeight="40.0" maxHeight="Infinity" GridPane.columnSpan="3">
+                    <items>
+                        <TaskButton prefWidth="50" functionKey="F3"
+                                    fx:id="showDetails" onAction="#showDetails" text="">
+                            <graphic>
+                                <ImageView fitHeight="21.0" fitWidth="21.0"
+                                           pickOnBounds="true" preserveRatio="true" smooth="true">
+                                    <image>
+                                        <Image url="@/com/hydro/core/gui/images/expand.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TaskButton>
+                        <ComboBox fx:id="filterSelection"/>
+                        <HBox fx:id="durationFilter" alignment="CENTER" spacing="5.0">
+                            <children>
+                                <Label text="von"/>
+                                <DateTimePicker fx:id="from"
+                                                orientation="HORIZONTAL"/>
+                                <Label text="bis"/>
+                                <DateTimePicker fx:id="to"
+                                                orientation="HORIZONTAL"/>
+                            </children>
+                        </HBox>
+                        <HBox fx:id="chargeDataFilter" alignment="CENTER"
+                              spacing="5.0">
+                            <children>
+                                <Label text="Charge" textAlignment="RIGHT"/>
+                                <CustomTextField fx:id="charge"
+                                                 promptText="Bitte eingeben"/>
+                            </children>
+                        </HBox>
+                        <HBox fx:id="paDataFilter" alignment="CENTER"
+                              spacing="5.0">
+                            <children>
+                                <Label text="Prozess-Auftrag" textAlignment="RIGHT"/>
+                                <CustomTextField fx:id="pa"
+                                                 promptText="Bitte eingeben"/>
+                            </children>
+                        </HBox>
+                    </items>
+                </ToolBar>
+                <ToolBar GridPane.columnIndex="3" maxHeight="Infinity">
+                    <items>
+                        <Button fx:id="reload" onAction="#reload">
+                            <graphic>
+                                <ImageView fitHeight="21.0" fitWidth="21.0"
+                                           pickOnBounds="true" preserveRatio="true" smooth="true">
+                                    <image>
+                                        <Image url="@/com/hydro/core/gui/images/reload.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </items>
+                </ToolBar>
+            </children>
+        </GridPane>
+    </top>
+    <center>
+        <MasterDetailPane fx:id="detailPane" detailSide="BOTTOM" dividerPosition="0.5"
+                          showDetailNode="false">
+            <masterNode>
+                <fx:include fx:id="table"
+                            source="../table/ProductionOrderTable.fxml"/>
+            </masterNode>
+            <detailNode>
+                <fx:include fx:id="details"
+                            source="../detail/ProductionOrderDetail.fxml"/>
+            </detailNode>
+        </MasterDetailPane>
+    </center>
+    <right>
+        <VBox spacing="5.0" alignment="TOP_CENTER">
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </BorderPane.margin>
+            <TaskButton onAction="#assignCharge">
+                <tooltip>
+                    <Tooltip text="Charge erzeugen"/>
+                </tooltip>
+                <graphic>
+                    <ImageView fitHeight="21.0" fitWidth="21.0"
+                               pickOnBounds="true" preserveRatio="true">
+                        <Image url="@/com/hydro/core/gui/images/extract.png"/>
+                    </ImageView>
+                </graphic>
+                <task>
+                    <CreateChargeTask fx:id="createChargeTask" selectionProvider="$table"/>
+                </task>
+            </TaskButton>
+        </VBox>
+    </right>
+</ViewParent>

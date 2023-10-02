@@ -1,0 +1,5438 @@
+[
+  {
+    "machine": "80",
+    "charge": "85469",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10802,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 31
+          },
+          "time": {
+            "hour": 16,
+            "minute": 10,
+            "second": 55,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 14113,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 31
+          },
+          "time": {
+            "hour": 19,
+            "minute": 10,
+            "second": 57,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "85470",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10208,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 31
+          },
+          "time": {
+            "hour": 23,
+            "minute": 6,
+            "second": 10,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 25399,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 1,
+            "minute": 56,
+            "second": 18,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "85472",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10440,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 8,
+            "minute": 59,
+            "second": 37,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 19294,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 11,
+            "minute": 53,
+            "second": 37,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "85473",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10098,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 17,
+            "minute": 15,
+            "second": 11,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 29601,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 20,
+            "minute": 3,
+            "second": 29,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "85475",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10076,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 4,
+            "minute": 16,
+            "second": 50,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 19349,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 7,
+            "minute": 4,
+            "second": 46,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "85474",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 352,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 12,
+            "minute": 27,
+            "second": 15,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 15467,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 12,
+            "minute": 33,
+            "second": 7,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "85477",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10296,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 16,
+            "minute": 50,
+            "second": 54,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 20955,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 19,
+            "minute": 42,
+            "second": 30,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "85476",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 9647,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 1,
+            "minute": 31,
+            "second": 45,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 18601,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 4,
+            "minute": 12,
+            "second": 32,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "85480",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10582,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 9,
+            "minute": 22,
+            "second": 33,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 13729,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 12,
+            "minute": 18,
+            "second": 55,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "85481",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 1221,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 16,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 14979,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 16,
+            "minute": 28,
+            "second": 5,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "85263",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 20,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 23,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84879",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 1,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 4,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84880",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 5,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 8,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84881",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 10,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 13,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84882",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 14,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 17,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84883",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 19,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 22,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84884",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 23,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 2,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84885",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 4,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 7,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84886",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 8,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 11,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84887",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 13,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 16,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84888",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 17,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 20,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84889",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 22,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 1,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84890",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 2,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 5,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84891",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 7,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 10,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84892",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 11,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 14,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84893",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 16,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AF",
+        "actualDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 5400,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 19,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "80",
+    "charge": "84894",
+    "phases": [
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 20,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "85469",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 0,
+            "minute": 10,
+            "second": 55,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 5,
+            "minute": 10,
+            "second": 55,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 31
+          },
+          "time": {
+            "hour": 20,
+            "minute": 40,
+            "second": 55,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 31
+          },
+          "time": {
+            "hour": 18,
+            "minute": 10,
+            "second": 55,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10802,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 31
+          },
+          "time": {
+            "hour": 16,
+            "minute": 10,
+            "second": 55,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 78520,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 31
+          },
+          "time": {
+            "hour": 19,
+            "minute": 10,
+            "second": 57,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "85472",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 16,
+            "minute": 59,
+            "second": 37,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 21,
+            "minute": 59,
+            "second": 37,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 13,
+            "minute": 29,
+            "second": 37,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 10,
+            "minute": 59,
+            "second": 37,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10440,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 8,
+            "minute": 59,
+            "second": 37,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 117218,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 11,
+            "minute": 53,
+            "second": 37,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "85474",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 20,
+            "minute": 27,
+            "second": 15,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 1,
+            "minute": 27,
+            "second": 15,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 16,
+            "minute": 57,
+            "second": 15,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 14,
+            "minute": 27,
+            "second": 15,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 352,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 12,
+            "minute": 27,
+            "second": 15,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 44267,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 12,
+            "minute": 33,
+            "second": 7,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "85477",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 0,
+            "minute": 50,
+            "second": 54,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 5,
+            "minute": 50,
+            "second": 54,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 21,
+            "minute": 20,
+            "second": 54,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 18,
+            "minute": 50,
+            "second": 54,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10296,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 16,
+            "minute": 50,
+            "second": 54,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 78003,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 19,
+            "minute": 42,
+            "second": 30,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "85480",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 17,
+            "minute": 22,
+            "second": 33,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 22,
+            "minute": 22,
+            "second": 33,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 13,
+            "minute": 52,
+            "second": 33,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 11,
+            "minute": 22,
+            "second": 33,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10582,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 9,
+            "minute": 22,
+            "second": 33,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 58729,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 12,
+            "minute": 18,
+            "second": 55,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "85263",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 4,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 9,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 1,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 22,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 20,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 23,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "84880",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 13,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 18,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 10,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 7,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 5,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 8,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "84882",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 22,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 3,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 19,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 16,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 14,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 17,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "84884",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 7,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 12,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 4,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 1,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 23,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 2,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "84886",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 16,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 21,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 13,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 10,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 8,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 11,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "84888",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 1,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 6,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 22,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 19,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 17,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 20,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "84890",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 10,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 15,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 7,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 4,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 2,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 5,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "84892",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 19,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 7
+          },
+          "time": {
+            "hour": 0,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 16,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 13,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 11,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 14,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "81",
+    "charge": "84894",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 7
+          },
+          "time": {
+            "hour": 4,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 7
+          },
+          "time": {
+            "hour": 9,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 7
+          },
+          "time": {
+            "hour": 1,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 22,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 20,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "82",
+    "charge": "85470",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 7,
+            "minute": 6,
+            "second": 10,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 12,
+            "minute": 6,
+            "second": 10,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 3,
+            "minute": 36,
+            "second": 10,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 1,
+            "minute": 6,
+            "second": 10,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10208,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 10,
+            "day": 31
+          },
+          "time": {
+            "hour": 23,
+            "minute": 6,
+            "second": 10,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 83933,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 1,
+            "minute": 56,
+            "second": 18,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "82",
+    "charge": "85473",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 1,
+            "minute": 15,
+            "second": 11,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 6,
+            "minute": 15,
+            "second": 11,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 21,
+            "minute": 45,
+            "second": 11,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 19,
+            "minute": 15,
+            "second": 11,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10098,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 17,
+            "minute": 15,
+            "second": 11,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 58401,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 1
+          },
+          "time": {
+            "hour": 20,
+            "minute": 3,
+            "second": 29,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "82",
+    "charge": "85475",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 12,
+            "minute": 16,
+            "second": 50,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 17,
+            "minute": 16,
+            "second": 50,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 8,
+            "minute": 46,
+            "second": 50,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 6,
+            "minute": 16,
+            "second": 50,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10076,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 4,
+            "minute": 16,
+            "second": 50,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 95219,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 2
+          },
+          "time": {
+            "hour": 7,
+            "minute": 4,
+            "second": 46,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "82",
+    "charge": "85476",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 9,
+            "minute": 31,
+            "second": 45,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 14,
+            "minute": 31,
+            "second": 45,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 6,
+            "minute": 1,
+            "second": 45,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 3,
+            "minute": 31,
+            "second": 45,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 9647,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 1,
+            "minute": 31,
+            "second": 45,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 71712,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 4,
+            "minute": 12,
+            "second": 32,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "82",
+    "charge": "85481",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 0,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 5,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 20,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 18,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 1221,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 16,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 59979,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 3
+          },
+          "time": {
+            "hour": 16,
+            "minute": 28,
+            "second": 5,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "82",
+    "charge": "84879",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 9,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 14,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 5,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 3,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 1,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 4,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "82",
+    "charge": "84881",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 18,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 23,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 14,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 12,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 10,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 13,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "82",
+    "charge": "84883",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 3,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 8,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 23,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 21,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 19,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 4
+          },
+          "time": {
+            "hour": 22,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "82",
+    "charge": "84885",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 12,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 17,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 8,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 6,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 4,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 7,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "82",
+    "charge": "84887",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 21,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 2,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 17,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 15,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 13,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 16,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "82",
+    "charge": "84889",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 6,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 11,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 2,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 0,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 5
+          },
+          "time": {
+            "hour": 22,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 1,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "82",
+    "charge": "84891",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 15,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 20,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 11,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 9,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 7,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "OR",
+        "actualDuration": {
+          "seconds": 50400,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 3600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 10,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "machine": "82",
+    "charge": "84893",
+    "phases": [
+      {
+        "name": "CH",
+        "actualDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 18000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 7
+          },
+          "time": {
+            "hour": 0,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GA",
+        "actualDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -30600,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 7
+          },
+          "time": {
+            "hour": 5,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AK",
+        "actualDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -9000,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 20,
+            "minute": 37,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "AS",
+        "actualDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": -7200,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 18,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      },
+      {
+        "name": "GI",
+        "actualDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "plannedDuration": {
+          "seconds": 10800,
+          "nanos": 0
+        },
+        "start": {
+          "date": {
+            "year": 2022,
+            "month": 11,
+            "day": 6
+          },
+          "time": {
+            "hour": 16,
+            "minute": 7,
+            "second": 44,
+            "nano": 0
+          }
+        }
+      }
+    ]
+  }
+]

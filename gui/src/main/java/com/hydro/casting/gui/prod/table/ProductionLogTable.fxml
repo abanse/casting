@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.ServerTableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.TableColumn?>
+<?import com.hydro.core.gui.comp.cell.TableDateCellFactory?>
+<?import com.hydro.core.gui.comp.cell.TableStringCellFactory?>
+<ServerTableView fx:id="table" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.prod.table.ProductionLogTableController">
+    <columns>
+        <TableColumn fx:id="eventTS" prefWidth="120.0" text="Zeitpunkt" id="eventTS">
+            <cellValueFactory>
+                <PropertyValueFactory property="eventTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn text="Charge" prefWidth="70.0" id="refName">
+            <cellValueFactory>
+                <PropertyValueFactory property="refName"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableStringCellFactory beginIndex="2"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn text="Meldung" prefWidth="1000.0" id="message">
+            <cellValueFactory>
+                <PropertyValueFactory property="message"/>
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+</ServerTableView>

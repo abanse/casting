@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.prod.control.*?>
+<?import com.hydro.casting.gui.prod.task.SkimmingFurnaceTask?>
+<?import com.hydro.core.gui.comp.*?>
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<?import com.hydro.casting.gui.prod.task.RestingFurnaceTask?>
+<?import com.hydro.casting.gui.prod.table.ChargingAnalysisTable?>
+<ViewParent title="BDE Abkrätzen"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.hydro.casting.gui.prod.view.MobileSkimmingViewController"
+            prefHeight="400.0" prefWidth="600.0">
+    <center>
+        <MasterDetailPane detailSide="RIGHT" dividerPosition="0.85" showDetailNode="false">
+            <masterNode>
+                <MasterDetailPane detailSide="BOTTOM" showDetailNode="true">
+                    <masterNode>
+                        <GridPane hgap="5.0" vgap="5.0">
+                            <padding>
+                                <Insets top="10.0" bottom="10.0" left="10.0" right="10.0"/>
+                            </padding>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                                <ColumnConstraints prefWidth="3"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                                <ColumnConstraints prefWidth="3"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                                <ColumnConstraints prefWidth="3"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                                <ColumnConstraints prefWidth="0"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints vgrow="ALWAYS"/>
+                                <RowConstraints prefHeight="3"/>
+                                <RowConstraints vgrow="ALWAYS"/>
+                            </rowConstraints>
+                            <TaskButton fx:id="furnace51" text="Ofen 51" onAction="#selectFurnace" GridPane.rowIndex="0" GridPane.columnIndex="0" maxHeight="Infinity" maxWidth="Infinity" userData="51">
+                                <graphic>
+                                    <Pane prefHeight="21.0"/>
+                                </graphic>
+                            </TaskButton>
+                            <EquipmentStatus fx:id="furnace51Status" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.halignment="CENTER" translateX="-36" GridPane.valignment="CENTER"
+                                             GridPane.fillWidth="false" GridPane.fillHeight="false"/>
+                            <ProgressCanvas fx:id="furnace51Progress" GridPane.rowIndex="0" GridPane.columnIndex="0" progressHeight="4.0">
+                                <insets>
+                                    <Insets right="8.0" left="8.0"/>
+                                </insets>
+                            </ProgressCanvas>
+
+                            <TaskButton fx:id="furnace52" text="Ofen 52" onAction="#selectFurnace" GridPane.rowIndex="0" GridPane.columnIndex="1" maxWidth="Infinity" userData="52">
+                                <graphic>
+                                    <Pane prefHeight="21.0"/>
+                                </graphic>
+                            </TaskButton>
+                            <EquipmentStatus fx:id="furnace52Status" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" translateX="-36" GridPane.valignment="CENTER"
+                                             GridPane.fillWidth="false" GridPane.fillHeight="false"/>
+                            <ProgressCanvas fx:id="furnace52Progress" GridPane.rowIndex="0" GridPane.columnIndex="1" progressHeight="4.0">
+                                <insets>
+                                    <Insets right="8.0" left="8.0"/>
+                                </insets>
+                            </ProgressCanvas>
+
+                            <Separator orientation="VERTICAL" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+
+                            <TaskButton fx:id="furnace61" text="Ofen 61" onAction="#selectFurnace" GridPane.rowIndex="0" GridPane.columnIndex="3" maxWidth="Infinity" userData="61">
+                                <graphic>
+                                    <Pane prefHeight="21.0"/>
+                                </graphic>
+                            </TaskButton>
+                            <EquipmentStatus fx:id="furnace61Status" GridPane.rowIndex="0" GridPane.columnIndex="3" GridPane.halignment="CENTER" translateX="-36" GridPane.valignment="CENTER"
+                                             GridPane.fillWidth="false" GridPane.fillHeight="false"/>
+                            <ProgressCanvas fx:id="furnace61Progress" GridPane.rowIndex="0" GridPane.columnIndex="3" progressHeight="4.0">
+                                <insets>
+                                    <Insets right="8.0" left="8.0"/>
+                                </insets>
+                            </ProgressCanvas>
+
+                            <TaskButton fx:id="furnace62" text="Ofen 62" onAction="#selectFurnace" GridPane.rowIndex="0" GridPane.columnIndex="4" maxWidth="Infinity" userData="62">
+                                <graphic>
+                                    <Pane prefHeight="21.0"/>
+                                </graphic>
+                            </TaskButton>
+                            <EquipmentStatus fx:id="furnace62Status" GridPane.rowIndex="0" GridPane.columnIndex="4" GridPane.halignment="CENTER" translateX="-36" GridPane.valignment="CENTER"
+                                             GridPane.fillWidth="false" GridPane.fillHeight="false"/>
+                            <ProgressCanvas fx:id="furnace62Progress" GridPane.rowIndex="0" GridPane.columnIndex="4" progressHeight="4.0">
+                                <insets>
+                                    <Insets right="8.0" left="8.0"/>
+                                </insets>
+                            </ProgressCanvas>
+
+                            <Separator orientation="VERTICAL" GridPane.rowIndex="1" GridPane.columnIndex="5"/>
+
+                            <TaskButton fx:id="furnace71" text="Ofen 71" onAction="#selectFurnace" GridPane.rowIndex="0" GridPane.columnIndex="6" maxWidth="Infinity" userData="71">
+                                <graphic>
+                                    <Pane prefHeight="21.0"/>
+                                </graphic>
+                            </TaskButton>
+                            <EquipmentStatus fx:id="furnace71Status" GridPane.rowIndex="0" GridPane.columnIndex="6" GridPane.halignment="CENTER" translateX="-36" GridPane.valignment="CENTER"
+                                             GridPane.fillWidth="false" GridPane.fillHeight="false"/>
+                            <ProgressCanvas fx:id="furnace71Progress" GridPane.rowIndex="0" GridPane.columnIndex="6" progressHeight="4.0">
+                                <insets>
+                                    <Insets right="8.0" left="8.0"/>
+                                </insets>
+                            </ProgressCanvas>
+
+                            <TaskButton fx:id="furnace72" text="Ofen 72" onAction="#selectFurnace" GridPane.rowIndex="0" GridPane.columnIndex="7" maxWidth="Infinity" userData="72">
+                                <graphic>
+                                    <Pane prefHeight="21.0"/>
+                                </graphic>
+                            </TaskButton>
+                            <EquipmentStatus fx:id="furnace72Status" GridPane.rowIndex="0" GridPane.columnIndex="7" GridPane.halignment="CENTER" translateX="-36" GridPane.valignment="CENTER"
+                                             GridPane.fillWidth="false" GridPane.fillHeight="false"/>
+                            <ProgressCanvas fx:id="furnace72Progress" GridPane.rowIndex="0" GridPane.columnIndex="7" progressHeight="4.0">
+                                <insets>
+                                    <Insets right="8.0" left="8.0"/>
+                                </insets>
+                            </ProgressCanvas>
+
+                            <Separator orientation="VERTICAL" GridPane.rowIndex="0" GridPane.columnIndex="8"/>
+
+                            <TaskButton fx:id="furnace81" text="Ofen 81" onAction="#selectFurnace" GridPane.rowIndex="0" GridPane.columnIndex="9" maxWidth="Infinity" userData="81">
+                                <graphic>
+                                    <Pane prefHeight="21.0"/>
+                                </graphic>
+                            </TaskButton>
+                            <EquipmentStatus fx:id="furnace81Status" GridPane.rowIndex="0" GridPane.columnIndex="9" GridPane.halignment="CENTER" translateX="-36" GridPane.valignment="CENTER"
+                                             GridPane.fillWidth="false" GridPane.fillHeight="false"/>
+                            <ProgressCanvas fx:id="furnace81Progress" GridPane.rowIndex="0" GridPane.columnIndex="9" progressHeight="4.0">
+                                <insets>
+                                    <Insets right="8.0" left="8.0"/>
+                                </insets>
+                            </ProgressCanvas>
+
+                            <TaskButton fx:id="furnace82" text="Ofen 82" onAction="#selectFurnace" GridPane.rowIndex="0" GridPane.columnIndex="10" maxWidth="Infinity" userData="82">
+                                <graphic>
+                                    <Pane prefHeight="21.0"/>
+                                </graphic>
+                            </TaskButton>
+                            <EquipmentStatus fx:id="furnace82Status" GridPane.rowIndex="0" GridPane.columnIndex="10" GridPane.halignment="CENTER" translateX="-36" GridPane.valignment="CENTER"
+                                             GridPane.fillWidth="false" GridPane.fillHeight="false"/>
+                            <ProgressCanvas fx:id="furnace82Progress" GridPane.rowIndex="0" GridPane.columnIndex="10" progressHeight="4.0">
+                                <insets>
+                                    <Insets right="8.0" left="8.0"/>
+                                </insets>
+                            </ProgressCanvas>
+
+                            <Separator GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="11"/>
+                            <TaskButton fx:id="startSkimming" text="Start Abkrätzen" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="5">
+                                <task>
+                                    <SkimmingFurnaceTask fx:id="skimmingFurnaceTask"/>
+                                </task>
+                            </TaskButton>
+                            <TaskButton fx:id="finishSkimming" text="Ende Abkrätzen" GridPane.rowIndex="2" GridPane.columnIndex="6" GridPane.columnSpan="5">
+                                <task>
+                                    <RestingFurnaceTask fx:id="restingFurnaceTask"/>
+                                </task>
+                            </TaskButton>
+                        </GridPane>
+                    </masterNode>
+                    <detailNode>
+                        <ChargingAnalysisTable fx:id="chargingAnalysisTable"/>
+                    </detailNode>
+                </MasterDetailPane>
+            </masterNode>
+            <detailNode>
+                <GridPane hgap="5.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints vgrow="ALWAYS"/>
+                        <RowConstraints/>
+                        <RowConstraints vgrow="NEVER"/>
+                    </rowConstraints>
+                    <Accordion>
+                        <panes>
+                            <TitledPane text="Placeholder">
+                                <ScrollPane fitToWidth="true">
+                                    <VBox spacing="5.0">
+                                        <padding>
+                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                        </padding>
+
+                                    </VBox>
+                                </ScrollPane>
+                            </TitledPane>
+                            <TitledPane text="Placeholder 2">
+                                <VBox spacing="5.0">
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    </padding>
+                                </VBox>
+                            </TitledPane>
+                        </panes>
+                    </Accordion>
+                </GridPane>
+            </detailNode>
+        </MasterDetailPane>
+    </center>
+</ViewParent>

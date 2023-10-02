@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.SearchBox?>
+<?import com.hydro.core.gui.comp.TaskButton?>
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<ViewParent title="Tiegelbestand" prefHeight="500.0"
+            prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hydro.casting.gui.stock.view.CrucibleMaterialViewController">
+    <top>
+        <ToolBar prefHeight="40.0">
+            <items>
+                <TaskButton prefWidth="50" functionKey="F3"
+                            fx:id="showDetails" onAction="#showDetails">
+                    <tooltip>
+                        <Tooltip text="Details ein-/ausblenden"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="21.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <Image url="@/com/hydro/core/gui/images/collapse.png"/>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+                <Separator orientation="VERTICAL"/>
+                <SearchBox fx:id="searchBox" prefWidth="200"/>
+            </items>
+        </ToolBar>
+    </top>
+    <center>
+        <MasterDetailPane fx:id="detailPane" detailSide="BOTTOM" dividerPosition="0.5" showDetailNode="false">
+            <masterNode>
+                <fx:include fx:id="table" source="../table/CrucibleMaterialTable.fxml"/>
+            </masterNode>
+            <detailNode>
+                <fx:include fx:id="details" source="../detail/CrucibleMaterialDetail.fxml"/>
+            </detailNode>
+        </MasterDetailPane>
+    </center>
+</ViewParent>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.StringTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.hydro.casting.gui.prod.control.ChargeDetailControlController">
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints minWidth="10.0" prefWidth="70.0"/>
+        <ColumnConstraints/>
+        <ColumnConstraints minWidth="10.0" prefWidth="40.0"/>
+        <ColumnConstraints/>
+        <ColumnConstraints minWidth="10.0" prefWidth="40.0"/>
+        <ColumnConstraints/>
+        <ColumnConstraints minWidth="10.0" prefWidth="60.0"/>
+        <ColumnConstraints hgrow="ALWAYS"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+    <children>
+        <Label text="Charge"/>
+        <StringTextField fx:id="charge" editable="false" GridPane.columnIndex="1"/>
+        <Label text="Gießanlage" GridPane.columnIndex="2"/>
+        <StringTextField fx:id="caster" editable="false" GridPane.columnIndex="3"/>
+        <Label text="Ofen" GridPane.columnIndex="4"/>
+        <StringTextField fx:id="furnace" editable="false" GridPane.columnIndex="5"/>
+        <Label text="Legierung" GridPane.columnIndex="6"/>
+        <StringTextField fx:id="alloy" editable="false" GridPane.columnIndex="7"/>
+        <fx:include fx:id="positions" source="ChargeDetailPositionsControl.fxml" GridPane.rowIndex="1" GridPane.columnSpan="9" GridPane.fillWidth="true"/>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+</GridPane>

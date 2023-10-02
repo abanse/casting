@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import com.hydro.core.gui.comp.TaskButton?>
+<?import com.hydro.core.gui.comp.TaskProgressPane?>
+<?import com.hydro.core.gui.comp.grid.GridView?>
+<BorderPane fx:id="container" xmlns="http://javafx.com/javafx/8.0.152"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hydro.casting.gui.planning.view.content.MachineScheduleController">
+    <center>
+        <TaskProgressPane fx:id="taskProgressPane">
+            <mainNode>
+                <GridView fx:id="gridView"/>
+            </mainNode>
+        </TaskProgressPane>
+    </center>
+    <right>
+        <VBox fx:id="functionBox" spacing="5.0">
+            <children>
+                <TaskButton fx:id="release" onAction="#release" maxWidth="Infinity" functionKey="F6">
+                    <tooltip>
+                        <Tooltip text="Einträge fixieren (Übergabe an Produktion)"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="22" fitWidth="22"
+                                   preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/core/gui/images/save.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+                <TaskButton fx:id="copy" onAction="#copy" maxWidth="Infinity" functionKey="F7">
+                    <tooltip>
+                        <Tooltip text="Eintrag kopieren"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="22" fitWidth="22"
+                                   preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/core/gui/images/copy.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+                <TaskButton fx:id="delete" onAction="#delete" maxWidth="Infinity" functionKey="F8">
+                    <tooltip>
+                        <Tooltip text="Positionen löschen"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="22" fitWidth="22"
+                                   preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/core/gui/images/remove.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+                <Separator maxWidth="Infinity"/>
+                <TaskButton fx:id="targetSelection" onAction="#targetSelection" maxWidth="Infinity" functionKey="F9">
+                    <tooltip>
+                        <Tooltip text="Selektiere die selektierten Vorräte"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="22" fitWidth="22"
+                                   preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/casting/gui/images/target.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+                <Separator maxWidth="Infinity"/>
+                <TaskButton fx:id="configure" onAction="#configure" maxWidth="Infinity" functionKey="F10">
+                    <tooltip>
+                        <Tooltip text="Vorgaben der Anlage ändern"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="22" fitWidth="22"
+                                   preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/core/gui/images/config.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+                <Region VBox.vgrow="ALWAYS"/>
+                <Label maxWidth="Infinity" alignment="CENTER">
+                    <tooltip>
+                        <Tooltip text="Drag &#38; Drop Komponenten"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="22" fitWidth="22"
+                                   preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/casting/gui/images/addRow.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+                <Label fx:id="remarkDnDComponent" text="" maxWidth="Infinity"
+                       prefHeight="22" alignment="CENTER"
+                       style="-fx-background-color: #ffe733;-fx-text-fill: black">
+                    <tooltip>
+                        <Tooltip text="Kommentar hinzufügen"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="18" fitWidth="18"
+                                   preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/casting/gui/images/comment.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+                <Label fx:id="setupDnDComponent" text="" maxWidth="Infinity"
+                       prefHeight="22" alignment="CENTER"
+                       style="-fx-background-color: derive(#D42200, 60%);-fx-text-fill: white;">
+                    <tooltip>
+                        <Tooltip text="Spülguss hinzufügen"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="18" fitWidth="18"
+                                   preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/casting/gui/images/setup.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+        </VBox>
+    </right>
+</BorderPane>

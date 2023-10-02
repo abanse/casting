@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.*?>
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<ViewParent title="Gießerei Wissenstabelle"
+			prefHeight="500.0" prefWidth="500.0"
+			xmlns="http://javafx.com/javafx/8.0.111"
+			xmlns:fx="http://javafx.com/fxml/1"
+			fx:controller="com.hydro.casting.gui.planning.view.CastingKnowledgeViewController">
+	<center>
+		<TabPane>
+			<Tab text="Schmelzbereich" closable="false">
+				<BorderPane>
+					<top>
+						<GridPane>
+							<columnConstraints>
+								<ColumnConstraints hgrow="ALWAYS"/>
+								<ColumnConstraints hgrow="NEVER"/>
+								<ColumnConstraints prefWidth="10"/>
+							</columnConstraints>
+							<rowConstraints>
+								<RowConstraints/>
+							</rowConstraints>
+							<ToolBar maxHeight="Infinity" BorderPane.alignment="CENTER"
+									 GridPane.columnSpan="3">
+								<SearchBox fx:id="searchBoxCM" prefWidth="250"/>
+							</ToolBar>
+							<ToolBar maxHeight="Infinity" GridPane.columnIndex="1">
+								<HBox fx:id="summaryCM" alignment="CENTER" spacing="2.0"
+									  GridPane.columnIndex="1"/>
+								<TaskButton onAction="#reloadCM" functionKey="F5">
+									<tooltip>
+										<Tooltip text="Aktualisieren"/>
+									</tooltip>
+									<graphic>
+										<ImageView fitHeight="21.0" fitWidth="21.0"
+												   pickOnBounds="true" preserveRatio="true">
+											<Image url="@/com/hydro/core/gui/images/reload.png"/>
+										</ImageView>
+									</graphic>
+								</TaskButton>
+							</ToolBar>
+						</GridPane>
+					</top>
+					<center>
+						<fx:include fx:id="tableCM"
+									source="../table/MeltingKTMTable.fxml"/>
+					</center>
+					<right>
+						<VBox spacing="5.0" alignment="TOP_CENTER">
+							<BorderPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+							</BorderPane.margin>
+							<TaskButton onAction="#addCM" functionKey="F6">
+								<tooltip>
+									<Tooltip text="Datensatz hinzufügen"/>
+								</tooltip>
+								<graphic>
+									<ImageView fitHeight="21.0" fitWidth="21.0"
+											   pickOnBounds="true" preserveRatio="true">
+										<Image url="@/com/hydro/core/gui/images/add.png"/>
+									</ImageView>
+								</graphic>
+							</TaskButton>
+							<TaskButton fx:id="copyCM" onAction="#copyCM" functionKey="F7">
+								<tooltip>
+									<Tooltip text="Datensatz kopieren"/>
+								</tooltip>
+								<graphic>
+									<ImageView fitHeight="21.0" fitWidth="21.0"
+											   pickOnBounds="true" preserveRatio="true">
+										<Image url="@/com/hydro/core/gui/images/duplicate.png"/>
+									</ImageView>
+								</graphic>
+							</TaskButton>
+							<TaskButton fx:id="deleteCM" onAction="#deleteCM" functionKey="F8">
+								<tooltip>
+									<Tooltip text="Datensatz löschen"/>
+								</tooltip>
+								<graphic>
+									<ImageView fitHeight="21.0" fitWidth="21.0"
+											   pickOnBounds="true" preserveRatio="true">
+										<Image url="@/com/hydro/core/gui/images/minus.png"/>
+									</ImageView>
+								</graphic>
+							</TaskButton>
+						</VBox>
+					</right>
+				</BorderPane>
+			</Tab>
+			<Tab text="Gießbereich" closable="false">
+				<BorderPane>
+					<top>
+						<GridPane>
+							<columnConstraints>
+								<ColumnConstraints hgrow="ALWAYS"/>
+								<ColumnConstraints hgrow="NEVER"/>
+								<ColumnConstraints prefWidth="10"/>
+							</columnConstraints>
+							<rowConstraints>
+								<RowConstraints/>
+							</rowConstraints>
+							<ToolBar maxHeight="Infinity" BorderPane.alignment="CENTER"
+									 GridPane.columnSpan="3">
+								<SearchBox fx:id="searchBoxC" prefWidth="250"/>
+							</ToolBar>
+							<ToolBar maxHeight="Infinity" GridPane.columnIndex="1">
+								<HBox fx:id="summaryC" alignment="CENTER" spacing="2.0"
+									  GridPane.columnIndex="1"/>
+								<TaskButton onAction="#reloadC" functionKey="F5">
+									<tooltip>
+										<Tooltip text="Aktualisieren"/>
+									</tooltip>
+									<graphic>
+										<ImageView fitHeight="21.0" fitWidth="21.0"
+												   pickOnBounds="true" preserveRatio="true">
+											<Image url="@/com/hydro/core/gui/images/reload.png"/>
+										</ImageView>
+									</graphic>
+								</TaskButton>
+							</ToolBar>
+						</GridPane>
+					</top>
+					<center>
+						<fx:include fx:id="tableC"
+									source="../table/CastingKTMTable.fxml"/>
+					</center>
+					<right>
+						<VBox spacing="5.0" alignment="TOP_CENTER">
+							<BorderPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+							</BorderPane.margin>
+							<TaskButton onAction="#addC" functionKey="F6">
+								<tooltip>
+									<Tooltip text="Datensatz hinzufügen"/>
+								</tooltip>
+								<graphic>
+									<ImageView fitHeight="21.0" fitWidth="21.0"
+											   pickOnBounds="true" preserveRatio="true">
+										<Image url="@/com/hydro/core/gui/images/add.png"/>
+									</ImageView>
+								</graphic>
+							</TaskButton>
+							<TaskButton fx:id="copyC" onAction="#copyC" functionKey="F7">
+								<tooltip>
+									<Tooltip text="Datensatz kopieren"/>
+								</tooltip>
+								<graphic>
+									<ImageView fitHeight="21.0" fitWidth="21.0"
+											   pickOnBounds="true" preserveRatio="true">
+										<Image url="@/com/hydro/core/gui/images/duplicate.png"/>
+									</ImageView>
+								</graphic>
+							</TaskButton>
+							<TaskButton fx:id="deleteC" onAction="#deleteC" functionKey="F8">
+								<tooltip>
+									<Tooltip text="Datensatz löschen"/>
+								</tooltip>
+								<graphic>
+									<ImageView fitHeight="21.0" fitWidth="21.0"
+											   pickOnBounds="true" preserveRatio="true">
+										<Image url="@/com/hydro/core/gui/images/minus.png"/>
+									</ImageView>
+								</graphic>
+							</TaskButton>
+						</VBox>
+					</right>
+				</BorderPane>
+			</Tab>
+		</TabPane>
+	</center>
+</ViewParent>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.ClientModelTableView?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<?import com.hydro.core.gui.comp.cell.TableNumberCellFactory?>
+<?import com.hydro.core.gui.comp.cell.TableDateCellFactory?>
+<?import com.hydro.core.gui.comp.cell.TableStringCellFactory?>
+<?import com.hydro.core.gui.comp.cell.ClientModelPropertyValueFactory?>
+<?import com.hydro.casting.gui.stock.table.cell.SlabLockCellFactory?>
+<ClientModelTableView fx:id="table" clientModelId="casting.model" clientModelViewId="casting.model.slab" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+                      fx:controller="com.hydro.casting.gui.stock.table.SlabTableController">
+    <columns>
+        <TableColumn fx:id="slabColumn" prefWidth="100.0" text="Barren" id="slab">
+            <cellValueFactory>
+                <PropertyValueFactory property="slab"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="90.0" text="Legierung" id="alloy">
+            <cellValueFactory>
+                <PropertyValueFactory property="alloy"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="90.0" text="Norf-Legierung" id="norfAlloy">
+            <cellValueFactory>
+                <PropertyValueFactory property="norfAlloy"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="50.0" text="Qualität" id="quality">
+            <cellValueFactory>
+                <PropertyValueFactory property="quality"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="90.0" text="Sperren" id="countLocks">
+<!--            <cellValueFactory>-->
+<!--                <PropertyValueFactory property="countLocks"/>-->
+<!--            </cellValueFactory>-->
+            <cellFactory>
+                <SlabLockCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Bereich" id="location">
+            <cellValueFactory>
+                <PropertyValueFactory property="location"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="60.0" text="Breite" id="width">
+            <cellValueFactory>
+                <PropertyValueFactory property="width"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableNumberCellFactory numberFormat="\%.0f"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="60.0" text="Länge" id="length">
+            <cellValueFactory>
+                <PropertyValueFactory property="length"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableNumberCellFactory numberFormat="\%.0f"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="60.0" text="Ist-Länge" id="effLength">
+            <cellValueFactory>
+                <PropertyValueFactory property="effLength"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableNumberCellFactory numberFormat="\%.0f"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="70.0" text="Gewicht" id="weight">
+            <cellValueFactory>
+                <PropertyValueFactory property="weight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableNumberCellFactory numberFormat="\%.0f"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="120.0" text="Liegezeit" id="yardTS">
+            <cellValueFactory>
+                <PropertyValueFactory property="yardTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Kundenzuordnung" id="customerId">
+            <cellValueFactory>
+                <PropertyValueFactory property="customerId"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableStringCellFactory beginIndex="5"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="240.0" text="kalk. Kundenauftrag" id="representation">
+            <cellValueFactory>
+                <ClientModelPropertyValueFactory propertyQuery="demandAssignment.representation" clientModelProvider="$table"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="80.0" text="Versuchs-Nr." id="experimentNumber">
+            <cellValueFactory>
+                <PropertyValueFactory property="experimentNumber"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="70.0" text="Fehler-Code" id="errorCode">
+            <cellValueFactory>
+                <PropertyValueFactory property="errorCode"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="200.0" text="Fehler" id="error">
+            <cellValueFactory>
+                <PropertyValueFactory property="error"/>
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+</ClientModelTableView>

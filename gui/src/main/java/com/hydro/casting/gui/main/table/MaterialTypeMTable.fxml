@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.cell.*?>
+<?import com.hydro.core.gui.comp.MaintenanceTableView?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<MaintenanceTableView fx:id="table" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.main.table.MaterialTypeMTableController">
+    <columns>
+        <TableColumn fx:id="apk" prefWidth="160.0" text="Material-Nummer" id="apk" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="apk"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="300.0" text="Beschreibung" id="description" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="description"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Qualität" id="quality" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="quality"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Qualitätscode" id="qualityCode" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="qualityCode"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="200.0" text="Tags" id="tags" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="tags"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+    </columns>
+</MaintenanceTableView>

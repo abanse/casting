@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<ViewParent title="Kokillenbau"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.hydro.casting.gui.prod.view.MoldDepartmentViewController"
+            prefHeight="400.0" prefWidth="600.0">
+    <center>
+        <fx:include fx:id="moldDepartment" source="content/MoldDepartment.fxml" />
+    </center>
+</ViewParent>

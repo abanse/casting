@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<GridPane hgap="5.0" vgap="5.0" style="-fx-border-color: lightgray;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.hydro.casting.gui.prod.control.ChargeDetailPositionsControlController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="20" halignment="CENTER"/>
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="20" halignment="CENTER"/>
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="20" halignment="CENTER"/>
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="20" halignment="CENTER"/>
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="20" halignment="CENTER"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <fx:include fx:id="pos1"
+                    source="ChargeDetailPositionControl.fxml" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <fx:include fx:id="pos2"
+                    source="ChargeDetailPositionControl.fxml" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <fx:include fx:id="pos3"
+                    source="ChargeDetailPositionControl.fxml" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+        <fx:include fx:id="pos4"
+                    source="ChargeDetailPositionControl.fxml" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+        <fx:include fx:id="pos5"
+                    source="ChargeDetailPositionControl.fxml" GridPane.columnIndex="4" GridPane.rowIndex="0"/>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+</GridPane>

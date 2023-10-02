@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.cell.*?>
+<?import com.hydro.core.gui.comp.MaintenanceTableView?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<MaintenanceTableView xmlns="http://javafx.com/javafx"
+                      xmlns:fx="http://javafx.com/fxml"
+                      fx:controller="com.hydro.casting.gui.planning.table.MeltingFurnaceKTMTableController"
+                      prefHeight="400.0" prefWidth="600.0">
+    <columns>
+        <TableColumn prefWidth="100.0" text="Schmelzofen" id="melter" userData="disableSimpleEdit" styleClass="kt-column">
+            <cellValueFactory>
+                <PropertyValueFactory property="melter"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Legierung" id="alloy" userData="disableSimpleEdit" styleClass="kt-column">
+            <cellValueFactory>
+                <PropertyValueFactory property="alloy"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Priorität" id="prio" userData="disableSimpleEdit" styleClass="kt-column">
+            <cellValueFactory>
+                <PropertyValueFactory property="prio"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Chargieren Überwachungszeit(min)" id="chargingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="chargingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Schmelzen Überwachungszeit(min)" id="meltingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="meltingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Abkrätzen Überwachungszeit(min)" id="skimmingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="skimmingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Gattieren Überwachungszeit(min)" id="treatingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="treatingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Heizen Überwachungszeit(min)" id="heatingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="heatingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Abgießen Überwachungszeit(min)" id="pouringTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="pouringTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Ausbaggern Überwachungszeit(min)" id="dredgingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="dredgingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+    </columns>
+</MaintenanceTableView>

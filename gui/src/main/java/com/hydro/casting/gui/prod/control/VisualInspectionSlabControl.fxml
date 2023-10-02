@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<GridPane hgap="5.0" vgap="5.0"
+          style="-fx-border-color: lightgray;"
+          xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.hydro.casting.gui.prod.control.VisualInspectionSlabControlController"
+          prefHeight="400.0" prefWidth="600.0">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES"/>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <CheckBox fx:id="checkBoxOk" mnemonicParsing="false" onAction="#checkboxClickedOk" text="i.O." GridPane.columnIndex="0"/>
+    <CheckBox fx:id="checkBoxNok" mnemonicParsing="false" onAction="#checkboxClickedNok" text="n.i.O" GridPane.columnIndex="1"/>
+    <Label text="Fehlerart:" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.halignment="LEFT"/>
+    <ComboBox fx:id="comboBoxIssueType" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.hgrow="ALWAYS"/>
+</GridPane>

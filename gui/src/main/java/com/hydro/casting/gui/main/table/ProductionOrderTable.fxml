@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.ServerTableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.TableColumn?>
+<?import com.hydro.core.gui.comp.cell.TableNumberCellFactory?>
+<?import com.hydro.core.gui.comp.cell.TableDateCellFactory?>
+<?import com.hydro.core.gui.comp.cell.TableStringCellFactory?>
+<ServerTableView fx:id="table" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.main.table.ProductionOrderTableController">
+    <columns>
+        <TableColumn fx:id="apkColumn" prefWidth="120" text="Prozess-Auftrag" id="apk">
+            <cellValueFactory>
+                <PropertyValueFactory property="apk"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="90" text="Charge" id="charge">
+            <cellValueFactory>
+                <PropertyValueFactory property="charge"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="70" text="Art" id="kind">
+            <cellValueFactory>
+                <PropertyValueFactory property="kind"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="80" text="Menge" id="amount">
+            <cellValueFactory>
+                <PropertyValueFactory property="amount"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableNumberCellFactory numberFormat="\%.0f"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="70" text="Einheit" id="unit">
+            <cellValueFactory>
+                <PropertyValueFactory property="unit"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="90" text="SAP-Charge" id="erpCharge">
+            <cellValueFactory>
+                <PropertyValueFactory property="erpCharge"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="110" text="Start" id="startTS">
+            <cellValueFactory>
+                <PropertyValueFactory property="startTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="110" text="Ende" id="endTS">
+            <cellValueFactory>
+                <PropertyValueFactory property="endTS"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="300" text="Beschreibung" id="description">
+            <cellValueFactory>
+                <PropertyValueFactory property="description"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn prefWidth="80" text="SAP-Material" id="materialTypeApk">
+            <cellValueFactory>
+                <PropertyValueFactory property="materialTypeApk"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TableStringCellFactory beginIndex="10"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="300" text="SAP-Material-Kurztext" id="materialTypeDescription">
+            <cellValueFactory>
+                <PropertyValueFactory property="materialTypeDescription"/>
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+</ServerTableView>

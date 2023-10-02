@@ -1,0 +1,364 @@
+[
+  {
+    "id": 0,
+    "type": "70075043",
+    "name": "Kaltmetall 1",
+    "group": "Kaltmetalle",
+    "weight": 100000.0,
+    "consumedOperation": 0,
+    "materialAnalysisElements": [
+      {
+        "name": "Cu",
+        "value": 0.005
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "type": "70075044",
+    "name": "Kaltmetall 2",
+    "group": "Kaltmetalle",
+    "weight": 100000.0,
+    "consumedOperation": 0,
+    "materialAnalysisElements": [
+      {
+        "name": "Fe",
+        "value": 0.05
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "type": "70075044",
+    "name": "Elektrolyse",
+    "group": "Flüssigmetalle",
+    "weight": 100000.0,
+    "consumedOperation": 0,
+    "unitWeight": 4500,
+    "materialAnalysisElements": [
+      {
+        "name": "Cu",
+        "value": 0.005
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "type": "70075044",
+    "name": "S1",
+    "group": "Flüssigmetalle",
+    "weight": 100000.0,
+    "consumedOperation": 0,
+    "unitWeight": 8500,
+    "materialAnalysisElements": [
+      {
+        "name": "Cu",
+        "value": 0.005
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "type": "70075044",
+    "name": "AlTi10 - Waffelplatten",
+    "group": "Auflegierungen",
+    "weight": 5000.0,
+    "consumedOperation": 0,
+    "materialAnalysisElements": [
+      {
+        "name": "Ti",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "type": "70075000",
+    "name": "Silizium 98,5 %",
+    "group": "Auflegierungen",
+    "weight": 5000.0,
+    "consumedOperation": 0,
+    "materialAnalysisElements": [
+      {
+        "name": "Si",
+        "value": 98.5
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "type": "70075040",
+    "name": "AlCu 80-Tabletten",
+    "group": "Auflegierungen",
+    "weight": 5000.0,
+    "consumedOperation": 0,
+    "materialAnalysisElements": [
+      {
+        "name": "Cu",
+        "value": 80
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "type": "70075039",
+    "name": "Fe 90 Pulver",
+    "group": "Auflegierungen",
+    "weight": 5000.0,
+    "consumedOperation": 0,
+    "materialAnalysisElements": [
+      {
+        "name": "Fe",
+        "value": 90
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "type": "70075042",
+    "name": "AlMn60 - Splatter",
+    "group": "Auflegierungen",
+    "weight": 5000.0,
+    "consumedOperation": 0,
+    "materialAnalysisElements": [
+      {
+        "name": "Mn",
+        "value": 60
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "type": "70076910",
+    "name": "AlNi20 - Waffelplatten",
+    "group": "Auflegierungen",
+    "weight": 5000.0,
+    "consumedOperation": 0,
+    "materialAnalysisElements": [
+      {
+        "name": "Ni",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "type": "70075623",
+    "name": "Zink, min. 99,995 %",
+    "group": "Auflegierungen",
+    "weight": 5000.0,
+    "consumedOperation": 0,
+    "materialAnalysisElements": [
+      {
+        "name": "Zi",
+        "value": 99.995
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "type": "70075036",
+    "name": "Hüttenmagnesium 99,8%",
+    "group": "Auflegierungen",
+    "weight": 5000.0,
+    "consumedOperation": 0,
+    "materialAnalysisElements": [
+      {
+        "name": "Mn",
+        "value": 99.8
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "type": "70075044",
+    "name": "AlTi3B1 - Grain Refiner",
+    "group": "Auflegierungen",
+    "weight": 5000.0,
+    "consumedOperation": 0,
+    "materialAnalysisElements": [
+      {
+        "name": "Ti",
+        "value": 3
+      },
+      {
+        "name": "B",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "99/01",
+    "name": "54765 Kopfstück",
+    "group": "Sägestücke",
+    "weight": 520.0,
+    "consumedOperation": 0,
+    "unitWeight": 595,
+    "materialAnalysisElements": [
+      {
+        "name": "Mg",
+        "value": 0.00227
+      },
+      {
+        "name": "Pb",
+        "value": 0.00154
+      },
+      {
+        "name": "B",
+        "value": 8.5E-4
+      },
+      {
+        "name": "Li",
+        "value": 3.0E-5
+      },
+      {
+        "name": "Ga",
+        "value": 0.01055
+      },
+      {
+        "name": "Zr",
+        "value": 9.1E-4
+      },
+      {
+        "name": "Si",
+        "value": 0.05899
+      },
+      {
+        "name": "Ti",
+        "value": 0.00372
+      },
+      {
+        "name": "Cd",
+        "value": 0.0
+      },
+      {
+        "name": "Zn",
+        "value": 0.00811
+      },
+      {
+        "name": "V",
+        "value": 0.00803
+      },
+      {
+        "name": "Ni",
+        "value": 0.00393
+      },
+      {
+        "name": "Cr",
+        "value": 0.00114
+      },
+      {
+        "name": "Mn",
+        "value": 0.0182
+      },
+      {
+        "name": "Fe",
+        "value": 0.87168
+      },
+      {
+        "name": "Na",
+        "value": 2.0E-4
+      },
+      {
+        "name": "Ca",
+        "value": 3.0E-5
+      },
+      {
+        "name": "Be",
+        "value": 2.0E-5
+      },
+      {
+        "name": "Cu",
+        "value": 0.00191
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "99/01",
+    "name": "63261 Kopfstück",
+    "group": "Sägestücke",
+    "weight": 1000.0,
+    "consumedOperation": 0,
+    "unitWeight": 1174,
+    "materialAnalysisElements": [
+      {
+        "name": "Mg",
+        "value": 0.00227
+      },
+      {
+        "name": "Pb",
+        "value": 0.00154
+      },
+      {
+        "name": "B",
+        "value": 8.5E-4
+      },
+      {
+        "name": "Li",
+        "value": 3.0E-5
+      },
+      {
+        "name": "Ga",
+        "value": 0.01055
+      },
+      {
+        "name": "Zr",
+        "value": 9.1E-4
+      },
+      {
+        "name": "Si",
+        "value": 0.05899
+      },
+      {
+        "name": "Ti",
+        "value": 0.00372
+      },
+      {
+        "name": "Cd",
+        "value": 0.0
+      },
+      {
+        "name": "Zn",
+        "value": 0.00811
+      },
+      {
+        "name": "V",
+        "value": 0.00803
+      },
+      {
+        "name": "Ni",
+        "value": 0.00393
+      },
+      {
+        "name": "Cr",
+        "value": 0.00114
+      },
+      {
+        "name": "Mn",
+        "value": 0.0182
+      },
+      {
+        "name": "Fe",
+        "value": 0.87168
+      },
+      {
+        "name": "Na",
+        "value": 2.0E-4
+      },
+      {
+        "name": "Ca",
+        "value": 3.0E-5
+      },
+      {
+        "name": "Be",
+        "value": 2.0E-5
+      },
+      {
+        "name": "Cu",
+        "value": 0.00191
+      }
+    ]
+  }
+]

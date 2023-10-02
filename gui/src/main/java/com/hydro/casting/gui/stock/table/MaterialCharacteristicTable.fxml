@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.ServerTableView?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<ServerTableView fx:id="table" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+    <columns>
+        <TableColumn text="Name" prefWidth="200.0" id="name">
+            <cellValueFactory>
+                <PropertyValueFactory property="name"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Beschreibung" prefWidth="250.0" id="description">
+            <cellValueFactory>
+                <PropertyValueFactory property="description"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Wert" prefWidth="120.0" id="value">
+            <cellValueFactory>
+                <PropertyValueFactory property="value"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Einheit" prefWidth="90.0" id="unit">
+            <cellValueFactory>
+                <PropertyValueFactory property="unit"/>
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Format" prefWidth="90.0" id="valueFormat">
+            <cellValueFactory>
+                <PropertyValueFactory property="valueFormat"/>
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+</ServerTableView>

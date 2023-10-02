@@ -1,0 +1,260 @@
+/*******************************************************************************
+ *                                                                             *
+ * Global                                                                      *
+ *                                                                             *
+ ******************************************************************************/
+.header {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Chargen-Doku                                                                *
+ *                                                                             *
+ ******************************************************************************/
+.charge-doc-tab-pane > .tab-header-area > .control-buttons-tab > .container > .tab-down-button {
+    -fx-background-color: -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: -1 50 5 0, 0 51 6 1, 1 52 7 2;
+    -fx-padding: 4 54 9 4;
+    -fx-background-radius: 10;
+}
+
+.charge-doc-tab-pane > .tab-header-area > .control-buttons-tab > .container > .tab-down-button > .arrow {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 0 0 -1 0, 0;
+    -fx-padding: 2 4 2 4; /* 2 4 2 4 */
+    -fx-shape: "M 0 0 h 7 l -3.5 4 z";
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Chart                                                                       *
+ *                                                                             *
+ ******************************************************************************/
+
+.castingGantt {
+    -fx-padding: 4px 20px 1px 1px;
+}
+
+.castingGantt > .chart-content {
+    -fx-padding: 5px;
+}
+
+#actualValueChart {
+    -fx-padding: 0px 20px 0px 28px;
+}
+
+#actualValueChart .default-color0.chart-series-line {
+    -fx-stroke: #0E5E8C
+}
+
+#actualValueChart .default-color1.chart-series-line {
+    -fx-stroke: #D41E24
+}
+
+#actualValueChart .chart-line-symbol {
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 2px;
+    -fx-padding: 2px;
+}
+
+#actualValueChart .default-color0.chart-line-symbol {
+    -fx-background-color: #0E5E8C, white
+}
+
+#actualValueChart .default-color1.chart-line-symbol {
+    -fx-background-color: #D41E24, white
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Axis                                                                        *
+ *                                                                             *
+ ******************************************************************************/
+
+.castingGanttAxis {
+    -fx-tick-label-font-size: 10px;
+    -fx-tick-label-fill: derive(-fx-text-background-color, 30%);
+    -fx-tick-length: 3px;
+}
+
+.castingGanttAxis:top > .axis-label,
+.castingGanttAxis:left > .axis-label {
+    -fx-padding: 5 5 5 5;
+}
+
+.castingGanttAxis:bottom > .axis-label,
+.castingGanttAxis:right > .axis-label {
+    -fx-padding: 5 5 5 5;
+}
+
+.gridView-cell.prev-change {
+    -fx-background-color: indianred, #f5f5f5;
+    -fx-background-insets: 0, 2 0 0 0;
+}
+
+.gridView-cell.prev-change:hover,
+.gridView-cell.prev-change:filled:focused {
+    -fx-background-color: indianred, derive(#039ed3, 50%);
+    -fx-background-insets: 0, 2 0 0 0;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.gridView-cell.prev-change:filled:selected,
+.gridView-cell.prev-change:filled:focused:selected,
+.gridView-cell.prev-change:filled:focused:selected:hover {
+    -fx-background-color: indianred, #039ed3;
+    -fx-background-insets: 0, 2 0 0 0;
+    -fx-border-color: #039ed3;
+    -fx-border-width: 0.5px;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.kt-column {
+    -fx-background-color: #0000FF04;
+}
+
+.kt-column:selected {
+    -fx-background-color: -fx-accent;
+}
+
+.tab-headless {
+    -fx-tab-max-height: 0;
+}
+
+.tab-headless .tab-header-area {
+    visibility: hidden;
+    -fx-padding: -20 0 0 0;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Chart                                                                       *
+ *                                                                             *
+ ******************************************************************************/
+
+.downtimeChart {
+    -fx-padding: 4px 20px 1px 1px;
+}
+
+.downtimeChart > .chart-content {
+    -fx-padding: 0px;
+}
+
+.downtime-status-red {
+    -fx-background-color: rgba(212, 23, 21, 0.9);
+}
+
+.downtime-status-green {
+    -fx-background-color: rgba(119, 184, 70, 0.9);
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Axis                                                                        *
+ *                                                                             *
+ ******************************************************************************/
+
+.downtimeAxis {
+    -fx-tick-label-font-size: 10px;
+    -fx-tick-label-fill: derive(-fx-text-background-color, 30%);
+    -fx-tick-length: 3px;
+}
+
+.downtimeAxis:top > .axis-label,
+.downtimeAxis:left > .axis-label {
+    -fx-padding: 0 0 0 0;
+}
+
+.downtimeAxis:bottom > .axis-label,
+.downtimeAxis:right > .axis-label {
+    -fx-padding: 0 0 0 0;
+}
+
+.functions-menubutton {
+    -fx-background-color: transparent;
+    -fx-background-radius: 4;
+    -fx-graphic-text-gap: 0;
+    -fx-max-height: 25px;
+    -fx-min-height: 25px;
+    -fx-max-width: 40px;
+    -fx-min-width: 40px;
+}
+
+.functions-menubutton:hover {
+    -fx-background-color: -fx-focus-color, -fx-background;
+    -fx-background-insets: 0, 1;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Time-Management                                                             *
+ *                                                                             *
+ ******************************************************************************/
+
+.time-management-violation-cell {
+    -fx-background-color: transparent;
+}
+
+.time-management-violation-cell:filled {
+    -fx-background-color: linear-gradient(#ff5c5c 0.0%, #de3535 15.0%, #ff4f4f 100.0%);
+    -fx-border-radius: 10.0;
+    -fx-border-insets: 5.0;
+    -fx-background-radius: 5.0;
+    -fx-background-insets: 5.0;
+    -fx-padding: 10.0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.8), 5.0, 0.0, 2.0, 2.0);
+}
+
+.time-management-violation-cell:filled:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.8), 15.0, 0.0, 4.0, 4.0);
+}
+
+.time-management-violation-cell:filled:pressed {
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.8), 2.0, 0.0, 1.0, 1.0);
+}
+
+.time-management-violation-checked-cell {
+    -fx-background-color: transparent;
+}
+
+.time-management-violation-checked-cell:filled {
+    -fx-background-color: linear-gradient(#ffbf64 0.0%, #fca92a 15.0%, #ffbf64 100.0%);
+    -fx-border-radius: 10.0;
+    -fx-border-insets: 5.0;
+    -fx-background-radius: 5.0;
+    -fx-background-insets: 5.0;
+    -fx-padding: 10.0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.8), 5.0, 0.0, 2.0, 2.0);
+}
+
+.time-management-violation-checked-cell:filled:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.8), 15.0, 0.0, 4.0, 4.0);
+}
+
+.time-management-violation-checked-cell:filled:pressed {
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.8), 2.0, 0.0, 1.0, 1.0);
+}
+
+/*.time-management-violation-cell:filled:selected:focused, .time-management-violation-cell:filled:selected {*/
+/*    -fx-background-color: linear-gradient(#f2f2f2 0.0%, #c03030 15.0%, #f2f2f2 100.0%);*/
+/*}*/
+
+.borderlessDialog .content {
+    -fx-padding: 0 ;
+}
+
+.sliderRed .thumb {
+    -fx-background-color:
+            linear-gradient(to bottom, derive(-fx-text-box-border, -20%), derive(-fx-text-box-border, -30%)),
+            #cb2d2d,
+            #bb0c0c;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 1.0em; /* makes sure this remains circular */
+    -fx-padding: 0.583333em;  /* 7 */
+    -fx-effect: dropshadow(two-pass-box , rgba(0, 0, 0, 0.1), 5, 0.0 , 0, 2);
+}
+.sliderRed:focused .thumb {
+    -fx-background-radius: 1.0em; /* makes sure this remains circular */
+}

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.downtime.control.DowntimeChart?>
+<?import com.hydro.casting.gui.prod.control.KPIOutputControl?>
+<?import com.hydro.core.gui.comp.gauge.KPIGaugeView?>
+<?import com.hydro.core.gui.comp.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.hydro.casting.gui.prod.view.content.MoldDepartmentController"
+            prefHeight="400.0" prefWidth="600.0">
+    <top>
+        <ToolBar GridPane.columnSpan="5">
+            <TaskButton prefWidth="50" functionKey="F3"
+                        fx:id="showDetails" onAction="#showDetails">
+                <tooltip>
+                    <Tooltip text="Details ein-/ausblenden"/>
+                </tooltip>
+                <graphic>
+                    <ImageView fitHeight="21.0" fitWidth="21.0"
+                               pickOnBounds="true" preserveRatio="true">
+                        <Image url="@/com/hydro/core/gui/images/collapse.png"/>
+                    </ImageView>
+                </graphic>
+            </TaskButton>
+            <Separator orientation="VERTICAL"/>
+        </ToolBar>
+    </top>
+    <center>
+        <MasterDetailPane fx:id="detailPane" detailSide="BOTTOM" dividerPosition="0.5" showDetailNode="false">
+            <masterNode>
+                <MasterDetailPane detailSide="RIGHT" dividerPosition="0.85" showDetailNode="true">
+                    <masterNode>
+                        <fx:include fx:id="table"
+                                    source="../../table/MoldDepartmentTable.fxml"/>
+                    </masterNode>
+                    <detailNode>
+                        <Accordion expandedPane="$standard">
+                            <panes>
+                                <TitledPane fx:id="standard" text="Standardablauf">
+                                    <ScrollPane fitToWidth="true">
+                                        <VBox spacing="5.0">
+                                            <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                            </padding>
+                                            <TaskButton functionKey="F5" maxWidth="Infinity" text="Rückmelden">
+                                                <task>
+                                                </task>
+                                            </TaskButton>
+                                            <TaskButton functionKey="F6" maxWidth="Infinity" text="Zur Gießanlage(Einsatzbereit)">
+                                                <task>
+                                                </task>
+                                            </TaskButton>
+                                            <TaskButton functionKey="F7" maxWidth="Infinity" text="Sperren">
+                                                <task>
+                                                </task>
+                                            </TaskButton>
+                                        </VBox>
+                                    </ScrollPane>
+                                </TitledPane>
+                                <TitledPane text="Sonderfunktionen">
+                                    <VBox spacing="5.0">
+                                        <TaskButton maxWidth="Infinity" text="Kokillen-Bestand">
+                                            <task>
+                                            </task>
+                                        </TaskButton>
+                                        <TaskButton maxWidth="Infinity" text="Angußsteine-Bestand">
+                                            <task>
+                                            </task>
+                                        </TaskButton>
+                                        <TaskButton maxWidth="Infinity" text="Sperren aufheben">
+                                            <task>
+                                            </task>
+                                        </TaskButton>
+                                        <padding>
+                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                        </padding>
+                                    </VBox>
+                                </TitledPane>
+                            </panes>
+                        </Accordion>
+                    </detailNode>
+                </MasterDetailPane>
+            </masterNode>
+            <detailNode>
+                <fx:include source="../../detail/MoldDepartmentDetail.fxml"/>
+            </detailNode>
+        </MasterDetailPane>
+    </center>
+    <bottom>
+        <GridPane hgap="5.0" vgap="5.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER"/>
+                <ColumnConstraints/>
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS"/>
+                <ColumnConstraints halignment="CENTER" hgrow="NEVER"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="60" maxHeight="60" prefHeight="60" vgrow="NEVER"/>
+            </rowConstraints>
+            <padding>
+                <Insets left="5.0" right="5.0"/>
+            </padding>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                <VBox alignment="TOP_CENTER" prefWidth="110.0">
+                    <KPIOutputControl fx:id="outputGauge" prefHeight="60.0" prefWidth="110.0"/>
+                </VBox>
+                <Separator orientation="VERTICAL"/>
+                <VBox alignment="TOP_CENTER" prefWidth="80.0">
+                    <KPIGaugeView fx:id="downtimeGauge" prefHeight="100" prefWidth="100" rightArcMin="0.4" leftArcMax="0.3"/>
+                </VBox>
+            </HBox>
+            <Separator orientation="VERTICAL" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <DowntimeChart fx:id="downtimeChart" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+            <Button onAction="#createDowntime" GridPane.columnIndex="3" GridPane.rowIndex="0">
+                <graphic>
+                    <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@/com/hydro/core/gui/images/add.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </GridPane>
+    </bottom>
+</BorderPane>

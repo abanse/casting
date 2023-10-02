@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hydro.casting.gui.main.control.WorkStepListDetailControlController">
+    <center>
+        <fx:include fx:id="table"
+                    source="../table/WorkStepTable.fxml"/>
+    </center>
+</BorderPane>

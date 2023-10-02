@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.cell.*?>
+<?import com.hydro.core.gui.comp.ServerTreeTableView?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<ServerTreeTableView fx:id="demandTable" showRoot="false" columnFilterEnabled="true"
+                     xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.planning.table.FurnaceDemandTableController">
+    <columns>
+        <TreeTableColumn prefWidth="120.0" text="Legierung" id="alloy">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="alloy"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn fx:id="chargeColumn" prefWidth="70.0" text="Charge" id="charge">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="charge"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="Max.Ofenfüllung(to)" id="furnaceMaxWeight">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="furnaceMaxWeight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%.2f" factor="0.001"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="Abguß(to)" id="plannedWeight">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="plannedWeight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%.2f" factor="0.001"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="Sumpf Vorgänger(to)" id="bottomWeight">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="bottomWeight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%.2f" factor="0.001"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="S1 gepl." id="plannedS1Weight">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="plannedS1Weight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%.2f" factor="0.001"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="S2 gepl." id="plannedS2Weight">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="plannedS2Weight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%.2f" factor="0.001"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="S3(UBC) gepl." id="plannedS3Weight">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="plannedS3Weight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%.2f" factor="0.001"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="Elektrolyse gepl." id="plannedELWeight">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="plannedELWeight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%.2f" factor="0.001"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="Real Alloy gepl." id="plannedRAWeight">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="plannedRAWeight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%.2f" factor="0.001"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="Offen (Metaleinsatz)" id="neededWeight">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="neededWeight"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%.2f" factor="0.001"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="proz. Flüssigeinsatz(%)" id="percLiquid">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="percLiquid"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%.0f"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="70.0" text="proz. Metaleinsatz(%)" id="percMetal">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="percMetal"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%.0f"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn fx:id="startTimeColumn" prefWidth="100.0" text="PST" id="startTime">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="startTime"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="100.0" text="PET" id="endTime">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="endTime"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableDateCellFactory dateFormat="dd.MM.yy HH:mm"/>
+            </cellFactory>
+        </TreeTableColumn>
+    </columns>
+</ServerTreeTableView>

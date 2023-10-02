@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.AutoHideSidesPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.util.Duration?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<AutoHideSidesPane fx:id="mainAutoHideSidePane" triggerDistance="0.0001" xmlns="http://javafx.com/javafx/8.0.111"
+                   xmlns:fx="http://javafx.com/fxml/1"
+                   fx:controller="com.hydro.casting.gui.planning.view.content.MaBeController">
+    <showAnimationDelay>
+        <Duration millis="10"/>
+    </showAnimationDelay>
+    <content>
+        <BorderPane>
+            <center>
+                <MasterDetailPane fx:id="hMDPane" detailSide="BOTTOM"
+                                  dividerPosition="0.6" showDetailNode="true">
+                    <masterNode>
+                        <BorderPane fx:id="pane"/>
+                    </masterNode>
+                    <detailNode>
+                        <fx:include fx:id="schedule"
+                                    source="MachineSchedule.fxml"/>
+                    </detailNode>
+                </MasterDetailPane>
+            </center>
+            <right>
+                <TabPane side="LEFT" fx:id="selectionInfosSidebar">
+                    <tabs>
+                        <Tab text="Kokillen-Umbauplan" closable="false"/>
+                    </tabs>
+                </TabPane>
+            </right>
+        </BorderPane>
+    </content>
+    <right>
+        <BorderPane fx:id="instructionPane" style="-fx-background-color: white">
+            <top>
+                <GridPane fx:id="rightSidePane" prefWidth="1200" pickOnBounds="true">
+                    <children>
+                        <TabPane fx:id="selectionInfos">
+                            <tabs>
+                                <Tab text="Kokillen-Umbauplan" closable="false"/>
+                            </tabs>
+                        </TabPane>
+                        <Button onAction="#openFEVOWindow" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                            <GridPane.margin>
+                                <Insets top="1" right="60"/>
+                            </GridPane.margin>
+                            <graphic>
+                                <ImageView fitHeight="18" fitWidth="18"
+                                           preserveRatio="true" smooth="true">
+                                    <image>
+                                        <Image url="@/com/hydro/core/gui/images/moveOut.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <CheckBox fx:id="pinSelection" onAction="#pinSelection" text="pin" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                            <GridPane.margin>
+                                <Insets top="6" right="10"/>
+                            </GridPane.margin>
+                        </CheckBox>
+                    </children>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints vgrow="ALWAYS"/>
+                    </rowConstraints>
+                </GridPane>
+            </top>
+            <center>
+                <fx:include fx:id="moldSchedule"
+                            source="MoldSchedule.fxml" />
+            </center>
+        </BorderPane>
+    </right>
+</AutoHideSidesPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.CacheTreeTableView?>
+<?import com.hydro.core.gui.comp.cell.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<CacheTreeTableView fx:id="demandMaterialTable" showRoot="false" columnFilterEnabled="true" cache="casting-planning" cachePath="/caster-demand-material-type" xmlns="http://javafx.com/javafx/8.0.111"
+                    xmlns:fx="http://javafx.com/fxml/1">
+    <columns>
+        <TreeTableColumn prefWidth="90.0" text="Legierung" id="alloy">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="alloy"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="Qualität" id="quality">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="quality"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="Breite" id="width">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="width"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="Länge" id="length">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="length"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn fx:id="doubleLengthColumn" prefWidth="50.0" text="T-Länge" id="doubleLength">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="doubleLength"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="#Gesamt" id="amount">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="amount"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="#Geplant" id="planned">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="planned"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="50.0" text="#Abgerufen" id="retrieved">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="retrieved"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableNumberCellFactory numberFormat="\%d"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="80.0" text="Material-Nr." id="materialType">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="materialType"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableStringCellFactory beginIndex="10"/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="400.0" text="Material-Beschreibung" id="materialTypeDescription">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="materialTypeDescription"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+    </columns>
+</CacheTreeTableView>

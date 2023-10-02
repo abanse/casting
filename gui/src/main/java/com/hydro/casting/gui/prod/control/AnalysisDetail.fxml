@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.analysis.control.AnalysisTable?>
+<AnalysisTable fx:id="analysisDetail"
+               xmlns="http://javafx.com/javafx"
+               xmlns:fx="http://javafx.com/fxml"
+               fx:controller="com.hydro.casting.gui.prod.control.AnalysisDetailController"
+               prefHeight="400.0" prefWidth="600.0">
+
+</AnalysisTable>

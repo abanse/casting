@@ -1,0 +1,961 @@
+{
+  "name": "072435 71",
+  "minComp": {
+    "name": "99/01 Min",
+    "weight": 0.0,
+    "sampleNumber": 0,
+    "compositionElementDTOList": [
+      {
+        "name": "Cr",
+        "value": 0.0,
+        "precision": 2,
+        "sortOrderId": 6
+      },
+      {
+        "name": "B",
+        "value": 0.0,
+        "precision": 4,
+        "sortOrderId": 9
+      },
+      {
+        "name": "Na",
+        "value": 0.0,
+        "precision": 4,
+        "sortOrderId": 11
+      },
+      {
+        "name": "Zn",
+        "value": 0.0,
+        "precision": 2,
+        "sortOrderId": 7
+      },
+      {
+        "name": "Zr",
+        "value": 0.0,
+        "precision": 4,
+        "sortOrderId": 22
+      },
+      {
+        "name": "Ni",
+        "value": 0.0,
+        "precision": 3,
+        "sortOrderId": 19
+      },
+      {
+        "name": "Ti",
+        "value": 0.0,
+        "precision": 3,
+        "sortOrderId": 8
+      },
+      {
+        "name": "Mg",
+        "value": 0.0,
+        "precision": 4,
+        "sortOrderId": 5
+      },
+      {
+        "name": "Pb",
+        "value": 0.0,
+        "precision": 4,
+        "sortOrderId": 16
+      },
+      {
+        "name": "Cd",
+        "value": 0.0,
+        "precision": 4,
+        "sortOrderId": 14
+      },
+      {
+        "name": "Be",
+        "value": 0.0,
+        "precision": 4,
+        "sortOrderId": 10
+      },
+      {
+        "name": "Fe",
+        "value": 0.8,
+        "precision": 2,
+        "sortOrderId": 2
+      },
+      {
+        "name": "V",
+        "value": 0.0,
+        "precision": 4,
+        "sortOrderId": 21
+      },
+      {
+        "name": "Cu",
+        "value": 0.0,
+        "precision": 2,
+        "sortOrderId": 3
+      },
+      {
+        "name": "Ga",
+        "value": 0.0,
+        "precision": 4,
+        "sortOrderId": 18
+      },
+      {
+        "name": "SI_FE_sum",
+        "precision": 5
+      },
+      {
+        "name": "Si",
+        "value": 0.05,
+        "precision": 2,
+        "sortOrderId": 1
+      },
+      {
+        "name": "Li",
+        "value": 0.0,
+        "precision": 4,
+        "sortOrderId": 13
+      },
+      {
+        "name": "Mn",
+        "value": 0.015,
+        "precision": 3,
+        "sortOrderId": 4
+      },
+      {
+        "name": "Ca",
+        "value": 0.0,
+        "precision": 4,
+        "sortOrderId": 12
+      }
+    ]
+  },
+  "maxComp": {
+    "name": "99/01 Max",
+    "weight": 0.0,
+    "sampleNumber": 0,
+    "compositionElementDTOList": [
+      {
+        "name": "Cr",
+        "value": 0.02,
+        "precision": 2,
+        "sortOrderId": 6
+      },
+      {
+        "name": "B",
+        "value": 0.0015,
+        "precision": 4,
+        "sortOrderId": 9
+      },
+      {
+        "name": "Na",
+        "value": 5.0E-4,
+        "precision": 4,
+        "sortOrderId": 11
+      },
+      {
+        "name": "Zn",
+        "value": 0.07,
+        "precision": 2,
+        "sortOrderId": 7
+      },
+      {
+        "name": "Zr",
+        "value": 0.02,
+        "precision": 4,
+        "sortOrderId": 22
+      },
+      {
+        "name": "Ni",
+        "value": 0.02,
+        "precision": 3,
+        "sortOrderId": 19
+      },
+      {
+        "name": "Ti",
+        "value": 0.02,
+        "precision": 3,
+        "sortOrderId": 8
+      },
+      {
+        "name": "Mg",
+        "value": 0.0029,
+        "precision": 4,
+        "sortOrderId": 5
+      },
+      {
+        "name": "Pb",
+        "value": 0.007,
+        "precision": 4,
+        "sortOrderId": 16
+      },
+      {
+        "name": "Cd",
+        "value": 0.003,
+        "precision": 4,
+        "sortOrderId": 14
+      },
+      {
+        "name": "Be",
+        "value": 1.0E-4,
+        "precision": 4,
+        "sortOrderId": 10
+      },
+      {
+        "name": "Fe",
+        "value": 0.9,
+        "precision": 2,
+        "sortOrderId": 2
+      },
+      {
+        "name": "V",
+        "value": 0.03,
+        "precision": 4,
+        "sortOrderId": 21
+      },
+      {
+        "name": "Cu",
+        "value": 0.05,
+        "precision": 2,
+        "sortOrderId": 3
+      },
+      {
+        "name": "Ga",
+        "value": 0.03,
+        "precision": 4,
+        "sortOrderId": 18
+      },
+      {
+        "name": "SI_FE_sum",
+        "value": 1.0,
+        "precision": 5
+      },
+      {
+        "name": "Si",
+        "value": 0.1,
+        "precision": 2,
+        "sortOrderId": 1
+      },
+      {
+        "name": "Li",
+        "value": 2.0E-4,
+        "precision": 4,
+        "sortOrderId": 13
+      },
+      {
+        "name": "Mn",
+        "value": 0.025,
+        "precision": 3,
+        "sortOrderId": 4
+      },
+      {
+        "name": "Ca",
+        "value": 0.001,
+        "precision": 4,
+        "sortOrderId": 12
+      }
+    ]
+  },
+  "isLeaf": false,
+  "analysisList": [
+    {
+      "name": "01",
+      "weight": 0.0,
+      "sampleNumber": 1,
+      "compositionElementDTOList": [
+        {
+          "name": "Zn",
+          "value": 0.01
+        },
+        {
+          "name": "V",
+          "value": 0.005
+        },
+        {
+          "name": "Li",
+          "value": 3.0E-5
+        },
+        {
+          "name": "Zr",
+          "value": 0.0006
+        },
+        {
+          "name": "Ti",
+          "value": 0.002
+        },
+        {
+          "name": "Ca",
+          "value": 9.0E-6
+        },
+        {
+          "name": "B",
+          "value": 0.0005
+        },
+        {
+          "name": "Na",
+          "value": 7.3E-6
+        },
+        {
+          "name": "Be",
+          "value": 2.0E-5
+        },
+        {
+          "name": "Si",
+          "value": 0.04
+        },
+        {
+          "name": "Pb",
+          "value": 0.0016
+        },
+        {
+          "name": "Cr",
+          "value": 0.00001
+        },
+        {
+          "name": "Cu",
+          "value": 0.00001
+        },
+        {
+          "name": "Ni",
+          "value": 0.002
+        },
+        {
+          "name": "Mn",
+          "value": 0.017
+        },
+        {
+          "name": "Fe",
+          "value": 0.5
+        },
+        {
+          "name": "Cd",
+          "value": 0.0
+        },
+        {
+          "name": "Mg",
+          "value": 0.0013
+        },
+        {
+          "name": "Ga",
+          "value": 0.0065
+        },
+        {
+          "name": "SI_FE_sum",
+          "precision": 5,
+          "sortOrderId": 100
+        }
+      ]
+    },
+    {
+      "name": "02",
+      "weight": 0.0,
+      "sampleNumber": 2,
+      "compositionElementDTOList": [
+        {
+          "name": "Ti",
+          "value": 0.001
+        },
+        {
+          "name": "Mn",
+          "value": 0.009
+        },
+        {
+          "name": "Ni",
+          "value": 0.001
+        },
+        {
+          "name": "Zr",
+          "value": 0.0003
+        },
+        {
+          "name": "B",
+          "value": 0.0002
+        },
+        {
+          "name": "Ga",
+          "value": 0.0086
+        },
+        {
+          "name": "Fe",
+          "value": 0.68
+        },
+        {
+          "name": "Si",
+          "value": 0.05
+        },
+        {
+          "name": "Cr",
+          "value": 0.0001
+        },
+        {
+          "name": "Li",
+          "value": 3.0E-6
+        },
+        {
+          "name": "Cd",
+          "value": 0.0
+        },
+        {
+          "name": "Pb",
+          "value": 0.0008
+        },
+        {
+          "name": "Mg",
+          "value": 0.0018
+        },
+        {
+          "name": "Zn",
+          "value": 0.01
+        },
+        {
+          "name": "Be",
+          "value": 2.0E-6
+        },
+        {
+          "name": "Cu",
+          "value": 0.0001
+        },
+        {
+          "name": "Ca",
+          "value": 9.0E-6
+        },
+        {
+          "name": "Na",
+          "value": 0.0002
+        },
+        {
+          "name": "V",
+          "value": 0.0025
+        },
+        {
+          "name": "SI_FE_sum",
+          "precision": 5,
+          "sortOrderId": 100
+        }
+      ]
+    },
+    {
+      "name": "03",
+      "weight": 0.0,
+      "sampleNumber": 3,
+      "compositionElementDTOList": [
+        {
+          "name": "B",
+          "value": 0.0001
+        },
+        {
+          "name": "Ti",
+          "value": 0.00001
+        },
+        {
+          "name": "Cr",
+          "value": 0.0001
+        },
+        {
+          "name": "Mn",
+          "value": 0.004
+        },
+        {
+          "name": "Si",
+          "value": 0.02
+        },
+        {
+          "name": "Ni",
+          "value": 0.001
+        },
+        {
+          "name": "Li",
+          "value": 3.0E-6
+        },
+        {
+          "name": "Fe",
+          "value": 0.8
+        },
+        {
+          "name": "Ca",
+          "value": 5.0E-6
+        },
+        {
+          "name": "Zn",
+          "value": 0.001
+        },
+        {
+          "name": "Na",
+          "value": 0.0001
+        },
+        {
+          "name": "V",
+          "value": 0.0011
+        },
+        {
+          "name": "Cu",
+          "value": 0.001
+        },
+        {
+          "name": "Ga",
+          "value": 0.0038
+        },
+        {
+          "name": "Cd",
+          "value": 0.0
+        },
+        {
+          "name": "Be",
+          "value": 0.000001
+        },
+        {
+          "name": "Mg",
+          "value": 0.0021
+        },
+        {
+          "name": "Zr",
+          "value": 0.0001
+        },
+        {
+          "name": "Pb",
+          "value": 0.0004
+        },
+        {
+          "name": "SI_FE_sum",
+          "precision": 5,
+          "sortOrderId": 100
+        }
+      ]
+    },
+    {
+      "name": "04",
+      "weight": 0.0,
+      "sampleNumber": 4,
+      "compositionElementDTOList": [
+        {
+          "name": "Mg",
+          "value": 0.00234
+        },
+        {
+          "name": "V",
+          "value": 0.00796
+        },
+        {
+          "name": "Mn",
+          "value": 0.0178
+        },
+        {
+          "name": "Zr",
+          "value": 8.9E-4
+        },
+        {
+          "name": "Ti",
+          "value": 0.0027
+        },
+        {
+          "name": "Ga",
+          "value": 0.01064
+        },
+        {
+          "name": "B",
+          "value": 6.5E-4
+        },
+        {
+          "name": "Ni",
+          "value": 0.0039
+        },
+        {
+          "name": "Be",
+          "value": 2.0E-5
+        },
+        {
+          "name": "Ca",
+          "value": 4.0E-5
+        },
+        {
+          "name": "Cu",
+          "value": 0.00191
+        },
+        {
+          "name": "Pb",
+          "value": 0.00157
+        },
+        {
+          "name": "Fe",
+          "value": 0.87745
+        },
+        {
+          "name": "Li",
+          "value": 3.0E-5
+        },
+        {
+          "name": "Cr",
+          "value": 0.00115
+        },
+        {
+          "name": "Cd",
+          "value": 0.0
+        },
+        {
+          "name": "Na",
+          "value": 2.9E-4
+        },
+        {
+          "name": "Si",
+          "value": 0.05881
+        },
+        {
+          "name": "Zn",
+          "value": 0.00817
+        },
+        {
+          "name": "SI_FE_sum",
+          "precision": 5,
+          "sortOrderId": 100
+        }
+      ]
+    },
+    {
+      "name": "90",
+      "weight": 0.0,
+      "sampleNumber": 90,
+      "compositionElementDTOList": [
+        {
+          "name": "B",
+          "value": 6.7E-4
+        },
+        {
+          "name": "Mg",
+          "value": 0.00237
+        },
+        {
+          "name": "Fe",
+          "value": 0.88668
+        },
+        {
+          "name": "Be",
+          "value": 2.0E-5
+        },
+        {
+          "name": "Cr",
+          "value": 0.00115
+        },
+        {
+          "name": "Si",
+          "value": 0.05997
+        },
+        {
+          "name": "Mn",
+          "value": 0.01801
+        },
+        {
+          "name": "Cd",
+          "value": 0.0
+        },
+        {
+          "name": "V",
+          "value": 0.0079
+        },
+        {
+          "name": "Na",
+          "value": 3.0E-4
+        },
+        {
+          "name": "Ni",
+          "value": 0.00391
+        },
+        {
+          "name": "Zr",
+          "value": 8.9E-4
+        },
+        {
+          "name": "Ti",
+          "value": 0.0027
+        },
+        {
+          "name": "Li",
+          "value": 3.0E-5
+        },
+        {
+          "name": "Pb",
+          "value": 0.00159
+        },
+        {
+          "name": "Ca",
+          "value": 4.0E-5
+        },
+        {
+          "name": "Zn",
+          "value": 0.00841
+        },
+        {
+          "name": "Ga",
+          "value": 0.01071
+        },
+        {
+          "name": "Cu",
+          "value": 0.00194
+        },
+        {
+          "name": "SI_FE_sum",
+          "precision": 5,
+          "sortOrderId": 100
+        }
+      ]
+    },
+    {
+      "name": "11",
+      "weight": 0.0,
+      "sampleNumber": 11,
+      "compositionElementDTOList": [
+        {
+          "name": "Cu",
+          "value": 0.0018
+        },
+        {
+          "name": "Ni",
+          "value": 0.00385
+        },
+        {
+          "name": "V",
+          "value": 0.00798
+        },
+        {
+          "name": "Fe",
+          "value": 0.86797
+        },
+        {
+          "name": "Ga",
+          "value": 0.01051
+        },
+        {
+          "name": "Ca",
+          "value": 3.0E-5
+        },
+        {
+          "name": "Si",
+          "value": 0.05965
+        },
+        {
+          "name": "Li",
+          "value": 3.0E-5
+        },
+        {
+          "name": "Cd",
+          "value": 0.0
+        },
+        {
+          "name": "Cr",
+          "value": 0.00113
+        },
+        {
+          "name": "Ti",
+          "value": 0.00357
+        },
+        {
+          "name": "Zr",
+          "value": 9.1E-4
+        },
+        {
+          "name": "Na",
+          "value": 2.1E-4
+        },
+        {
+          "name": "Mg",
+          "value": 0.0023
+        },
+        {
+          "name": "Be",
+          "value": 2.0E-5
+        },
+        {
+          "name": "Pb",
+          "value": 0.00142
+        },
+        {
+          "name": "Mn",
+          "value": 0.01808
+        },
+        {
+          "name": "B",
+          "value": 7.6E-4
+        },
+        {
+          "name": "Zn",
+          "value": 0.00803
+        },
+        {
+          "name": "SI_FE_sum",
+          "precision": 5,
+          "sortOrderId": 100
+        }
+      ]
+    },
+    {
+      "name": "12",
+      "weight": 1.0,
+      "sampleNumber": 12,
+      "compositionElementDTOList": [
+        {
+          "name": "Cu",
+          "value": 0.0019
+        },
+        {
+          "name": "Ni",
+          "value": 0.00385
+        },
+        {
+          "name": "V",
+          "value": 0.00788
+        },
+        {
+          "name": "Fe",
+          "value": 0.87697
+        },
+        {
+          "name": "Ga",
+          "value": 0.01051
+        },
+        {
+          "name": "Ca",
+          "value": 3.0E-5
+        },
+        {
+          "name": "Si",
+          "value": 0.05865
+        },
+        {
+          "name": "Li",
+          "value": 3.0E-5
+        },
+        {
+          "name": "Cd",
+          "value": 0.0
+        },
+        {
+          "name": "Cr",
+          "value": 0.00113
+        },
+        {
+          "name": "Ti",
+          "value": 0.00357
+        },
+        {
+          "name": "Zr",
+          "value": 9.1E-4
+        },
+        {
+          "name": "Na",
+          "value": 2.1E-4
+        },
+        {
+          "name": "Mg",
+          "value": 0.0023
+        },
+        {
+          "name": "Be",
+          "value": 2.0E-5
+        },
+        {
+          "name": "Pb",
+          "value": 0.00142
+        },
+        {
+          "name": "Mn",
+          "value": 0.01808
+        },
+        {
+          "name": "B",
+          "value": 7.6E-4
+        },
+        {
+          "name": "Zn",
+          "value": 0.00803
+        },
+        {
+          "name": "SI_FE_sum",
+          "precision": 5,
+          "sortOrderId": 100
+        }
+      ]
+    },
+    {
+      "name": "13",
+      "weight": 1.0,
+      "sampleNumber": 13,
+      "compositionElementDTOList": [
+        {
+          "name": "Mg",
+          "value": 0.00227
+        },
+        {
+          "name": "Pb",
+          "value": 0.00154
+        },
+        {
+          "name": "B",
+          "value": 8.5E-4
+        },
+        {
+          "name": "Li",
+          "value": 3.0E-5
+        },
+        {
+          "name": "Ga",
+          "value": 0.01055
+        },
+        {
+          "name": "Zr",
+          "value": 9.1E-4
+        },
+        {
+          "name": "Si",
+          "value": 0.05899
+        },
+        {
+          "name": "Ti",
+          "value": 0.00372
+        },
+        {
+          "name": "Cd",
+          "value": 0.0
+        },
+        {
+          "name": "Zn",
+          "value": 0.00811
+        },
+        {
+          "name": "V",
+          "value": 0.00803
+        },
+        {
+          "name": "Ni",
+          "value": 0.00393
+        },
+        {
+          "name": "Cr",
+          "value": 0.00114
+        },
+        {
+          "name": "Mn",
+          "value": 0.0182
+        },
+        {
+          "name": "Fe",
+          "value": 0.87168
+        },
+        {
+          "name": "Na",
+          "value": 2.0E-4
+        },
+        {
+          "name": "Ca",
+          "value": 3.0E-5
+        },
+        {
+          "name": "Be",
+          "value": 2.0E-5
+        },
+        {
+          "name": "Cu",
+          "value": 0.00191
+        },
+        {
+          "name": "SI_FE_sum",
+          "precision": 5,
+          "sortOrderId": 100
+        }
+      ]
+    }
+  ]
+}

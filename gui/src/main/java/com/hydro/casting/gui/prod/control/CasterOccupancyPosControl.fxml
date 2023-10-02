@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import com.hydro.core.gui.comp.StringTextField?>
+<?import com.hydro.core.gui.comp.DoubleTextField?>
+<GridPane fx:id="mainPane" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.hydro.casting.gui.prod.control.CasterOccupancyPosControlController">
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" prefWidth="70"/>
+        <ColumnConstraints halignment="LEFT" prefWidth="120"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <Label fx:id="position" text="Pos. ?" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+        <Label text="Barren" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <StringTextField fx:id="slab" editable="false" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Label text="Auftrag" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <StringTextField fx:id="order" editable="false" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Label text="Länge" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <DoubleTextField fx:id="castingLength" pattern="0mm" alignment="CENTER" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Label text="Zuschlag" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <DoubleTextField fx:id="lengthBonus" pattern="0mm" alignment="CENTER" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+        <!--
+        <Label text="Kok." GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <StringTextField fx:id="mold" editable="false" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+        <Label text="AGS." GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+        <StringTextField fx:id="ags" editable="false" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+        -->
+        <Label fx:id="width" text="1600" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.halignment="CENTER">
+            <font>
+                <Font size="24"/>
+            </font>
+        </Label>
+    </children>
+</GridPane>

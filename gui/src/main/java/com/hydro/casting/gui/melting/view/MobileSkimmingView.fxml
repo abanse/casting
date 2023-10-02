@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.melting.task.*?>
+<?import com.hydro.casting.gui.prod.table.ChargingAnalysisTable?>
+<?import com.hydro.core.gui.comp.*?>
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<ViewParent title="BDE Abkrätzen"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.hydro.casting.gui.melting.view.MobileSkimmingViewController"
+            prefHeight="400.0" prefWidth="600.0">
+    <center>
+        <MasterDetailPane detailSide="RIGHT" dividerPosition="0.85" showDetailNode="false">
+            <masterNode>
+                <MasterDetailPane detailSide="BOTTOM" showDetailNode="true">
+                    <masterNode>
+                        <GridPane hgap="5.0" vgap="5.0">
+                            <padding>
+                                <Insets top="10.0" bottom="10.0" left="10.0" right="10.0"/>
+                            </padding>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints vgrow="ALWAYS"/>
+                                <RowConstraints prefHeight="3"/>
+                                <RowConstraints vgrow="ALWAYS"/>
+                            </rowConstraints>
+                            <TaskButton fx:id="furnaceS1" text="Schmelzofen S1" onAction="#selectFurnace" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="3" maxHeight="Infinity"
+                                        maxWidth="Infinity" userData="S1">
+                                <graphic>
+                                    <Pane prefHeight="21.0"/>
+                                </graphic>
+                            </TaskButton>
+
+                            <TaskButton fx:id="furnaceS2" text="Schelzofen S2" onAction="#selectFurnace" GridPane.rowIndex="0" GridPane.columnIndex="3" GridPane.columnSpan="3" maxHeight="Infinity"
+                                        maxWidth="Infinity" userData="S2">
+                                <graphic>
+                                    <Pane prefHeight="21.0"/>
+                                </graphic>
+                            </TaskButton>
+
+                            <Separator GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="4"/>
+
+                            <TaskButton fx:id="startSkimming" text="Start Abkrätzen" GridPane.rowIndex="2" GridPane.columnIndex="0">
+                                <task>
+                                    <StartSkimmingTask fx:id="startSkimmingTask"/>
+                                </task>
+                            </TaskButton>
+                            <TaskButton fx:id="finishSkimming" text="Ende Abkrätzen" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                            <TaskButton fx:id="startSkimmingMeltingChamber" text="Start Abkrätzen (Schmelzkammer)" GridPane.rowIndex="2" GridPane.columnIndex="2">
+                                <task>
+                                    <StartSkimmingMeltingChamberTask fx:id="startSkimmingMeltingChamberTask"/>
+                                </task>
+                            </TaskButton>
+                            <TaskButton fx:id="finishSkimmingMeltingChamber" text="Ende Abkrätzen (Schmelzkammer)" GridPane.rowIndex="2" GridPane.columnIndex="3">
+                                <task>
+                                    <EndSkimmingMeltingChamberTask fx:id="endSkimmingMeltingChamberTask"/>
+                                </task>
+                            </TaskButton>
+                            <TaskButton fx:id="startMixing" text="Start Materialverteilung" GridPane.rowIndex="2" GridPane.columnIndex="4">
+                                <task>
+                                    <StartMixingTask fx:id="startMixingTask"/>
+                                </task>
+                            </TaskButton>
+                            <TaskButton fx:id="finishMixing" text="Ende Materialverteilung" GridPane.rowIndex="2" GridPane.columnIndex="5">
+                                <task>
+                                    <EndMixingTask fx:id="endMixingTask"/>
+                                </task>
+                            </TaskButton>
+                        </GridPane>
+                    </masterNode>
+                    <detailNode>
+                        <ChargingAnalysisTable fx:id="chargingAnalysisTable"/>
+                    </detailNode>
+                </MasterDetailPane>
+            </masterNode>
+            <detailNode>
+                <GridPane hgap="5.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints vgrow="ALWAYS"/>
+                        <RowConstraints/>
+                        <RowConstraints vgrow="NEVER"/>
+                    </rowConstraints>
+                    <Accordion>
+                        <panes>
+                            <TitledPane text="Placeholder">
+                                <ScrollPane fitToWidth="true">
+                                    <VBox spacing="5.0">
+                                        <padding>
+                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                        </padding>
+
+                                    </VBox>
+                                </ScrollPane>
+                            </TitledPane>
+                            <TitledPane text="Placeholder 2">
+                                <VBox spacing="5.0">
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    </padding>
+                                </VBox>
+                            </TitledPane>
+                        </panes>
+                    </Accordion>
+                </GridPane>
+            </detailNode>
+        </MasterDetailPane>
+    </center>
+</ViewParent>

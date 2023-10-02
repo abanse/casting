@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.SearchBox?>
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import javafx.scene.control.ToolBar?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<ViewParent title="Soll-Analysen"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.hydro.casting.gui.analysis.view.AlloyViewController"
+            prefHeight="400.0" prefWidth="600.0">
+    <top>
+        <ToolBar prefHeight="40.0">
+            <SearchBox fx:id="searchBox" prefWidth="200"/>
+        </ToolBar>
+    </top>
+    <center>
+        <MasterDetailPane detailSide="BOTTOM"
+                          dividerPosition="0.6" showDetailNode="true">
+            <masterNode>
+                <fx:include fx:id="masterTable" source="../table/AlloyMasterTable.fxml"/>
+            </masterNode>
+            <detailNode>
+                <fx:include fx:id="detailTable" source="../table/AlloyDetailTable.fxml"/>
+            </detailNode>
+        </MasterDetailPane>
+    </center>
+</ViewParent>

@@ -1,0 +1,59 @@
+[
+  {
+    "charge": "12345",
+    "phases": [
+      {
+        "name": "GI",
+        "plannedDuration": {
+          "seconds": 2700,
+          "nanos": 0
+        }
+      },
+      {
+        "name": "AS",
+        "plannedDuration": {
+          "seconds": 7200,
+          "nanos": 0
+        }
+      }
+    ]
+  },
+  {
+    "charge": "12346",
+    "phases": [
+      {
+        "name": "GI",
+        "plannedDuration": {
+          "seconds": 2700,
+          "nanos": 0
+        }
+      },
+      {
+        "name": "AS",
+        "plannedDuration": {
+          "seconds": 7200,
+          "nanos": 0
+        }
+      }
+    ]
+  },
+  {
+    "charge": "12347",
+    "phases": [
+      {
+        "name": "GI",
+        "plannedDuration": {
+          "seconds": 2700,
+          "nanos": 0
+        }
+      },
+      {
+        "name": "AS",
+        "plannedDuration": {
+          "seconds": 7200,
+          "nanos": 0
+        }
+      }
+    ]
+  }
+]

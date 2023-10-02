@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.cell.*?>
+<?import com.hydro.core.gui.comp.ServerTreeTableView?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<ServerTreeTableView fx:id="table" showRoot="false" columnFilterEnabled="true" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.locking.workflow.table.LockingWorkflowHistoryTableController">
+	<columns>
+		<TreeTableColumn fx:id="materialStatusColumn" prefWidth="60.0" text="MaterialStatus" id="materialStatus">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="materialStatus" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="160.0" text="Arbeitsgang" id="workStepId">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="workStepId" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="150.0" text="Kunde" id="customerName">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="customerName" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn fx:id="ownerColumn" prefWidth="40.0" text="Bearbeiter" id="owner">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="owner" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="40.0" text="Sparte" id="cbuCode">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="cbuCode" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="40.0" text="an" id="nextCostCenter">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="nextCostCenter" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="70.0" text="Programm" id="scheduleNbr">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="scheduleNbr" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="80.0" text="Sperrdatum" id="lockDate">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="lockDate" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="65.0" text="Legierung" id="alloy">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="alloy" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="45.0" text="Zustand" id="temper">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="temper" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="45.0" text="Qualität" id="qualityCode">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="qualityCode" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="80.0" text="Ist-Dicke" id="gaugeOut">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="gaugeOut" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%.3f" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="80.0" text="Ist-Breite" id="widthOut">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="widthOut" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%.2f" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="80.0" text="Ist-Länge" id="lengthOut">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="lengthOut" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%.2f" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="50.0" text="Wickelhöhe" id="buildup">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="buildup" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%.0f" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="45.0" text="Innendurchmesser" id="exitArbor">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="exitArbor" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%d" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="45.0" text="Spule" id="spool">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="spool" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="85.0" text="Erläuterung(Sperrcode)" id="scrapCodeDescription">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="scrapCodeDescription" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="200.0" text="Sperrtext" id="reason">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="reason" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="60.0" text="Gewicht" id="weight">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="weight" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%d" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Soll-Dicke" id="outputGauge">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="outputGauge" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%.3f" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Soll-Breite" id="outputWidth">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="outputWidth" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%.2f" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Soll-Länge" id="outputLength">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="outputLength" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%.2f" />
+			</cellFactory>
+		</TreeTableColumn>
+			<TreeTableColumn prefWidth="70.0" text="Anlage" id="kst">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="kst" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="WH-Min" id="buildupMin">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="buildupMin" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%d" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="WH-Max" id="buildupMax">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="buildupMax" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%d" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Pack-Gewicht" id="pdWeight">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="pdWeight" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%d" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Sperrcode" id="materialLockType">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="materialLockType" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Fehlerort" id="materialLockLocation">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="materialLockLocation" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="200.0" text="Erläuterung(Sperrcode)" id="scrapCodeDescription2">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="scrapCodeDescription" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="200.0" text="Erläuterung(Fehlerort)" id="scrapAreaCodeDescription">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="scrapAreaCodeDescription" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="120.0" text="Gesperrt duch" id="userId">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="userId" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="150.0" text="Kunden-Auftragsnr." id="customerOrderNr">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="customerOrderNr" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="270.0" text="Materialkurztext" id="orderDescription">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="orderDescription" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Bestell-Dicke" id="finishGauge">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="finishGauge" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%.3f" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Bestell-Breite" id="orderedWidth">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="orderedWidth" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%.2f" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Materialnr." id="materialNo">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="materialNo" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Freigabedatum" id="freeDate">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="FreeDate" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="150.0" text="Gußcharge" id="castingId">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="castingId" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Charge" id="castSampleNbr">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="castSampleNbr" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="80.0" text="Querteilung" id="dropId">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="dropId" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="80.0" text="Längsteilung" id="cutId">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="cutId" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="80.0" text="Palette" id="paletteId">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="paletteId" />
+			</cellValueFactory>
+		</TreeTableColumn>
+<!-- 		<TreeTableColumn prefWidth="100.0" text="Material-Status" id="materialStatus">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="materialStatus" />
+			</cellValueFactory>
+		</TreeTableColumn>
+ -->		<TreeTableColumn prefWidth="100.0" text="Prod-Start" id="prodStartTs">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="prodStartTs" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Prod-End" id="prodEndTs">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="prodEndTs" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="AV-Start" id="avStartTs">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="avStartTs" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="AV-End" id="avEndTs">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="avEndTs" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="TCS-Start" id="tcsStartTs">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="tcsStartTs" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="TCS-End" id="tcsEndTs">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="tcsEndTs" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<!-- 
+		<TreeTableColumn prefWidth="200.0" text="Maßnahme" id="lockComment">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="lockComment" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		 -->
+		<TreeTableColumn prefWidth="100.0" text="Op.Meldung" id="opMessage">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="opMessage" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="200.0" text="Programm-Reihenfolge" id="scheduledOrder">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="scheduledOrder" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="150.0" text="Arbeitsgang-Text" id="operationText">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="operationText" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="150.0" text="Verkäufer" id="kdServiceName">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="kdServiceName" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="150.0" text="Verkäufer-Telefon" id="kdServiceTel">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="kdServiceTel" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="150.0" text="Verursacher-Kst." id="code">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="code" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Verursacher" id="ocDescription">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="ocDescription" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Soll-Gewicht" id="weightOut">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="weightOut" />
+			</cellValueFactory>
+			<cellFactory>
+				<TreeTableNumberCellFactory numberFormat="\%d" />
+			</cellFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="200.0" text="Kundenmaterialnummer" id="partNrCustomer">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="partNrCustomer" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="150.0" text="Bestellnummer" id="purchaseOrderNr">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="purchaseOrderNr" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="100.0" text="Lieferwoche" id="delivery">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="delivery" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="200.0" text="ProdOrderNo" id="prodOrderNo">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="prodOrderNo" />
+			</cellValueFactory>
+		</TreeTableColumn>
+	</columns>
+</ServerTreeTableView>

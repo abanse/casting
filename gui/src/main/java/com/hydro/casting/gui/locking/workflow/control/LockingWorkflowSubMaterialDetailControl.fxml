@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.172" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.hydro.casting.gui.locking.workflow.control.LockingWorkflowSubMaterialDetailControlController">
+	<columnConstraints>
+		<ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+		<ColumnConstraints hgrow="ALWAYS" />
+		<ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+		<ColumnConstraints hgrow="ALWAYS" />
+		<ColumnConstraints halignment="RIGHT" hgrow="NEVER" />
+		<ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+		<ColumnConstraints hgrow="ALWAYS" />
+		<ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+		<ColumnConstraints hgrow="ALWAYS" prefWidth="50.0" />
+		<ColumnConstraints hgrow="ALWAYS" />
+		<ColumnConstraints hgrow="NEVER" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints />
+		<RowConstraints />
+		<RowConstraints />
+	</rowConstraints>
+	<children>
+		<Label text="Sperrdatum" />
+		<Label text="Sperrtext" GridPane.rowIndex="2" />
+		<Label text="Fehlerort" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+		<Label text="Verursacher" GridPane.rowIndex="1" />
+		<LocalDateTimeTextField fx:id="lockDate" editable="false" maxWidth="Infinity" pattern="dd.MM.yy HH:mm:ss" GridPane.columnIndex="1" />
+		<Label fx:id="freeDateLabel" text="Freigabedatum" GridPane.columnIndex="2" />
+		<LocalDateTimeTextField fx:id="freeDate" editable="false" maxWidth="Infinity" pattern="dd.MM.yy HH:mm:ss" GridPane.columnIndex="3" />
+		<Label text="Sperrcode" GridPane.columnIndex="7" />
+		<StringTextField fx:id="defectTypeLoc" editable="false" maxWidth="Infinity" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+		<BorderPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+			<center>
+				<StringTextField fx:id="ocDescription" editable="false" maxWidth="Infinity">
+					<BorderPane.margin>
+						<Insets right="5.0" />
+					</BorderPane.margin>
+				</StringTextField>
+			</center>
+			<right>
+				<TaskButton fx:id="changeCouser" onAction="#changeCouser" >
+					<graphic>
+						<ImageView fitHeight="18.0" fitWidth="18.0" smooth="true">
+							<image>
+								<Image url="@/com/hydro/core/gui/images/edit.png" />
+							</image>
+						</ImageView>
+					</graphic>
+				</TaskButton>
+			</right>
+		</BorderPane>
+		<Label text="Gewicht" fx:id="weightOutLabel" GridPane.columnIndex="5" GridPane.halignment="RIGHT" />
+<!--		<Label text="Gewicht" fx:id="pdWeightLabel" GridPane.columnIndex="5" GridPane.rowIndex="1" GridPane.halignment="RIGHT" />-->
+		<Label text="Gesperrt durch" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+		<StringTextField fx:id="userId" editable="false" maxWidth="Infinity" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+		<StringTextField fx:id="shift" editable="false" prefWidth="24" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+		<DoubleTextField fx:id="weightOut" editable="false" maxWidth="Infinity" pattern="0 kg" GridPane.columnIndex="6" />
+<!--		<IntegerTextField fx:id="pdWeight" editable="false" maxWidth="Infinity" pattern="0 kg" GridPane.rowIndex="1" GridPane.columnIndex="6" />-->
+		<TextArea fx:id="defectTypeRea" editable="false" focusTraversable="false" maxWidth="Infinity" minWidth="26.0" prefHeight="26.0" GridPane.columnIndex="1" GridPane.columnSpan="2147483647"
+			GridPane.rowIndex="2" />
+		<StringTextField fx:id="defectTypeCat" editable="false" maxWidth="Infinity" GridPane.columnIndex="8" />
+<!--		<StringTextField fx:id="kst" GridPane.rowIndex="3" />-->
+		<StringTextField fx:id="scrapCodeDescription" editable="false" maxWidth="Infinity" minWidth="300" GridPane.columnIndex="9" />
+		<TaskButton fx:id="changeScrapCode" onAction="#changeScrapCode" GridPane.columnIndex="10">
+			<graphic>
+				<ImageView fitHeight="18.0" fitWidth="18.0" smooth="true">
+					<image>
+						<Image url="@/com/hydro/core/gui/images/edit.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</TaskButton>
+		<StringTextField fx:id="scrapAreaCodeDescription" editable="false" maxWidth="Infinity" minWidth="300" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+		<TaskButton fx:id="changeScrapAreaCodeDescription" onAction="#changeScrapAreaCodeDescription" GridPane.columnIndex="10" GridPane.rowIndex="1">
+			<graphic>
+				<ImageView fitHeight="18.0" fitWidth="18.0" smooth="true">
+					<image>
+						<Image url="@/com/hydro/core/gui/images/edit.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</TaskButton>
+	</children>
+	<padding>
+		<Insets bottom="5.0" left="0.0" right="0.0" top="5.0" />
+	</padding>
+</GridPane>

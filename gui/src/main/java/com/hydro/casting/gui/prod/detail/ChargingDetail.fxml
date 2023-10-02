@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.StackPane?>
+<StackPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.prod.detail.ChargingDetailController">
+    <children>
+        <TabPane fx:id="details">
+            <tabs>
+                <Tab text="Ofenbefüllungen" closable="false">
+                </Tab>
+                <Tab text="Entwicklung Zielanalyse" closable="false">
+                </Tab>
+            </tabs>
+        </TabPane>
+        <!--
+        <Label fx:id="tabTitle" StackPane.alignment="TOP_RIGHT">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+        </Label>
+        -->
+    </children>
+</StackPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.StackPane?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.hydro.casting.gui.melting.detail.MelterDetailController"
+           prefHeight="400.0" prefWidth="600.0">
+    <TabPane fx:id="details">
+        <Tab text="Chargiermenge" closable="false">
+            <fx:include fx:id="chargingAmountAV" source="../../prod/control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Schachtfüllstand" closable="false">
+            <fx:include fx:id="shaftFillLevelAV" source="../../prod/control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Geschw. Metallpumpe 1" closable="false">
+            <fx:include fx:id="metalPump1SpeedAV" source="../../prod/control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Geschw. Metallpumpe 2" closable="false">
+            <fx:include fx:id="metalPump2SpeedAV" source="../../prod/control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Metallstand im Ofen" closable="false">
+            <fx:include fx:id="metalLevelInOvenAV" source="../../prod/control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Schachtgewicht" closable="false">
+            <fx:include fx:id="shaftWeightAV" source="../../prod/control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Schachtdeckel offen" closable="false">
+            <fx:include fx:id="shaftOpenAV" source="../../prod/control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Badtemperatur" closable="false">
+            <fx:include fx:id="bathTempAV" source="../../prod/control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Tiegelgewicht" closable="false">
+            <fx:include fx:id="crucibleWeightAV" source="../../prod/control/ActualValuesDetail.fxml"/>
+        </Tab>
+        <Tab text="Geschw. Ausförderpumpe" closable="false">
+            <fx:include fx:id="pouringPumpSpeedAV" source="../../prod/control/ActualValuesDetail.fxml"/>
+        </Tab>
+    </TabPane>
+</StackPane>

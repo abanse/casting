@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
+<?import com.hydro.core.gui.comp.SearchBox?>
+<?import com.hydro.core.gui.comp.TaskButton?>
+<BorderPane fx:id="mainPane" xmlns="http://javafx.com/javafx/8.0.111"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hydro.casting.gui.planning.view.content.PlanningDemandController">
+    <top>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints prefWidth="100"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints/>
+            </rowConstraints>
+            <children>
+                <ToolBar prefHeight="42.0" prefWidth="200.0">
+                    <items>
+                        <SearchBox fx:id="searchBox" prefWidth="200" promptText="Filtern nach ?"/>
+                        <Separator/>
+                        <GridPane>
+                            <columnConstraints>
+                                <ColumnConstraints fillWidth="true" halignment="CENTER"/>
+                                <ColumnConstraints prefWidth="30" fillWidth="true" halignment="CENTER"/>
+                                <ColumnConstraints prefWidth="30" fillWidth="true" halignment="CENTER"/>
+                                <ColumnConstraints/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints prefHeight="20"/>
+                                <RowConstraints prefHeight="10"/>
+                            </rowConstraints>
+                            <children>
+                                <Label text="Verfügbar" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.rowSpan="2"/>
+                                <CheckBox fx:id="free" GridPane.columnIndex="1" GridPane.rowIndex="0" style="-fx-label-padding: 0;">
+                                    <tooltip>
+                                        <Tooltip text="frei verfügbar"/>
+                                    </tooltip>
+                                </CheckBox>
+                                <CheckBox fx:id="planned" GridPane.columnIndex="2" GridPane.rowIndex="0" style="-fx-label-padding: 0;">
+                                    <tooltip>
+                                        <Tooltip text="geplant verfügbar"/>
+                                    </tooltip>
+                                </CheckBox>
+                                <Label text="frei" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <tooltip>
+                                        <Tooltip text="frei verfügbar"/>
+                                    </tooltip>
+                                    <font>
+                                        <Font size="10"/>
+                                    </font>
+                                </Label>
+                                <Label text="gepl." GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <tooltip>
+                                        <Tooltip text="geplant verfügbar"/>
+                                    </tooltip>
+                                    <font>
+                                        <Font size="10"/>
+                                    </font>
+                                </Label>
+                                <CheckBox fx:id="all" GridPane.columnIndex="3" GridPane.rowIndex="0" GridPane.rowSpan="2" style="-fx-label-padding: 0;">
+                                    <tooltip>
+                                        <Tooltip text="verfügbare"/>
+                                    </tooltip>
+                                </CheckBox>
+                            </children>
+                        </GridPane>
+                        <Separator/>
+                        <Label text="Legierung"/>
+                        <CustomTextField fx:id="alloy" prefWidth="70" promptText="*"/>
+                        <Separator/>
+                        <Label text="Breite"/>
+                        <CustomTextField fx:id="width" prefWidth="70" promptText="*"/>
+                        <Separator/>
+                        <Label text="Länge"/>
+                        <CustomTextField fx:id="length" prefWidth="70" promptText="*"/>
+                    </items>
+                </ToolBar>
+                <ToolBar prefHeight="42.0" GridPane.columnIndex="1"/>
+                <HBox fx:id="summaryDemand" alignment="CENTER" spacing="2.0"
+                      GridPane.columnIndex="1"/>
+                <HBox fx:id="summaryDemandMaterialType" alignment="CENTER" spacing="2.0" visible="false"
+                      GridPane.columnIndex="1"/>
+            </children>
+        </GridPane>
+    </top>
+    <right>
+        <VBox fx:id="functionBox" spacing="5.0">
+            <children>
+                <TaskButton fx:id="add" maxWidth="Infinity" functionKey="F1"
+                            onAction="#add">
+                    <tooltip>
+                        <Tooltip text="Eintrag einfügen (selektierte Position)"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="22" fitWidth="22"
+                                   preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/casting/gui/images/insertPos.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+                <TaskButton fx:id="addN" maxWidth="Infinity" functionKey="F1" functionKeyWithShift="true"
+                            onAction="#addN">
+                    <tooltip>
+                        <Tooltip text="Mehrere Einträge einfügen (selektierte Position)"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="22" fitWidth="22"
+                                   preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/casting/gui/images/insertPosN.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+                <TaskButton fx:id="append" maxWidth="Infinity" functionKey="F2"
+                            onAction="#append">
+                    <tooltip>
+                        <Tooltip text="Eintrag ans Ende anfügen"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="22" fitWidth="22"
+                                   preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/casting/gui/images/append.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+                <TaskButton fx:id="appendN" maxWidth="Infinity" functionKey="F2" functionKeyWithShift="true"
+                            onAction="#appendN">
+                    <tooltip>
+                        <Tooltip text="Mehrere Einträge ans Ende anfügen"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="22" fitWidth="22"
+                                   preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/casting/gui/images/appendN.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+                <Separator maxWidth="Infinity"/>
+                <TaskButton fx:id="targetSelection" maxWidth="Infinity" functionKey="F3" onAction="#targetSelection">
+                    <tooltip>
+                        <Tooltip text="Selektiere die selektierten Maschinenbelgungseinträge"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="22" fitWidth="22"
+                                   preserveRatio="true" smooth="true">
+                            <image>
+                                <Image url="@/com/hydro/casting/gui/images/target.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+        </VBox>
+    </right>
+    <center>
+        <TabPane fx:id="tableTapPane" side="LEFT" >
+            <tabs>
+                <Tab text="Kundenaufträge" closable="false">
+                    <content>
+                        <fx:include fx:id="tableDemand"
+                                    source="../../table/CasterDemandTable.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Artikel" closable="false">
+                    <content>
+                        <fx:include fx:id="tableMaterialType"
+                                    source="../../table/CasterDemandMaterialTypeTable.fxml" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

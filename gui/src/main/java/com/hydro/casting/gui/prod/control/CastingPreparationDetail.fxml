@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.hydro.casting.gui.prod.control.CastingPreparationDetailController"
+            prefHeight="400.0" prefWidth="600.0">
+    <center>
+        <ScrollPane fitToWidth="true">
+            <VBox spacing="5.0">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                </padding>
+                <TextFlow maxWidth="1.7976931348623157E308" textAlignment="CENTER">
+                    <Text text="Anlage ">
+                        <font>
+                            <Font size="18.0"/>
+                        </font>
+                    </Text>
+                    <Text fx:id="caster">
+                        <font>
+                            <Font size="18.0"/>
+                        </font>
+                    </Text>
+                </TextFlow>
+                <GridPane hgap="5" style="-fx-border-color: lightgray;">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <Label text="Ofen:"/>
+                    <Label fx:id="furnace" GridPane.columnIndex="1">
+                        <font>
+                            <Font size="18.0"/>
+                        </font>
+                    </Label>
+                    <Label text="Charge:" GridPane.columnIndex="2"/>
+                    <Label text="Legierung:" GridPane.columnIndex="4"/>
+                    <Label fx:id="charge" GridPane.columnIndex="3">
+                        <font>
+                            <Font size="18.0"/>
+                        </font>
+                    </Label>
+                    <Label fx:id="alloy" GridPane.columnIndex="5">
+                        <font>
+                            <Font size="18.0"/>
+                        </font>
+                    </Label>
+                </GridPane>
+                <Label fx:id="ruleHeader" text="Angussvorbereitung (*)">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <VBox fx:id="rulesBox" spacing="5.0"/>
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>

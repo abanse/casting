@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.cell.*?>
+<?import com.hydro.core.gui.comp.MaintenanceTableView?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<MaintenanceTableView xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.planning.table.MeltingKTMTableController">
+    <columns>
+        <TableColumn prefWidth="100.0" text="Gießanlage" id="caster" userData="disableSimpleEdit" styleClass="kt-column">
+            <cellValueFactory>
+                <PropertyValueFactory property="caster"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Ofen" id="furnace" userData="disableSimpleEdit" styleClass="kt-column">
+            <cellValueFactory>
+                <PropertyValueFactory property="furnace"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Legierung" id="alloy" userData="disableSimpleEdit" styleClass="kt-column">
+            <cellValueFactory>
+                <PropertyValueFactory property="alloy"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceStringCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Priorität" id="prio" userData="disableSimpleEdit" styleClass="kt-column">
+            <cellValueFactory>
+                <PropertyValueFactory property="prio"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Metalanteil(%)" id="percentageSolidMetal" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="percentageSolidMetal"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceNumberCellFactory pattern="0.0"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Schmelzleistung(to/h)" id="meltingCapacity" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="meltingCapacity"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceNumberCellFactory pattern="0.00"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Handlingzeit(h)" id="handlingTime" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="handlingTime"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceNumberCellFactory pattern="0.0"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="S1 Einsatz(%)" id="percentageS1" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="percentageS1"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceNumberCellFactory pattern="0.0"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="S2 Einsatz(%)" id="percentageS2" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="percentageS2"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceNumberCellFactory pattern="0.0"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="S3 Einsatz(%)" id="percentageS3" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="percentageS3"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceNumberCellFactory pattern="0.0"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Elektrolyse Einsatz(%)" id="percentageEL" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="percentageEL"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceNumberCellFactory pattern="0.0"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Real Alloy Einsatz(%)" id="percentageRA" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="percentageRA"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceNumberCellFactory pattern="0.0"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Abstehzeit(h)" id="standingTime" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="standingTime"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceNumberCellFactory pattern="0.0"/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Ofenreinigung Überwachungszeit(min)" id="preparingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="preparingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Chargieren Überwachungszeit(min)" id="chargingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="chargingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Gattieren Überwachungszeit(min)" id="treatingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="treatingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Abkrätzen Überwachungszeit(min)" id="skimmingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="skimmingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Abstehen Überwachungszeit(min)" id="restingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="restingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Freigabe Gießen Überwachungszeit(min)" id="readyToCastTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="readyToCastTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+        <TableColumn prefWidth="100.0" text="Gießen Überwachungszeit(min)" id="castingTM" userData="disableSimpleEdit">
+            <cellValueFactory>
+                <PropertyValueFactory property="castingTM"/>
+            </cellValueFactory>
+            <cellFactory>
+                <MaintenanceIntegerCellFactory/>
+            </cellFactory>
+        </TableColumn>
+    </columns>
+</MaintenanceTableView>

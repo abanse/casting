@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.downtime.control.DowntimeChart?>
+<?import com.hydro.casting.gui.prod.control.*?>
+<?import com.hydro.casting.gui.prod.table.ChargingAnalysisTable?>
+<?import com.hydro.core.gui.comp.gauge.DigitalCounterView?>
+<?import com.hydro.core.gui.comp.gauge.KPIGaugeView?>
+<?import com.hydro.core.gui.comp.*?>
+<?import com.hydro.core.gui.task.OpenDetailViewTask?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<?import com.hydro.casting.gui.prod.task.StartCastingTask?>
+<?import com.hydro.casting.gui.prod.task.EndCastingTask?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.hydro.casting.gui.prod.view.content.CasterController"
+            prefHeight="400.0" prefWidth="600.0">
+    <top>
+        <GridPane hgap="5.0">
+            <columnConstraints>
+                <ColumnConstraints prefWidth="65"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints prefWidth="0"/>
+            </columnConstraints>
+            <!--
+            <ToolBar GridPane.columnSpan="5">
+                <TaskButton prefWidth="50" functionKey="F3"
+                            fx:id="showDetails" onAction="#showDetails">
+                    <tooltip>
+                        <Tooltip text="Details ein-/ausblenden"/>
+                    </tooltip>
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="21.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <Image url="@/com/hydro/core/gui/images/collapse.png"/>
+                        </ImageView>
+                    </graphic>
+                </TaskButton>
+                <Separator orientation="VERTICAL"/>
+            </ToolBar>
+            <TaskButton fx:id="furnaceLeftTaskButton" text="Ofen ?1" onAction="#openFurnaceLeft" GridPane.columnIndex="1" maxWidth="Infinity">
+                <graphic>
+                    <Pane prefHeight="21.0"/>
+                </graphic>
+            </TaskButton>
+            <EquipmentStatus fx:id="furnaceLeftStatus" GridPane.columnIndex="1" GridPane.halignment="CENTER" translateX="-36" GridPane.valignment="CENTER" GridPane.fillWidth="false"/>
+            <ProgressCanvas fx:id="furnaceLeftProgress" GridPane.columnIndex="1" progressHeight="4.0">
+                <insets>
+                    <Insets bottom="4.0" right="8.0" left="8.0"/>
+                </insets>
+            </ProgressCanvas>
+            <TaskButton fx:id="casterTaskButton" text="Gießanlage ?0" onAction="#openCaster" GridPane.columnIndex="2" maxWidth="Infinity">
+                <graphic>
+                    <Pane prefHeight="21.0"/>
+                </graphic>
+            </TaskButton>
+            <EquipmentStatus fx:id="casterStatus" GridPane.columnIndex="2" GridPane.halignment="CENTER" translateX="-55" GridPane.valignment="CENTER" GridPane.fillWidth="false"/>
+            <ProgressCanvas fx:id="casterProgress" GridPane.columnIndex="2" progressHeight="4.0">
+                <insets>
+                    <Insets bottom="4.0" right="8.0" left="8.0"/>
+                </insets>
+            </ProgressCanvas>
+            <TaskButton fx:id="furnaceRightTaskButton" text="Ofen ?2" onAction="#openFurnaceRight" GridPane.columnIndex="3" maxWidth="Infinity">
+                <graphic>
+                    <Pane prefHeight="21.0"/>
+                </graphic>
+            </TaskButton>
+            <EquipmentStatus fx:id="furnaceRightStatus" GridPane.columnIndex="3" GridPane.halignment="CENTER" translateX="-36" GridPane.valignment="CENTER" GridPane.fillWidth="false"/>
+            <ProgressCanvas fx:id="furnaceRightProgress" GridPane.columnIndex="3" progressHeight="4.0">
+                <insets>
+                    <Insets bottom="4.0" right="8.0" left="8.0"/>
+                </insets>
+            </ProgressCanvas>
+            -->
+        </GridPane>
+    </top>
+    <center>
+        <MasterDetailPane fx:id="detailPane" detailSide="BOTTOM" dividerPosition="0.5" showDetailNode="false">
+            <masterNode>
+                <MasterDetailPane detailSide="RIGHT" dividerPosition="0.85" showDetailNode="true">
+                    <masterNode>
+                        <ScrollPane fitToWidth="true" fitToHeight="true">
+                            <GridPane fx:id="centerPane" hgap="5">
+                                <columnConstraints>
+                                    <ColumnConstraints prefWidth="50" halignment="CENTER"/>
+                                    <ColumnConstraints hgrow="ALWAYS" halignment="CENTER"/>
+                                    <ColumnConstraints prefWidth="50" halignment="CENTER"/>
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints/>
+                                    <RowConstraints/>
+                                    <RowConstraints/>
+                                    <RowConstraints vgrow="ALWAYS"/>
+                                    <RowConstraints/>
+                                    <RowConstraints/>
+                                </rowConstraints>
+                                <TitledSeparator text="Charge" GridPane.rowIndex="0" GridPane.columnSpan="3"/>
+                                <TaskButton prefWidth="40" prefHeight="40" maxWidth="40"
+                                            fx:id="showDetails" onAction="#showDetails" GridPane.rowIndex="1" >
+                                    <tooltip>
+                                        <Tooltip text="Details ein-/ausblenden"/>
+                                    </tooltip>
+                                    <graphic>
+                                        <ImageView fitHeight="21.0" fitWidth="21.0"
+                                                   pickOnBounds="true" preserveRatio="true">
+                                            <Image url="@/com/hydro/core/gui/images/collapse.png"/>
+                                        </ImageView>
+                                    </graphic>
+                                </TaskButton>
+                                <fx:include fx:id="casterInstruction" source="../../control/CasterInstructionControl.fxml" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                                <TitledSeparator text="Analysen" GridPane.rowIndex="2" GridPane.columnSpan="3"/>
+                                <ChargingAnalysisTable fx:id="chargingAnalysisTable" withTimestampInName="true" prefHeight="200" GridPane.rowIndex="3" GridPane.columnSpan="3"/>
+                                <TitledSeparator text="Positionsbelegung" GridPane.rowIndex="4" GridPane.columnSpan="3"/>
+                            </GridPane>
+                        </ScrollPane>
+                    </masterNode>
+                    <detailNode>
+                        <GridPane hgap="5.0">
+                            <columnConstraints>
+                                <ColumnConstraints fillWidth="true" hgrow="ALWAYS"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints vgrow="ALWAYS"/>
+                                <!--
+                                <RowConstraints/>
+                                <RowConstraints vgrow="NEVER"/>
+                                -->
+                            </rowConstraints>
+                            <Accordion expandedPane="$standard">
+                                <panes>
+                                    <TitledPane fx:id="standard" text="Standardablauf">
+                                        <ScrollPane fitToWidth="true">
+                                            <VBox spacing="5.0">
+                                                <padding>
+                                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                                </padding>
+                                                <TaskButton functionKey="F5" maxWidth="Infinity" text="Angussvorbereitung">
+                                                    <task>
+                                                        <OpenDetailViewTask fx:id="openCastingPreparationTask" viewIdToOpen="casting.prod.detail.casting-preparation.view"/>
+                                                    </task>
+                                                </TaskButton>
+                                                <!--
+                                                <TaskButton fx:id="startCasting" functionKey="F7" maxWidth="Infinity" text="Start Giessen">
+                                                    <task>
+                                                        <StartCastingTask fx:id="startCastingTask"/>
+                                                    </task>
+                                                </TaskButton>
+                                                <TaskButton fx:id="cancelCastingButton" functionKey="F8" maxWidth="Infinity" text="Gußabbruch">
+                                                </TaskButton>
+                                                <TaskButton functionKey="F9" maxWidth="Infinity" text="Ende Gießen">
+                                                    <task>
+                                                        <EndCastingTask fx:id="endCastingTask"/>
+                                                    </task>
+                                                </TaskButton>
+                                                -->
+                                                <TaskButton functionKey="F10" maxWidth="Infinity" text="Sichtprüfung">
+                                                    <task>
+                                                        <OpenDetailViewTask fx:id="openVisualInspectionTask" viewIdToOpen="casting.prod.detail.visual-inspection.view"/>
+                                                    </task>
+                                                </TaskButton>
+                                                <!--
+                                                <TaskButton functionKey="F11" maxWidth="Infinity" text="Rückmelden">
+                                                    <task>
+                                                        <OpenDetailViewTask fx:id="openUnloadCasterTask" viewIdToOpen="casting.prod.detail.unload-caster.view" securityId="casting.prod.action.unload-caster"/>
+                                                    </task>
+                                                </TaskButton>
+                                                -->
+                                            </VBox>
+                                        </ScrollPane>
+                                    </TitledPane>
+                                    <TitledPane text="Sonderfunktionen">
+                                        <VBox spacing="5.0">
+                                            <TaskButton maxWidth="Infinity" text="Maschinenbelegung">
+                                                <task>
+                                                    <OpenDetailViewTask fx:id="openMabeInfoTask" viewIdToOpen="casting.mabe.detail.mabe-info.view"/>
+                                                </task>
+                                            </TaskButton>
+                                            <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                            </padding>
+                                        </VBox>
+                                    </TitledPane>
+                                </panes>
+                            </Accordion>
+                            <!--
+                            <Label text="Zeitüberschreitung" alignment="CENTER" GridPane.rowIndex="1" maxWidth="Infinity"/>
+                            <TimeManagementListView fx:id="timeManagementListView" GridPane.rowIndex="2" prefHeight="105"/>
+                            -->
+                        </GridPane>
+                    </detailNode>
+                </MasterDetailPane>
+            </masterNode>
+            <detailNode>
+                <fx:include fx:id="details" source="../../detail/CasterDetail.fxml"/>
+            </detailNode>
+        </MasterDetailPane>
+    </center>
+    <bottom>
+        <GridPane hgap="5.0" vgap="5.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS"/>
+                <ColumnConstraints halignment="CENTER" hgrow="NEVER"/>
+                <ColumnConstraints halignment="CENTER" hgrow="NEVER"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="60" maxHeight="60" prefHeight="60" vgrow="ALWAYS"/>
+            </rowConstraints>
+            <padding>
+                <Insets left="5.0" right="5.0"/>
+            </padding>
+            <DowntimeChart fx:id="downtimeChart" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <Button onAction="#createDowntime" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                <graphic>
+                    <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@/com/hydro/core/gui/images/add.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <DowntimeRequestButton onAction="#resolveDowntimes" fx:id="downtimeRequestButton" GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.fillHeight="true" GridPane.fillWidth="true"/>
+        </GridPane>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,14 @@
+package com.hydro.casting.server.contract.dto;
+
+public class VisualInspectionDTO extends InspectionDTO
+{
+    private static final long serialVersionUID = 1L;
+
+    public final static String CATEGORY_APK = "visualInspection";
+
+    @Override
+    public long getId()
+    {
+        return CATEGORY_APK.hashCode();
+    }
+}

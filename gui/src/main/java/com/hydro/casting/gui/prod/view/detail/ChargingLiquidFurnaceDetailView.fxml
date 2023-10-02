@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.TaskButton?>
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import com.hydro.core.gui.comp.TitledSeparator?>
+<?import com.hydro.core.gui.comp.numpad.NumPad?>
+<?import com.hydro.core.gui.comp.IntegerTextField?>
+<?import javafx.scene.text.Font?>
+<?import com.hydro.casting.gui.prod.control.MaterialBrowser?>
+<ViewParent prefHeight="500.0" prefWidth="1097.0" title="Chargieren" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.hydro.casting.gui.prod.view.detail.ChargingLiquidFurnaceDetailViewController">
+    <center>
+        <MasterDetailPane detailSide="RIGHT" dividerPosition="0.85" showDetailNode="true" BorderPane.alignment="CENTER">
+            <masterNode>
+                    <GridPane hgap="5" vgap="5">
+                        <columnConstraints>
+                            <ColumnConstraints hgrow="ALWAYS"/>
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints/>
+                            <RowConstraints vgrow="ALWAYS" fillHeight="true"/>
+                        </rowConstraints>
+                        <TitledSeparator text="Tiegel"/>
+                        <MaterialBrowser fx:id="materialBrowser" GridPane.rowIndex="1"/>
+                    </GridPane>
+            </masterNode>
+            <detailNode>
+                <VBox prefWidth="303.0" spacing="5.0">
+                    <children>
+                        <TaskButton fx:id="chargingButton" onAction="#charging" maxWidth="Infinity" text="Chargieren">
+                            <!--                            <task>-->
+                            <!--                                <ActivateChargeTask fx:id="activateChargeTask" selectionProvider="$table"/>-->
+                            <!--                            </task>-->
+                        </TaskButton>
+                        <Button maxWidth="Infinity" onAction="#cancel" text="Abbrechen"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </VBox>
+            </detailNode>
+        </MasterDetailPane>
+    </center>
+</ViewParent>

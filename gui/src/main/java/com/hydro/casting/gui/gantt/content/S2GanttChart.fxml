@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.gantt.ProcessStepsGanttChart?>
+<?import com.hydro.core.gui.comp.DateTimePicker?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.hydro.casting.gui.gantt.content.S2GanttChartController"
+            prefHeight="400.0" prefWidth="600.0">
+    <top>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="NEVER"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints/>
+            </rowConstraints>
+            <ToolBar prefHeight="42.0">
+                <ToggleButton fx:id="last24h" text="letzten 24h" onAction="#reload"/>
+                <ToggleButton fx:id="yesterday" text="gestern" onAction="#reload"/>
+                <ToggleButton fx:id="timeRange" text="Zeitraum" onAction="#reload"/>
+                <Label fx:id="fromLabel" text="von"/>
+                <DateTimePicker fx:id="from" orientation="HORIZONTAL"/>
+                <Label fx:id="toLabel" text="bis"/>
+                <DateTimePicker fx:id="to" orientation="HORIZONTAL"/>
+            </ToolBar>
+            <ToolBar prefHeight="42.0" prefWidth="60" minWidth="60" GridPane.columnIndex="1">
+                <Button fx:id="reload" onAction="#reload">
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@/com/hydro/core/gui/images/reload.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </ToolBar>
+        </GridPane>
+    </top>
+    <center>
+        <ProcessStepsGanttChart fx:id="processStepsGanttChart"/>
+    </center>
+</BorderPane>

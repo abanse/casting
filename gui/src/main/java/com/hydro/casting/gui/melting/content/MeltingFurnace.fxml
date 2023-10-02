@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.downtime.control.DowntimeChart?>
+<?import com.hydro.casting.gui.melting.task.*?>
+<?import com.hydro.casting.gui.prod.control.DowntimeRequestButton?>
+<?import com.hydro.casting.gui.prod.control.EquipmentStatus?>
+<?import com.hydro.casting.gui.prod.control.ProgressCanvas?>
+<?import com.hydro.casting.gui.prod.control.TimeManagementListView?>
+<?import com.hydro.casting.gui.prod.table.ChargingAnalysisTable?>
+<?import com.hydro.core.gui.comp.*?>
+<?import com.hydro.core.gui.task.OpenDetailViewTask?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.hydro.casting.gui.melting.content.MeltingFurnaceController"
+            prefHeight="400.0" prefWidth="600.0">
+    <center>
+        <MasterDetailPane detailSide="RIGHT" dividerPosition="0.85" showDetailNode="true">
+            <masterNode>
+                <ScrollPane fitToWidth="true" fitToHeight="true">
+                        <GridPane hgap="5">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints/>
+                                <RowConstraints/>
+                                <RowConstraints/>
+                                <RowConstraints/>
+                                <RowConstraints vgrow="ALWAYS"/>
+                            </rowConstraints>
+                            <TitledSeparator text="Charge" GridPane.rowIndex="0"/>
+                            <fx:include fx:id="meltingFurnaceInstructionControl" source="../control/MeltingFurnaceInstructionControl.fxml" GridPane.rowIndex="1"/>
+                            <EquipmentStatus fx:id="currentStep" GridPane.rowIndex="1" GridPane.halignment="CENTER" GridPane.fillWidth="false" translateX="-100" translateY="-3" scaleX="1.5"
+                                             scaleY="1.5"/>
+                            <ProgressCanvas fx:id="currentStepProgress" GridPane.rowIndex="2"/>
+                            <TitledSeparator text="Analysen" GridPane.rowIndex="3"/>
+                            <ChargingAnalysisTable fx:id="chargingAnalysisTable" withTimestampInName="true" prefHeight="200" GridPane.rowIndex="4"/>
+                        </GridPane>
+                </ScrollPane>
+            </masterNode>
+            <detailNode>
+                <GridPane hgap="5.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="ALWAYS"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints vgrow="ALWAYS"/>
+                        <RowConstraints/>
+                        <RowConstraints vgrow="NEVER"/>
+                    </rowConstraints>
+                    <Accordion expandedPane="$standard" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                        <panes>
+                            <TitledPane fx:id="standard" text="Standardablauf">
+                                <ScrollPane fitToWidth="true">
+                                    <VBox spacing="5.0">
+                                        <padding>
+                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                        </padding>
+                                        <TaskButton functionKey="F4" maxWidth="Infinity" text="Neue Charge anlegen">
+                                            <task>
+                                                <CreateNewMeltingChargeTask/>
+                                            </task>
+                                        </TaskButton>
+                                        <TaskButton functionKey="F5" maxWidth="Infinity" text="Charge aktivieren">
+                                            <task>
+                                                <OpenDetailViewTask fx:id="openActivateChargeTask" viewIdToOpen="casting.melting.detail.activate-charge.view"
+                                                                    securityId="casting.melting.action.activate-charge"/>
+                                            </task>
+                                        </TaskButton>
+                                        <TaskButton functionKey="F6" maxWidth="Infinity" text="Ofen chargieren">
+                                            <task>
+                                                <StartChargingTask fx:id="startChargingTask"/>
+                                            </task>
+                                        </TaskButton>
+                                        <TaskButton functionKey="F7" maxWidth="Infinity" text="Schmelzen">
+                                            <task>
+                                                <StartMeltingTask fx:id="startMeltingTask"/>
+                                            </task>
+                                        </TaskButton>
+                                        <TaskButton functionKey="F8" maxWidth="Infinity" text="Abkrätzen">
+                                            <task>
+                                                <StartSkimmingTask fx:id="startSkimmingTask"/>
+                                            </task>
+                                        </TaskButton>
+                                        <TaskButton functionKey="F9" maxWidth="Infinity" text="Gattieren">
+                                            <task>
+                                                <StartTreatingTask fx:id="startTreatingTask"/>
+                                            </task>
+                                        </TaskButton>
+                                        <TaskButton functionKey="F10" maxWidth="Infinity" text="Heizen">
+                                            <task>
+                                                <StartHeatingTask fx:id="startHeatingTask"/>
+                                            </task>
+                                        </TaskButton>
+                                        <TaskButton functionKey="F11" maxWidth="Infinity" text="Abfüllen">
+                                            <task>
+                                                <StartPouringTask fx:id="startPouringTask"/>
+                                            </task>
+                                        </TaskButton>
+                                        <TaskButton functionKey="F12" maxWidth="Infinity" text="Ausbaggern">
+                                            <task>
+                                                <StartDredgingTask fx:id="startDredgingTask"/>
+                                            </task>
+                                        </TaskButton>
+                                        <TaskButton maxWidth="Infinity" text="Charge beenden">
+                                            <task>
+                                                <FinishChargeTask fx:id="finishChargeTask"/>
+                                            </task>
+                                        </TaskButton>
+                                    </VBox>
+                                </ScrollPane>
+                            </TitledPane>
+                            <TitledPane text="Sonderfunktionen">
+                                <VBox spacing="5.0">
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                    </padding>
+                                    <TaskButton maxWidth="Infinity" text="Charge deaktivieren">
+                                        <task>
+                                            <DeactivateChargeTask fx:id="deactivateChargeTask"/>
+                                        </task>
+                                    </TaskButton>
+                                    <TaskButton maxWidth="Infinity" text="Chargenparameter anpassen">
+                                        <task>
+                                            <ConfigureNewMeltingChargeTask fx:id="configureNewMeltingChargeTask"/>
+                                        </task>
+                                    </TaskButton>
+                                </VBox>
+                            </TitledPane>
+                        </panes>
+                    </Accordion>
+                    <Label text="Zeitüberschreitung" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1" maxWidth="Infinity"/>
+                    <TimeManagementListView fx:id="timeManagementListView" GridPane.columnIndex="0" GridPane.rowIndex="2" prefHeight="105"/>
+                </GridPane>
+            </detailNode>
+        </MasterDetailPane>
+    </center>
+    <bottom>
+        <GridPane hgap="5.0" vgap="5.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS"/>
+                <ColumnConstraints hgrow="NEVER"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="60" maxHeight="60" prefHeight="60" vgrow="NEVER"/>
+            </rowConstraints>
+            <padding>
+                <Insets left="5.0" right="5.0"/>
+            </padding>
+            <DowntimeChart fx:id="downtimeChart" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <Button onAction="#createDowntime" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                <graphic>
+                    <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@/com/hydro/core/gui/images/add.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <DowntimeRequestButton onAction="#resolveDowntimes" fx:id="downtimeRequestButton" GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.fillHeight="true" GridPane.fillWidth="true"/>
+        </GridPane>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.*?>
+<?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.MasterDetailPane?>
+<?import com.hydro.casting.gui.control.CostCenterCheckComboBox?>
+<?import com.hydro.casting.gui.locking.workflow.task.LWSendMailTask?>
+<?import com.hydro.casting.gui.locking.workflow.task.LWPrintTask?>
+<?import com.hydro.casting.gui.locking.workflow.task.LWUnlockTask?>
+<?import com.hydro.casting.gui.locking.workflow.task.LWScrapTask?>
+<?import com.hydro.casting.gui.locking.workflow.task.LWMoveToContainerTask?>
+<?import com.hydro.casting.gui.locking.workflow.task.LWAssignProductionTask?>
+<?import com.hydro.casting.gui.locking.workflow.task.LWAssignQSTask?>
+<?import com.hydro.casting.gui.locking.workflow.task.LWAssignAVTask?>
+<?import com.hydro.casting.gui.locking.workflow.task.LWAssignTCSTask?>
+<ViewParent title="Sperrabwicklung (mit Historie)" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hydro.casting.gui.locking.workflow.view.LockingWorkflowHistoryViewController">
+	<top>
+		<GridPane>
+			<columnConstraints>
+				<ColumnConstraints hgrow="ALWAYS" />
+				<ColumnConstraints hgrow="NEVER" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints />
+			</rowConstraints>
+			<children>
+				<ToolBar fx:id="filterToolBar" prefHeight="40.0" prefWidth="200.0">
+					<items>
+						<Button fx:id="expand" mnemonicParsing="false" onAction="#expand" text="">
+							<graphic>
+								<ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true" smooth="true">
+									<image>
+										<Image url="@/com/hydro/core/gui/images/expand.png" />
+									</image>
+								</ImageView>
+							</graphic>
+						</Button>
+						<ComboBox fx:id="filterSelection" />
+						<HBox fx:id="durationFilter" alignment="CENTER" spacing="5.0">
+							<children>
+								<Label text="von" />
+								<DateTimePicker fx:id="from" orientation="HORIZONTAL" />
+								<Label text="bis" />
+								<DateTimePicker fx:id="to" orientation="HORIZONTAL" />
+							</children>
+						</HBox>
+						<HBox fx:id="productionOrderFilter" alignment="CENTER" spacing="5.0">
+							<children>
+								<SearchBox fx:id="productionOrder" promptText="Auftragsnummer eingeben" prefWidth="300" />
+							</children>
+						</HBox>
+						<HBox fx:id="customerNumberFilter" alignment="CENTER" spacing="5.0">
+							<children>
+								<SearchBox fx:id="customerNumber" promptText="Kundenauftrag eingeben" prefWidth="300" />
+							</children>
+						</HBox>
+<!-- 				<OwnerCheckComboBox fx:id="owner" />-->
+						<CostCenterCheckComboBox fx:id="costCenter" />
+					</items>
+				</ToolBar>
+				<ToolBar GridPane.columnIndex="1">
+					<items>
+						<HBox fx:id="summary" alignment="CENTER" spacing="2.0" GridPane.columnIndex="1" />
+						<Button fx:id="reload" onAction="#reload">
+							<graphic>
+								<ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true" smooth="true">
+									<image>
+										<Image url="@/com/hydro/core/gui/images/reload.png" />
+									</image>
+								</ImageView>
+							</graphic>
+						</Button>
+					</items>
+				</ToolBar>
+			</children>
+		</GridPane>
+	</top>
+	<center>
+		<MasterDetailPane fx:id="detailPane" detailSide="BOTTOM" dividerPosition="0.5" BorderPane.alignment="CENTER" showDetailNode="false" animated="false">
+			<masterNode>
+				<MasterDetailPane fx:id="functionPane" detailSide="RIGHT" dividerPosition="0.6" BorderPane.alignment="CENTER" showDetailNode="false" animated="false">
+					<masterNode>
+						<fx:include fx:id="table" source="../table/LockingWorkflowHistoryTable.fxml" />
+					</masterNode>
+					<detailNode>
+						<MasterDetailPane dividerPosition="0.6" detailSide="RIGHT" showDetailNode="true" animated="false">
+							<masterNode>
+								<fx:include fx:id="steps" source="../control/LockingWorkflowStepsControl.fxml" />
+							</masterNode>
+							<detailNode>
+								<BorderPane>
+									<top>
+										<Label fx:id="functionTitle" maxWidth="Infinity" text="Details" alignment="CENTER" />
+									</top>
+									<center>
+										<VBox spacing="5.0">
+											<children>
+												<TaskButton maxWidth="Infinity" text="E-Mail Senden">
+													<task>
+														<LWSendMailTask table="$table" />
+													</task>
+												</TaskButton>
+												<TaskButton maxWidth="Infinity" text="Drucken">
+													<task>
+														<LWPrintTask table="$table" />
+													</task>
+												</TaskButton>
+ 												<TaskButton maxWidth="Infinity" text="Freigeben">
+ 													<task>
+ 														<LWUnlockTask table="$table" />
+ 													</task>
+ 												</TaskButton>
+ 												<TaskButton maxWidth="Infinity" text="Verschrotten">
+ 													<task>
+ 														<LWScrapTask table="$table" />
+ 													</task>
+ 												</TaskButton>
+												<TaskButton maxWidth="Infinity" text="An Container buchen">
+													<task>
+														<LWMoveToContainerTask table="$table" />
+													</task>
+												</TaskButton>
+												<!--<TaskButton maxWidth="Infinity" text="zus. Verschrottungstext">
+													<task>
+														<LWAdditionalScrapTextTask table="$table" />
+													</task>
+												</TaskButton>-->
+ 												<Label maxWidth="Infinity" text="Weiter an" />
+ 												<TaskButton maxWidth="Infinity" text="Produktion">
+ 													<task>
+ 														<LWAssignProductionTask table="$table" />
+ 													</task>
+ 												</TaskButton>
+ 												<TaskButton maxWidth="Infinity" text="QS">
+ 													<task>													
+ 													<LWAssignQSTask table="$table" />
+ 													</task>
+ 												</TaskButton>
+ 												<TaskButton maxWidth="Infinity" text="AV">
+ 													<task>
+ 														<LWAssignAVTask table="$table" />
+ 													</task>
+ 												</TaskButton>
+ 												<TaskButton maxWidth="Infinity" text="TCS">
+ 													<task>
+ 														<LWAssignTCSTask table="$table" />
+ 													</task>
+ 												</TaskButton>
+											</children>
+											<padding>
+												<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+											</padding>
+										</VBox>
+									</center>
+								</BorderPane>
+							</detailNode>
+						</MasterDetailPane>
+					</detailNode>
+				</MasterDetailPane>
+			</masterNode>
+			<detailNode>
+				<StackPane>
+					<children>
+						<TabPane fx:id="details">
+							<tabs>
+								<Tab text="Aktuelle Daten" closable="false">
+									<content>
+										<fx:include fx:id="detail" source="../control/LockingWorkflowDetailControl.fxml" />
+									</content>
+								</Tab>
+							</tabs>
+						</TabPane>
+						<Label fx:id="tabTitle" StackPane.alignment="TOP_RIGHT">
+							<padding>
+								<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+						</Label>
+					</children>
+				</StackPane>
+			</detailNode>
+		</MasterDetailPane>
+	</center>
+</ViewParent>

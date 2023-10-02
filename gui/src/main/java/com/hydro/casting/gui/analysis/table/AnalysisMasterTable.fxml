@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.analysis.table.cell.AnalysisResultCellFactory?>
+<?import com.hydro.core.gui.comp.CacheTreeTableView?>
+<?import com.hydro.core.gui.comp.cell.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<CacheTreeTableView fx:id="masterTable" showRoot="false" cache="casting-planning" cachePath="/analysis"
+                    xmlns="http://javafx.com/javafx/8.0.111"
+                    xmlns:fx="http://javafx.com/fxml/1"
+                    fx:controller="com.hydro.casting.gui.analysis.table.AnalysisMasterTableController">
+    <columns>
+        <TreeTableColumn prefWidth="90.0" text="Name" id="name">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="name"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Probe" id="sampleNumber">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="sampleNumber"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Status" id="status">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="status"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Analyse OK" id="analysisOk">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="analysisOk"/>
+            </cellValueFactory>
+            <cellFactory>
+                <AnalysisResultCellFactory/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Analyse-Nummer" id="analysisNo">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="analysisNo"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Charge" id="charge">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="charge"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Ofen" id="melter">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="melter"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Legierung" id="alloyName">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="alloyName"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Version (Legierung)" id="alloyVersion">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="alloyVersion"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="120.0" text="CMS Voranmeldung" id="originalPreregistrationTime">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="originalPreregistrationTime"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableDateCellFactory/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="120.0" text="LIMS Ankunft Probe" id="scanTime">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="scanTime"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableDateCellFactory/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="120.0" text="LIMS Voranmeldung" id="registrationTime">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="registrationTime"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableDateCellFactory/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="120.0" text="LIMS Fertigstellung" id="approvalTime">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="approvalTime"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableDateCellFactory/>
+            </cellFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="120.0" text="LIMS Verarbeitungsdauer" id="processingTimeLab">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="processingTimeLab"/>
+            </cellValueFactory>
+            <cellFactory>
+                <TreeTableDurationCellFactory/>
+            </cellFactory>
+        </TreeTableColumn>
+    </columns>
+
+</CacheTreeTableView>

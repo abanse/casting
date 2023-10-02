@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane fx:id="mainGrid"
+          hgap="5.0" vgap="5.0" style="-fx-border-color: lightgray;"
+          xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.hydro.casting.gui.prod.control.VisualInspectionControlController"
+          prefHeight="100.0" prefWidth="600.0">
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="10" halignment="LEFT"/>
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="45" halignment="CENTER"/>
+        <ColumnConstraints hgrow="ALWAYS" percentWidth="45" halignment="CENTER"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+    <Label fx:id="description" GridPane.columnSpan="4" GridPane.halignment="LEFT"/>
+    <Label fx:id="result" GridPane.columnSpan="4" GridPane.halignment="RIGHT"/>
+    <Label text="Barren-ID" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Label text="Befund der Sichtprüfung Netze" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label text="Befund der Sichtprüfung Walzbarren nach dem Guß" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+    <Label text="Sichtprüfer / Datum:" GridPane.columnIndex="0" GridPane.rowIndex="12"/>
+    <HBox GridPane.columnIndex="1" GridPane.rowIndex="12">
+        <Label fx:id="inspector_nets" text="-" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Label fx:id="inspection_ts_nets" text="-" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+    </HBox>
+    <HBox GridPane.columnIndex="2" GridPane.rowIndex="12">
+        <Label fx:id="inspector_cast" text="-" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+        <Label fx:id="inspection_ts_cast" text="-" HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+    </HBox>
+</GridPane>
