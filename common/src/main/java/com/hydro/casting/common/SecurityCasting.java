@@ -421,6 +421,10 @@ public interface SecurityCasting
         String VIEW = "casting.analysis.view";
     }
 
+    interface LABEL
+    {
+        String VIEW = "casting.label.view";
+    }
     interface ALLOY
     {
         String VIEW = "casting.alloy.view";
