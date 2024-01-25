@@ -2,6 +2,8 @@ package com.hydro.casting.common;
 
 public interface SecurityCasting
 {
+
+
     interface GANTT
     {
         interface CASTER
