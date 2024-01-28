@@ -42,8 +42,8 @@ public class CastingProductDefinition implements ProductDefinition
         ExplorerContentImpl lims = new ExplorerContentImpl( 2000, "LIMS" );
         lims.addChild( new ExplorerContentImpl( 2100, "Analysen", SecurityCasting.ANALYSIS.VIEW ) );
         lims.addChild( new ExplorerContentImpl( 2200, "Soll-Analysen", SecurityCasting.ALLOY.VIEW ) );
-        lims.addChild( new ExplorerContentImpl( 2300, "Spezifikations-Verwaltung", "TODO" ) );
-        lims.addChild( new ExplorerContentImpl( 2400, "Etiketten-Verwaltung", SecurityCasting.LABEL.VIEW ) );
+     //   lims.addChild( new ExplorerContentImpl( 2300, "Spezifikations-Verwaltung", "TODO" ) );
+        lims.addChild( new ExplorerContentImpl( 2300, "Etiketten-Verwaltung", SecurityCasting.LABEL.VIEW ) );
 
         explorerContent.add( lims );
 
