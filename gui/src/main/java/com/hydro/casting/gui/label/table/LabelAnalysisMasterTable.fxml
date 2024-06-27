@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.analysis.table.cell.AnalysisResultCellFactory?>
+<?import com.hydro.core.gui.comp.CacheTreeTableView?>
+<?import com.hydro.core.gui.comp.cell.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<CacheTreeTableView fx:id="masterTable" showRoot="false" cache="casting-planning" cachePath="/analysis" prefWidth="600"
+                    xmlns="http://javafx.com/javafx/8.0.111"
+                    xmlns:fx="http://javafx.com/fxml/1"
+                    fx:controller="com.hydro.casting.gui.analysis.table.AnalysisMasterTableController">
+    <columns>
+
+        <TreeTableColumn prefWidth="90.0" text="Probe" id="sampleNumber">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="sampleNumber"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+
+
+
+        <TreeTableColumn prefWidth="90.0" text="Charge" id="charge">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="charge"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Ofen" id="melter">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="melter"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Legierung" id="alloyName">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="alloyName"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+
+
+
+
+    </columns>
+
+</CacheTreeTableView>

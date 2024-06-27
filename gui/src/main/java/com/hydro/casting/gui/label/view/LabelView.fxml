@@ -2,64 +2,69 @@
 
 <?import com.hydro.core.gui.comp.SearchBox?>
 <?import com.hydro.core.gui.view.comp.ViewParent?>
+<?import com.hydro.core.gui.comp.SearchBox?>
 
-<?import com.hydro.core.gui.comp.CacheTreeTableView?>
+<?import org.controlsfx.control.MasterDetailPane?>
 
-<?import javafx.scene.control.cell.*?>
 <?import javafx.scene.control.*?>
 
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import com.hydro.core.gui.comp.TaskButton?>
+<?import com.hydro.casting.gui.downtime.task.DowntimeAddTask?>
 <ViewParent title="Etiketten" prefHeight="500.0"
             prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.111"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.hydro.casting.gui.label.view.LabelViewController">
     <top>
-        <ToolBar prefHeight="40.0">
-            <SearchBox fx:id="searchBox" prefWidth="200"/>
+        <ToolBar prefHeight="40.0"   >
+            <SearchBox fx:id="searchBox" prefWidth="200"    />
+            <HBox  alignment="CENTER" spacing="5.0" prefWidth="180">
+
+
+            </HBox>
+
+            <ComboBox fx:id="fiterprinter" prefWidth="200"  />
+
+
         </ToolBar>
+
+
     </top>
     <left>
-        <CacheTreeTableView prefHeight="140.0">
-            <columns>
-                <TreeTableColumn prefWidth="90.0" text="Name" id="name">
-                    <cellValueFactory>
-                        <TreeItemPropertyValueFactory property="name"/>
-                    </cellValueFactory>
-                </TreeTableColumn>
-                <TreeTableColumn prefWidth="90.0" text="Probe" id="sampleNumber">
-                    <cellValueFactory>
-                        <TreeItemPropertyValueFactory property="sampleNumber"/>
-                    </cellValueFactory>
-                </TreeTableColumn>
+
+<MasterDetailPane    detailSide="RIGHT"
+                   dividerPosition="0.85"   showDetailNode="false"
+                   animated="false" >
+        <masterNode  >
+
+                <fx:include fx:id="masterTable" source="../table/LabelAnalysisMasterTable.fxml"/>
 
 
-                <TreeTableColumn prefWidth="90.0" text="Analyse-Nummer" id="analysisNo">
-                    <cellValueFactory>
-                        <TreeItemPropertyValueFactory property="analysisNo"/>
-                    </cellValueFactory>
-                </TreeTableColumn>
-                <TreeTableColumn prefWidth="90.0" text="Charge" id="charge">
-                    <cellValueFactory>
-                        <TreeItemPropertyValueFactory property="charge"/>
-                    </cellValueFactory>
-                </TreeTableColumn>
-                <TreeTableColumn prefWidth="90.0" text="Ofen" id="melter">
-                    <cellValueFactory>
-                        <TreeItemPropertyValueFactory property="melter"/>
-                    </cellValueFactory>
-                </TreeTableColumn>
-                <TreeTableColumn prefWidth="90.0" text="Legierung" id="alloyName">
-                    <cellValueFactory>
-                        <TreeItemPropertyValueFactory property="alloyName"/>
-                    </cellValueFactory>
-                </TreeTableColumn>
+        </masterNode>
+
+   <detailNode>
+    <BorderPane>
+        <top>
+            <Label fx:id="operationAreaTitle" maxWidth="Infinity" text="Details"
+                   alignment="CENTER" />
+        </top>
+        <center>
+            <VBox spacing="5.0">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                </padding>
+               <Button text="ein Button" >
+
+               </Button>
 
 
-
-
-
-
-            </columns>
-
-        </CacheTreeTableView>
+            </VBox>
+        </center>
+    </BorderPane>
+</detailNode>
+</MasterDetailPane>
     </left>
 </ViewParent>

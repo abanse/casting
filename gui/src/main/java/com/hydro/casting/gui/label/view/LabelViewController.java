@@ -15,6 +15,8 @@ import com.hydro.core.gui.comp.SearchBox;
 import com.hydro.core.gui.view.ViewControllerBase;
 import com.hydro.core.gui.view.ViewDeclaration;
 import javafx.fxml.FXML;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TreeItem;
 import javafx.scene.image.Image;
 
@@ -22,6 +24,8 @@ import javafx.scene.image.Image;
 public class LabelViewController extends ViewControllerBase
 {
     public final static String ID = SecurityCasting.LABEL.VIEW;
+
+
     @Inject
     private Injector injector;
     @FXML
@@ -33,6 +37,8 @@ public class LabelViewController extends ViewControllerBase
     @FXML
     private SearchBox searchBox;
 
+    @FXML
+    public ComboBox fiterprinter;
     public final static Image ANALYSIS_OK = ImagesCore.READY.load();
     public final static Image ANALYSIS_LOW = ImagesCore.BLUE_DOWN_ARROW.load();
     public final static Image ANALYSIS_HIGH = ImagesCore.RED_UP_ARROW.load();
@@ -43,9 +49,15 @@ public class LabelViewController extends ViewControllerBase
     @FXML
     void initialize()
     {
-     //      masterTable.setTitle( "Etiketten" );
+        masterTable.setTitle( "Etiketten" );
+        masterTable.filterProperty().bindBidirectional( searchBox.textProperty() );
 
+        masterTable.connect( injector, new AnalysisMasterTableGroup() );
+
+      //  masterTable.getSelectionModel().selectedItemProperty().addListener( ( p, o, n ) -> setDetailTableContent( n ) );
     }
+
+
 
     @Override
     public void beforeShown( View view )

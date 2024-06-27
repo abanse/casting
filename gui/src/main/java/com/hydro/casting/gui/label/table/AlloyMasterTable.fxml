@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.core.gui.comp.CacheTreeTableView?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<CacheTreeTableView fx:id="masterTable" showRoot="false" cache="casting-planning" cachePath="/alloy"
+                    xmlns="http://javafx.com/javafx/8.0.111"
+                    xmlns:fx="http://javafx.com/fxml/1"
+                    fx:controller="com.hydro.casting.gui.analysis.table.AlloyMasterTableController">
+    <columns>
+        <TreeTableColumn prefWidth="90.0" text="Name" id="name">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="name"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Version" id="version">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="version"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Beschreibung" id="description">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="description"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Aktiv" id="active">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="active"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+        <TreeTableColumn prefWidth="90.0" text="Aktiviert am" id="activationTime">
+            <cellValueFactory>
+                <TreeItemPropertyValueFactory property="activationTime"/>
+            </cellValueFactory>
+        </TreeTableColumn>
+    </columns>
+</CacheTreeTableView>
