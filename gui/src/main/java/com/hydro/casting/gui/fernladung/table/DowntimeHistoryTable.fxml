@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hydro.casting.gui.downtime.table.cell.*?>
+<?import com.hydro.core.gui.comp.ServerTreeTableView?>
+<?import javafx.scene.control.cell.TreeItemPropertyValueFactory?>
+<?import javafx.scene.control.*?>
+<ServerTreeTableView fx:id="table" showRoot="false" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" >
+	<columns>
+		<TreeTableColumn prefWidth="55.0" text="Kostenstelle" style="-fx-alignment: center" id="costCenter">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="costCenter" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="140.0" text="Startzeit" style="-fx-alignment: center" id="downtimeStart">
+			<cellValueFactory>
+				<DowntimeDateTimeFromValueFactory/>
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="140.0" text="Endzeit" style="-fx-alignment: center" id="downtimeEnd">
+			<cellValueFactory>
+				<DowntimeDateTimeUntilValueFactory/>
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="70.0" text="Dauer" style="-fx-alignment: CENTER-RIGHT" id="duration">
+			<cellValueFactory>
+				<DowntimeDurationValueFactory/>
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="200.0" text="Baugruppe" style="-fx-alignment: center" id="downtimeModule">
+			<cellValueFactory>
+				<DowntimeModuleValueFactory/>
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="200.0" text="Störzeitart" style="-fx-alignment: center" id="downtimeKind">
+			<cellValueFactory>
+				<DowntimeKindValueFactory/>
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="90.0" text="Typ" style="-fx-alignment: center" id="type">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="type"/>
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="500.0" text="Beschreibung" id="description">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="description" />
+			</cellValueFactory>
+		</TreeTableColumn>
+		<TreeTableColumn prefWidth="500.0" text="Zusatz" id="remark">
+			<cellValueFactory>
+				<TreeItemPropertyValueFactory property="remark" />
+			</cellValueFactory>
+		</TreeTableColumn>
+	</columns>
+</ServerTreeTableView>
