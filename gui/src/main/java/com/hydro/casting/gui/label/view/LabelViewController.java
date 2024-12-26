@@ -6,11 +6,15 @@ import com.hydro.casting.common.SecurityCasting;
 import com.hydro.casting.gui.analysis.table.AnalysisDetailTableController;
 import com.hydro.casting.gui.analysis.table.grouping.AnalysisMasterTableGroup;
 import com.hydro.casting.gui.label.control.AnalysisTable;
+import com.hydro.casting.server.contract.analysis.LimsLabelPreregistrationView;
 import com.hydro.casting.server.contract.dto.AnalysisDTO;
+import com.hydro.casting.server.contract.dto.LimsLabelPreregistrationDTO;
+import com.hydro.core.gui.BusinessManager;
 import com.hydro.core.gui.ImagesCore;
 import com.hydro.core.gui.View;
 import com.hydro.core.gui.ViewType;
 import com.hydro.core.gui.comp.CacheTreeTableView;
+import com.hydro.core.gui.comp.MaintenanceTableView;
 import com.hydro.core.gui.comp.SearchBox;
 import com.hydro.core.gui.view.ViewControllerBase;
 import com.hydro.core.gui.view.ViewDeclaration;
@@ -25,11 +29,12 @@ public class LabelViewController extends ViewControllerBase
 {
     public final static String ID = SecurityCasting.LABEL.VIEW;
 
-
+    @Inject
+    private BusinessManager businessManager;
     @Inject
     private Injector injector;
     @FXML
-    private CacheTreeTableView<AnalysisDTO> masterTable;
+    private MaintenanceTableView<LimsLabelPreregistrationDTO> masterTable;
     @FXML
     private AnalysisTable detailTable;
     @FXML
@@ -52,7 +57,13 @@ public class LabelViewController extends ViewControllerBase
         masterTable.setTitle( "Etiketten" );
         masterTable.filterProperty().bindBidirectional( searchBox.textProperty() );
 
-        masterTable.connect( injector, new AnalysisMasterTableGroup() );
+        LimsLabelPreregistrationView limsView = businessManager.getSession(LimsLabelPreregistrationView.class);
+
+        masterTable.connect(injector, limsView);
+
+        masterTable.loadData();
+
+
 
       //  masterTable.getSelectionModel().selectedItemProperty().addListener( ( p, o, n ) -> setDetailTableContent( n ) );
     }
@@ -75,13 +86,5 @@ public class LabelViewController extends ViewControllerBase
         searchBox.setText( (String) startObject );
     }
 
-    private void setDetailTableContent( TreeItem<AnalysisDTO> treeItem )
-    {
-        AnalysisDTO dto = null;
-        if ( treeItem != null )
-        {
-            dto = treeItem.getValue();
-        }
-        detailTableController.setMaster( dto );
-    }
+
 }

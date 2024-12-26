@@ -5,39 +5,40 @@
 <?import com.hydro.core.gui.comp.cell.*?>
 <?import javafx.scene.control.cell.*?>
 <?import javafx.scene.control.*?>
-<CacheTreeTableView fx:id="masterTable" showRoot="false" cache="casting-planning" cachePath="/analysis" prefWidth="600"
-                    xmlns="http://javafx.com/javafx/8.0.111"
-                    xmlns:fx="http://javafx.com/fxml/1"
-                    fx:controller="com.hydro.casting.gui.analysis.table.AnalysisMasterTableController">
+<?import com.hydro.core.gui.comp.MaintenanceTableView?>
+<MaintenanceTableView   cachePath="/analysis" prefWidth="600"
+                      xmlns="http://javafx.com/javafx/8.0.111"
+                      xmlns:fx="http://javafx.com/fxml/1"
+                      fx:controller="com.hydro.casting.gui.label.table.LabelAnalysisMasterTableController">
     <columns>
 
-        <TreeTableColumn prefWidth="90.0" text="Probe" id="sampleNumber">
+        <TableColumn prefWidth="90.0" text="Probe" id="probe">
             <cellValueFactory>
-                <TreeItemPropertyValueFactory property="sampleNumber"/>
+                <PropertyValueFactory property="probe"/>
             </cellValueFactory>
-        </TreeTableColumn>
+        </TableColumn>
 
 
 
-        <TreeTableColumn prefWidth="90.0" text="Charge" id="charge">
+        <TableColumn prefWidth="90.0" text="Charge" id="charge">
             <cellValueFactory>
-                <TreeItemPropertyValueFactory property="charge"/>
+                <PropertyValueFactory property="charge"/>
             </cellValueFactory>
-        </TreeTableColumn>
-        <TreeTableColumn prefWidth="90.0" text="Ofen" id="melter">
+        </TableColumn>
+        <TableColumn prefWidth="90.0" text="Ofen" id="ofen">
             <cellValueFactory>
-                <TreeItemPropertyValueFactory property="melter"/>
+                <PropertyValueFactory property="ofen"/>
             </cellValueFactory>
-        </TreeTableColumn>
-        <TreeTableColumn prefWidth="90.0" text="Legierung" id="alloyName">
+        </TableColumn>
+        <TableColumn prefWidth="90.0" text="Legierung" id="legnr">
             <cellValueFactory>
-                <TreeItemPropertyValueFactory property="alloyName"/>
+                <PropertyValueFactory property="legnr"/>
             </cellValueFactory>
-        </TreeTableColumn>
+        </TableColumn>
 
 
 
 
     </columns>
 
-</CacheTreeTableView>
+</MaintenanceTableView>
